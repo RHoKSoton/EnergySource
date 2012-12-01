@@ -10,6 +10,7 @@ fs = require 'fs'
 
 delay = (ms, cb) -> setTimeout cb, ms
 
+POP_THRESHOLD = 10000
 ACTUALLY_SEARCH = 0
 RAND_DELAY = 60000
 GOOGLE_ARE_ANGRY = false
@@ -56,9 +57,10 @@ for componentType, componentSpecs of data.components then do (componentType, com
   for componentSpec in componentSpecs then do (componentSpec) ->
 
     for countryName, countrySpec of data.countries then do (countryName, countrySpec) ->
-      step = Math.floor countrySpec.cities.length/6
-      cities = (city.name for city, n in countrySpec.cities when (n % step) is 0)
-      cities = ['Kakamega', 'Garissa', 'Eldoret']
+      #step = Math.floor countrySpec.cities.length/6
+      #cities = (city.name for city, n in countrySpec.cities when (n % step) is 0)
+      cities = (city.name for city in countrySpec.cities when city.population > POP_THRESHOLD)
+      #cities = ['Kakamega', 'Garissa', 'Eldoret']
       #cities = cities.slice(0,2)
       for city in cities then do (city) ->
 
