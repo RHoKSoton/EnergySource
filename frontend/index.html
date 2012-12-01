@@ -43,7 +43,7 @@ Released   : 20121105
                 checkboxes = document.getElementsByTagName('input');
 
                 for (var i = 0; i < checkboxes.length; i++) {
-                    if (checkboxes[i].type == 'checkbox') {
+                    if (checkboxes[i].type == 'radio') {
                         checkboxes[i].checked = this.checktoggle;
                     }
                 }
@@ -60,7 +60,7 @@ Released   : 20121105
             <div id="header-wrapper" class="container">
                 <div id="header" class="container">
                     <div id="logo">
-                        <h1><a href="#">Energy Source</a></h1>
+                        <h1><a href="#">EnergySource</a></h1>
 
                     </div>
                     <div id="menu">
@@ -77,7 +77,7 @@ Released   : 20121105
                 <div id="content">
                     <div class="onecolumn">
                         <div class="content"><br />
-                            <p><iframe width="800" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=zh-TW&amp;geocode=&amp;q=%E8%82%AF%E5%B0%BC%E4%BA%9E%E5%A5%88%E6%B4%9B%E6%AF%94&amp;aq=0&amp;oq=NAIRO&amp;sll=50.913822,-1.400493&amp;sspn=0.10823,0.338173&amp;ie=UTF8&amp;hq=&amp;hnear=%E8%82%AF%E5%B0%BC%E4%BA%9E+Nairobi,+%E5%A5%88%E6%B4%9B%E6%AF%94&amp;t=m&amp;ll=-1.292157,36.822052&amp;spn=0.164753,0.219727&amp;z=12&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=zh-TW&amp;geocode=&amp;q=%E8%82%AF%E5%B0%BC%E4%BA%9E%E5%A5%88%E6%B4%9B%E6%AF%94&amp;aq=0&amp;oq=NAIRO&amp;sll=50.913822,-1.400493&amp;sspn=0.10823,0.338173&amp;ie=UTF8&amp;hq=&amp;hnear=%E8%82%AF%E5%B0%BC%E4%BA%9E+Nairobi,+%E5%A5%88%E6%B4%9B%E6%AF%94&amp;t=m&amp;ll=-1.292157,36.822052&amp;spn=0.164753,0.219727&amp;z=12&amp;iwloc=A" style="color:#0000FF;text-align:left">檢視較大的地圖</a></small>
+                            <p><iframe width="800" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Nairobi,+Kenya&amp;aq=0&amp;oq=NAIROB&amp;sll=53.800651,-4.064941&amp;sspn=6.413511,21.643066&amp;ie=UTF8&amp;hq=&amp;hnear=Nairobi,+Nairobi+Province,+Kenya&amp;t=m&amp;z=11&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.co.uk/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Nairobi,+Kenya&amp;aq=0&amp;oq=NAIROB&amp;sll=53.800651,-4.064941&amp;sspn=6.413511,21.643066&amp;ie=UTF8&amp;hq=&amp;hnear=Nairobi,+Nairobi+Province,+Kenya&amp;t=m&amp;z=11&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small><br />
                         </div>
                     </div>
 
@@ -90,32 +90,51 @@ Released   : 20121105
                                     <p>
                                         <input id="Text1" type="text" onclick="return Text1_onclick()" 
                                                value="Nairobi " /></p>
-                                    <p><table>
-                                            <tr><td>
-                                                    <input id="Checkbox2" type="checkbox" onclick="checkAll(searchPanel)" 
-                                                        checked="checked"/></td><td class="style2"><strong>Components</strong></td>
-                                                <td class="style1"></td></tr><tr><td>
+                                    <p>
+                                
+                                    <table>
+                                    <tr><td colspan="3">&nbsp;</td></tr>
+                                             <tr>
+                                                    <td colspan="3"><a href="#" class="link-style">View All Components</a></td>
+                                               
+                                                </tr>
 
-                                                <form name="searchPanel">
-                                                    <input id="Checkbox1" type="checkbox"  checked="checked" /></td><td class="style2">components</td>
+                                                 <tr>
+                                                    <td colspan="3"></td>
+                                               
+                                                </tr>
+                                            <tr><td class="style2" colspan="3"><br /><strong>View one component </strong></td>
+                                                <td class="style1"></td></tr>
+                                       
+                                            
+
+
+                                                <tr>
+                                              
+                                                <td>
+
+                                                  <form action="#" method="get">
+
+                                                    <input id="Checkbox1" name="components" type="radio" /></td><td class="style2">components</td>
                                                 <td class="style1">light</td></tr>
                                             <tr><td>
-                                                    <input id="Checkbox4" type="checkbox"  checked="checked"/></td><td class="style2">components</td>
+                                                    <input id="Checkbox4" name="components" type="radio"  /></td><td class="style2">components</td>
                                                 <td class="style1">light</td></tr>
                                             <tr><td>
-                                                    <input id="Checkbox3" type="checkbox"  checked="checked" /></td><td class="style2">components</td>
+                                                    <input id="Checkbox3" name="components" type="radio"   /></td><td class="style2">components</td>
                                                 <td class="style1">light</td></tr>
                                             <tr><td>
-                                                    <input id="Checkbox5" type="checkbox"  checked="checked"/></td><td class="style2">components</td>
+                                                    <input id="Checkbox5" name="components" type="radio"  /></td><td class="style2">components</td>
                                                 <td class="style1">light</td></tr>
                                             <tr><td>
-                                                    <input id="Checkbox6" type="checkbox"  checked="checked" /></td><td class="style2">components</td>
+                                                    <input id="Checkbox6" name="components" type="radio"   /></td><td class="style2">components</td>
                                                 <td class="style1">light</td></tr>
                                             <tr><td>
-                                                    <input id="Checkbox7" type="checkbox"  checked="checked"/></td><td class="style2">components</td>
-                                                <td class="style1">light</td></tr> 
-                                       </form>
-                                        </table></p>
+                                                    <input id="Checkbox7" name="components" type="radio"  /></td><td class="style2">components</td>
+                                                <td class="style1">light</td></tr> </form>
+                                   
+                                        </table>
+                                            </p>
                                     <p>&nbsp;</p>
                                 </li>
                             </ul>
