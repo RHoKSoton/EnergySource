@@ -6,7 +6,7 @@ var energy = {
 			for (var i = 0, i_len = data.components[component].length; i < i_len; i++) {
 				var mf = data.components[component][i];
 				var mf_name = mf.Manufacturer;
-				components_list.append("<tr><td><input name='component' data-comp_name='" + mf_name + "' id='" + mf_name + "' type='radio'/></td><td class='style3'><a class='component_link' href=''>" + mf_name + "(" + mf.Part + ") </a></td><td class='style4'><a class='score_link'><img class='score_light' align='right' alt='' src='/static/img/Button-Blank-Red-icon.png' /></a></td></tr>");
+				components_list.append("<tr><td><input name='component' data-comp_name='" + mf_name + "' id='" + mf_name + "' type='radio'/></td><td class='style3'><a class='component_link' href=''>" + mf_name + "(" + mf.Part + ") </a></td><td class='style4'><a class='score_link'><img class='score_light' align='right' alt='' src='images/Button-Blank-Red-icon.png' /></a></td></tr>");
 			}
 		}
 		$(".component_link").live("click", function(e) {
@@ -39,7 +39,7 @@ var energy = {
 				else {
 					image_link = 'Button-Blank-Green-icon.png';
 				}
-				comp_dom.closest("tr").find(".score_light").attr({'src': "/static/img/" + image_link});
+				comp_dom.closest("tr").find(".score_light").attr({'src': "images/" + image_link});
 			}
 		}
 	},
