@@ -18,7 +18,7 @@ h1, h2, h3
 {
 	margin: 0px;
 	padding: 0px;
-	text-transform: uppercase;
+	/*text-transform: uppercase; */
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: 300;
 }
@@ -123,7 +123,7 @@ hr
 	width: 350px;
 	padding: 0px 0px 0px 10px;
 	text-shadow: 1px 1px 0px #814059;
-	text-transform: uppercase;
+    /* text-transform: uppercase;*/
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -219,6 +219,7 @@ hr
 {
 	float: left;
 	width: 800px;
+    height: 572px;
 }
 
 #content h2
@@ -245,7 +246,7 @@ hr
 #sidebar
 {
 	float: right;
-	width: 300px;
+	width: 286px;
     margin-left: 38px;
 }
 
@@ -423,6 +424,8 @@ hr
 	letter-spacing: 1px;
 	text-decoration: none;
 	text-shadow: 1px 0px 1px #5C1111;
-	text-transform: uppercase;
+	/*text-transform: uppercase; */
 	color: #FFFFFF;
+    width: 260px;
+    text-align: center;
 }
