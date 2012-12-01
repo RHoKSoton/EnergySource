@@ -1,6 +1,9 @@
 ###
-# run this as ./search.coffee > scores.json
+# run this as ./search.coffee ke >> scores.json
 ###
+
+country = process.argv[0]
+
 https = require 'https'
 util = require 'util'
 fs = require 'fs'
@@ -48,7 +51,7 @@ for countryName, countrySpec of data.countries then do (countryName, countrySpec
   for componentType, componentSpecs of data.components then do (componentType, componentSpecs) ->
     for componentSpec in componentSpecs then do (componentSpec) ->
       cities = (city.name for city in countrySpec.cities)
-      cities = cities.slice(0,2)
+#      cities = cities.slice(0,2)
       for city in cities then do (city) ->
         started++
         #term = 'intext:sonnenschein intext:battery intext:(nairobi | kisumu | mombasa | dadaab) intext:kenya -filetype:pdf (site:.com | site:.ke)'
