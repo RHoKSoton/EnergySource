@@ -1,12 +1,11 @@
 var energy = {
 	init: function() {
 		var components_list = $("#components_list");
-		var mfs = {};
-		for (var i = 0, i_len = scores.length; i < i_len; i++) {
-			var mf = scores[i].component.Manufacturer;
-			if (!mfs[mf]) {
-				components_list.append("<tr><td><input name='component' data-comp_name='" + mf + "' id='" + mf + "' type='radio'/></td><td class='style3'>" + mf + "(" + scores[i].component.Part + ") </td><td class='style4'><img class='score_light' align='right' alt='' src='/static/img/Button-Blank-Red-icon.png' /></td></tr>");
-				mfs[mf] = 1;
+		for (var component in data.components) {
+			for (var i = 0, i_len = data.components[component].length; i < i_len; i++) {
+				var mf = data.components[component][i];
+				var mf_name = mf.Manufacturer;
+				components_list.append("<tr><td><input name='component' data-comp_name='" + mf_name + "' id='" + mf_name + "' type='radio'/></td><td class='style3'>" + mf_name + "(" + mf.Part + ") </td><td class='style4'><img class='score_light' align='right' alt='' src='/static/img/Button-Blank-Red-icon.png' /></td></tr>");
 			}
 		}
 	},
