@@ -2,181 +2,52 @@
   {
     "city": "Nairobi",
     "country": "Kenya",
-    "component": {
-      "Part": "Battery",
-      "Manufacturer": "Sonnenschein",
-      "Term": "intext:sonnenschein intext:battery"
-    },
-    "results": "221"
-  },
-  {
-    "city": "Mombasa",
-    "country": "Kenya",
-    "component": {
-      "Part": "Battery",
-      "Manufacturer": "Sonnenschein",
-      "Term": "intext:sonnenschein intext:battery"
-    },
-    "results": "18"
-  },
-  {
-    "city": "Mombasa",
-    "country": "Kenya",
-    "component": {
-      "Part": "Inverter",
-      "Manufacturer": "SMA",
-      "Term": "intext:SMA intext:\"inverter\""
-    },
-    "results": "99"
-  },
-  {
-    "city": "Nairobi",
-    "country": "Kenya",
-    "component": {
-      "Part": "Battery",
-      "Manufacturer": "Rolls",
-      "Term": "intext:\"rolls\" -royce -\"rolls of\" -\"by the roll\" -scrap -news -importer intext:\"battery\""
-    },
-    "results": "6,890"
-  },
-  {
-    "city": "Nairobi",
-    "country": "Kenya",
-    "component": {
-      "Part": "Inverter",
-      "Manufacturer": "SMA",
-      "Term": "intext:SMA intext:\"inverter\""
-    },
-    "results": "2,800"
-  },
-  {
-    "city": "Nairobi",
-    "country": "Kenya",
-    "component": {
-      "Part": "Inverter",
-      "Manufacturer": "Victron",
-      "Term": "intext:victron intext:\"inverter\""
-    },
-    "results": "668"
-  },
-  {
-    "city": "Nairobi",
-    "country": "Kenya",
-    "component": {
-      "Part": "PV Module",
-      "Manufacturer": "Sharp",
-      "Term": "intext:sharp intext:\"PV module\""
-    },
-    "results": "265"
-  },
-  {
-    "city": "Mombasa",
-    "country": "Kenya",
-    "component": {
-      "Part": "Battery",
-      "Manufacturer": "Rolls",
-      "Term": "intext:\"rolls\" -royce -\"rolls of\" -\"by the roll\" -scrap -news -importer intext:\"battery\""
-    },
-    "results": "449"
-  },
-  {
-    "city": "Mombasa",
-    "country": "Kenya",
-    "component": {
-      "Part": "PV Module",
-      "Manufacturer": "Sharp",
-      "Term": "intext:sharp intext:\"PV module\""
-    },
-    "results": "7"
-  },
-  {
-    "city": "Mombasa",
-    "country": "Kenya",
-    "component": {
-      "Part": "Inverter",
-      "Manufacturer": "Victron",
-      "Term": "intext:victron intext:\"inverter\""
-    },
-    "results": "33"
-  },
-  {
-    "city": "Nairobi",
-    "country": "Kenya",
-    "component": {
-      "Part": "Generator",
-      "Manufacturer": "Caterpillar",
-      "Term": "intext:caterpillar intext:\"diesel generator\""
-    },
-    "results": "2,620"
-  },
-  {
-    "city": "Mombasa",
-    "country": "Kenya",
-    "component": {
-      "Part": "Generator",
-      "Manufacturer": "Perkins",
-      "Term": "intext:perkins intext:\"diesel generator\""
-    },
-    "results": "155"
-  },
-  {
-    "city": "Nairobi",
-    "country": "Kenya",
-    "component": {
-      "Part": "Generator",
-      "Manufacturer": "Perkins",
-      "Term": "intext:perkins intext:\"diesel generator\""
-    },
-    "results": "2,610"
-  },
-  {
-    "city": "Mombasa",
-    "country": "Kenya",
-    "component": {
-      "Part": "Generator",
-      "Manufacturer": "Caterpillar",
-      "Term": "intext:caterpillar intext:\"diesel generator\""
-    },
-    "results": "266"
-  },
-  {
-    "city": "Nairobi",
-    "country": "Kenya",
-    "component": {
-      "Part": "Pump",
-      "Manufacturer": "Danfos",
-      "Term": "intext:danfoss intext:\"pump\""
-    },
-    "results": "8,210"
-  },
-  {
-    "city": "Mombasa",
-    "country": "Kenya",
-    "component": {
-      "Part": "Charge controller",
-      "Manufacturer": "Outback",
-      "Term": "intext:outback intext:\"charge controller\""
-    },
-    "results": "1"
-  },
-  {
-    "city": "Mombasa",
-    "country": "Kenya",
-    "component": {
-      "Part": "Pump",
-      "Manufacturer": "Danfos",
-      "Term": "intext:danfoss intext:\"pump\""
-    },
-    "results": "92"
-  },
-  {
-    "city": "Nairobi",
-    "country": "Kenya",
-    "component": {
-      "Part": "Charge controller",
-      "Manufacturer": "Outback",
-      "Term": "intext:outback intext:\"charge controller\""
-    },
-    "results": "1,150"
+    "manufacturer": "Sonnenschein",
+    "part": "Battery",
+    "searchTerm": "intext:sonnenschein intext:battery intext:\"(Nairobi), Kenya\" (site:.com | site:.ke) -filetype:pdf",
+    "numResults": "217",
+    "score": 1,
+    "gResults": [
+      {
+        "GsearchResultClass": "GwebSearch",
+        "unescapedUrl": "http://www.posharp.com/backup-power-system-installers-in-the-world_renewable.aspx?ptype=alter_backup-power&btype=service_install",
+        "url": "http://www.posharp.com/backup-power-system-installers-in-the-world_renewable.aspx%3Fptype%3Dalter_backup-power%26btype%3Dservice_install",
+        "visibleUrl": "www.posharp.com",
+        "cacheUrl": "",
+        "title": "Backup Power System Installers in the World",
+        "titleNoFormatting": "Backup Power System Installers in the World",
+        "content": "<b>...</b> Kyocera, Trina Solar, Mega-tech, Exide, <b>Sonnenschein</b>, EcoSolarCool etc. <b>...</b>   Small Wind Energy Systems, <b>battery</b> manufacturing equipment, Digital Taxi Fare   <b>...</b> Nairobi, <b>Nairobi, Kenya</b>: Telephone Number: +254 020 552216: Facsimile <b>...</b>"
+      },
+      {
+        "GsearchResultClass": "GwebSearch",
+        "unescapedUrl": "http://www.posharp.com/energy/ptype=alter_backup-power/btype=wholesale/xtype=ntype/companies.aspx",
+        "url": "http://www.posharp.com/energy/ptype%3Dalter_backup-power/btype%3Dwholesale/xtype%3Dntype/companies.aspx",
+        "visibleUrl": "www.posharp.com",
+        "cacheUrl": "",
+        "title": "Backup Power System Wholesale Distributors in the World in <b>...</b>",
+        "titleNoFormatting": "Backup Power System Wholesale Distributors in the World in ...",
+        "content": "<b>...</b> Retailer, Wholesale Distributors: Products: Backup Power System, <b>Battery</b>   Charger, <b>...</b> Kyocera, Trina Solar, Mega-tech, Exide, <b>Sonnenschein</b>,   EcoSolarCool etc. <b>....</b> Nairobi, <b>Nairobi, Kenya</b>: Telephone Number: +254 020   552216: Facsimile <b>...</b>"
+      },
+      {
+        "GsearchResultClass": "GwebSearch",
+        "unescapedUrl": "http://wn.com/Checks_N_Balances",
+        "url": "http://wn.com/Checks_N_Balances",
+        "visibleUrl": "wn.com",
+        "cacheUrl": "",
+        "title": "Checks N Balances",
+        "titleNoFormatting": "Checks N Balances",
+        "content": "Location: 114 - 120 <b>Sonnenschein</b> Way, Saskatoon, SK S7M0W2 About: <b>.....</b>   Information and Specs from HobbyKing.com The Accucel-8150 is a Lipoly/LiFe   <b>battery</b> <b>.....</b> women soldiers rehearse a military parade at Uhuru Park, <b>Nairobi,</b>   <b>Kenya</b>, <b>...</b>"
+      },
+      {
+        "GsearchResultClass": "GwebSearch",
+        "unescapedUrl": "http://www.graves-johnston.com/news/cat97.html",
+        "url": "http://www.graves-johnston.com/news/cat97.html",
+        "visibleUrl": "www.graves-johnston.com",
+        "cacheUrl": "http://www.google.com/search?q=cache:sL98ztLsG58J:www.graves-johnston.com",
+        "title": "Michael Graves-Johnston - Catalogue 97: Eastern Africa <b>...</b>",
+        "titleNoFormatting": "Michael Graves-Johnston - Catalogue 97: Eastern Africa ...",
+        "content": "<b>Nairobi: Kenya</b> Literature Bureau, 1979 Wrpps, 8vo. xvi,214pp."
+      }
+    ]
   }
 ]

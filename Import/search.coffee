@@ -8,6 +8,8 @@ fs = require 'fs'
 delay = (ms, cb) -> setTimeout cb, ms
 
 ACTUALLY_SEARCH = 0
+RAND_DELAY = 60000
+GOOGLE_ARE_ANGRY = false
 
 search = (term, cb) ->
   url = "https://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=#{encodeURIComponent term}"
@@ -38,39 +40,58 @@ started = 0
 done = 0
 
 checkComplete = ->
-  if started is done
-    console.log JSON.stringify outputTuples, null, 2
-    process.exit 0
+  delay 0, ->
+    if started is done
+      console.log JSON.stringify outputTuples, null, 2
+      process.exit 0
 
 outputTuples = []
+if ACTUALLY_SEARCH is 0
+  RAND_DELAY = 0
 
-for countryName, countrySpec of data.countries then do (countryName, countrySpec) ->
-  for componentType, componentSpecs of data.components then do (componentType, componentSpecs) ->
-    for componentSpec in componentSpecs then do (componentSpec) ->
-      cities = (city.name for city in countrySpec.cities)
-      cities = cities.slice(0,2)
+for componentType, componentSpecs of data.components then do (componentType, componentSpecs) ->
+  for componentSpec in componentSpecs then do (componentSpec) ->
+
+    for countryName, countrySpec of data.countries then do (countryName, countrySpec) ->
+      step = Math.floor countrySpec.cities.length/6
+      cities = (city.name for city, n in countrySpec.cities when (n % step) is 0)
+      cities = ['Kakamega', 'Garissa', 'Eldoret']
+      #cities = cities.slice(0,2)
       for city in cities then do (city) ->
+
         started++
+        reqNum = started
         #term = 'intext:sonnenschein intext:battery intext:(nairobi | kisumu | mombasa | dadaab) intext:kenya -filetype:pdf (site:.com | site:.ke)'
         term = "#{componentSpec.Term} intext:\"(#{city}), #{countryName}\" (site:.com | site:.#{countrySpec.tld}) -filetype:pdf"
 
-        if started <= ACTUALLY_SEARCH
-          console.error "Search #{started}: #{term}"
-          search term, (err, res) ->
-            if err
-              console.error "ERROR!"
-              console.error err
-              return
-            #console.error util.inspect res, false, null, true
-            #console.error "Results for #{componentSpec.Manufacturer} #{componentSpec.Part} in #{city}: #{res.responseData.cursor.resultCount ? 0}"
-            done++
-            outputTuples.push
-              city: city
-              country: countryName
-              component: componentSpec
-              results: res.responseData.cursor.resultCount
-            checkComplete()
-        else
-          delay 0, ->
-            done++
-            console.error "Not Searching #{done}: #{term}"
+        delay started*RAND_DELAY + Math.random()*(RAND_DELAY/2), ->
+          if started <= ACTUALLY_SEARCH and not GOOGLE_ARE_ANGRY
+            console.error "Search #{reqNum}: #{term}"
+            search term, (err, res) ->
+              done++
+              if err or !res?.responseData?.cursor?
+                if res?.responseStatus is 403
+                  GOOGLE_ARE_ANGRY = true
+                console.error "ERROR!"
+                console.error err ? res
+                checkComplete()
+                return
+              #console.error util.inspect res, false, null, true
+              numResults = res.responseData.cursor.resultCount
+              score = (if numResults > 500 then 2 else if numResults > 50 then 1 else 0)
+              console.error "Results [#{reqNum}] for #{componentSpec.Manufacturer} #{componentSpec.Part} in #{city}: #{numResults ? 0}"
+              outputTuples.push
+                city: city
+                country: countryName
+                manufacturer: componentSpec.Manufacturer
+                part: componentSpec.Part
+                searchTerm: term
+                numResults: numResults
+                score: score
+                gResults: res.responseData.results
+              checkComplete()
+          else
+            delay 0, ->
+              done++
+              console.error "Not Searching #{done}: #{term}"
+              checkComplete()
