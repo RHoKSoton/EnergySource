@@ -81,6 +81,8 @@ for componentType, componentSpecs of data.components then do (componentType, com
                 return
               #console.error util.inspect res, false, null, true
               numResults = res.responseData.cursor.resultCount
+              numResults = numResults.replace ",", ""
+              numResults = parseInt numResults, 10
               score = (if numResults > 500 then 2 else if numResults > 50 then 1 else 0)
               console.error "Results [#{reqNum}] for #{componentSpec.Manufacturer} #{componentSpec.Part} in #{city}: #{numResults ? 0}"
               outputTuples.push
