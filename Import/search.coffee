@@ -1,5 +1,5 @@
 ###
-# run this as ./search.coffee ke > scores.json
+# run this as ./search.coffee ke >> scores.json
 ###
 
 country = process.argv[0]
