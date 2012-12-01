@@ -1,6 +1,9 @@
 ###
-# run this as ./search.coffee > scores.json
+# run this as ./search.coffee ke >> scores.json
 ###
+
+country = process.argv[0]
+
 https = require 'https'
 util = require 'util'
 fs = require 'fs'

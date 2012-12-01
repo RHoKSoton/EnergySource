@@ -1,0 +1,8 @@
+Make a scores.json by:
+
+1. Download sheets from this spreasheet as CSV: https://docs.google.com/spreadsheet/ccc?key=0At5eTj3CondTdFJqMVhpOTVVMUt4cXFKbEpLUEMtS2c
+   Make your own if you like but keep the name of the Document and each sheet is important.
+
+2. `coffee import.coffee ke` where ke is that country's TLD (We do include com when searching).
+
+3. `coffee search.coffee ke >> scores.json`, now go back to 2 and do another country.
