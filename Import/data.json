@@ -64,175 +64,396 @@
       "tld": "ke",
       "cities": [
         {
-          "name": "Baragoi"
+          "name": "Nairobi",
+          "population": "3133518"
         },
         {
-          "name": "Bungoma"
+          "name": "Mombasa",
+          "population": "915101"
         },
         {
-          "name": "Busia"
+          "name": "Nakuru",
+          "population": "286411"
         },
         {
-          "name": "Butere"
+          "name": "Kisumu",
+          "population": "259258"
         },
         {
-          "name": "Dadaab"
+          "name": "Eldoret",
+          "population": "252061"
         },
         {
-          "name": "Diani Beach"
+          "name": "Ruiru",
+          "population": "236961"
         },
         {
-          "name": "Eldoret"
+          "name": "Kikuyu",
+          "population": "190208"
         },
         {
-          "name": "Embu"
+          "name": "Thika",
+          "population": "136576"
         },
         {
-          "name": "Garissa"
+          "name": "Mavoko",
+          "population": "110396"
         },
         {
-          "name": "Gede"
+          "name": "Garissa",
+          "population": "110383"
         },
         {
-          "name": "Hola"
+          "name": "Ngong",
+          "population": "104073"
         },
         {
-          "name": "Homa Bay"
+          "name": "Karuri",
+          "population": "99739"
         },
         {
-          "name": "Isiolo"
+          "name": "Naivasha",
+          "population": "91993"
         },
         {
-          "name": "Kajiado"
+          "name": "Malindi",
+          "population": "84150"
         },
         {
-          "name": "Kakamega"
+          "name": "Kiambu",
+          "population": "76093"
         },
         {
-          "name": "Kakuma"
+          "name": "Kitale",
+          "population": "75782"
         },
         {
-          "name": "Kapenguria"
+          "name": "Kakamega",
+          "population": "69502"
         },
         {
-          "name": "Kericho"
+          "name": "Nyeri",
+          "population": "63626"
         },
         {
-          "name": "Kiambu"
+          "name": "Ukunda",
+          "population": "62529"
         },
         {
-          "name": "Kilifi"
+          "name": "Kisii",
+          "population": "61892"
         },
         {
-          "name": "Kisii"
+          "name": "Limuru",
+          "population": "61336"
         },
         {
-          "name": "Kisumu"
+          "name": "Kitengela",
+          "population": "58167"
         },
         {
-          "name": "Kitale"
+          "name": "Mandera",
+          "population": "57692"
         },
         {
-          "name": "Lamu"
+          "name": "Bungoma",
+          "population": "55867"
         },
         {
-          "name": "Langata"
+          "name": "Migori",
+          "population": "53100"
         },
         {
-          "name": "Lodwar"
+          "name": "Mtwapa",
+          "population": "48625"
         },
         {
-          "name": "Lokichoggio"
+          "name": "Lodwar",
+          "population": "45368"
         },
         {
-          "name": "Loyangalani"
+          "name": "Kilifi",
+          "population": "44257"
         },
         {
-          "name": "Machakos"
+          "name": "Isiolo",
+          "population": "44154"
         },
         {
-          "name": "Malindi"
+          "name": "Kericho",
+          "population": "42029"
         },
         {
-          "name": "Mandera"
+          "name": "Machakos",
+          "population": "41917"
         },
         {
-          "name": "Maralal"
+          "name": "Kimilili",
+          "population": "41115"
         },
         {
-          "name": "Marsabit"
+          "name": "Busia",
+          "population": "40740"
         },
         {
-          "name": "Meru"
+          "name": "Juja",
+          "population": "40446"
         },
         {
-          "name": "Mombasa"
+          "name": "Ongata Rongai",
+          "population": "40178"
         },
         {
-          "name": "Moyale"
+          "name": "Mumias",
+          "population": "38960"
         },
         {
-          "name": "Mumia's"
+          "name": "Meru",
+          "population": "38833"
         },
         {
-          "name": "Muranga"
+          "name": "Narok",
+          "population": "38653"
         },
         {
-          "name": "Nairobi"
+          "name": "Vihiga",
+          "population": "36398"
         },
         {
-          "name": "Naivasha"
+          "name": "Embu",
+          "population": "35736"
         },
         {
-          "name": "Nakuru"
+          "name": "Gilgil",
+          "population": "35293"
         },
         {
-          "name": "Namanga"
+          "name": "Elburgon",
+          "population": "32654"
         },
         {
-          "name": "Nanyuki"
+          "name": "Molo",
+          "population": "32576"
         },
         {
-          "name": "Naro Moru"
+          "name": "Kakuma",
+          "population": "31962"
         },
         {
-          "name": "Narok"
+          "name": "Nyahururu",
+          "population": "31952"
         },
         {
-          "name": "Nyahururu"
+          "name": "Nanyuki",
+          "population": "31826"
         },
         {
-          "name": "Nyeri"
+          "name": "Kehancha",
+          "population": "30109"
         },
         {
-          "name": "Ruiru"
+          "name": "Homa Bay",
+          "population": "28361"
         },
         {
-          "name": "Shimoni"
+          "name": "Moyale",
+          "population": "27943"
         },
         {
-          "name": "Takaungu"
+          "name": "Elwak",
+          "population": "24368"
         },
         {
-          "name": "Thika"
+          "name": "Mariakani",
+          "population": "24055"
         },
         {
-          "name": "Vihiga"
+          "name": "Rhamu",
+          "population": "24037"
         },
         {
-          "name": "Voi"
+          "name": "Murang'a",
+          "population": "23949"
         },
         {
-          "name": "Wajir"
+          "name": "Njoro",
+          "population": "23551"
         },
         {
-          "name": "Watamu"
+          "name": "Webuye",
+          "population": "23318"
         },
         {
-          "name": "Webuye"
+          "name": "Kapsabet",
+          "population": "22804"
         },
         {
-          "name": "Wundanyi"
+          "name": "Takaba",
+          "population": "21474"
+        },
+        {
+          "name": "Siaya",
+          "population": "20923"
+        },
+        {
+          "name": "Kapenguria",
+          "population": "20880"
+        },
+        {
+          "name": "Kitui",
+          "population": "20419"
+        },
+        {
+          "name": "Awendo",
+          "population": "17992"
+        },
+        {
+          "name": "Eldama Ravine",
+          "population": "17872"
+        },
+        {
+          "name": "Lokichogio",
+          "population": "17695"
+        },
+        {
+          "name": "Kabarnet",
+          "population": "17645"
+        },
+        {
+          "name": "Wanguru",
+          "population": "17626"
+        },
+        {
+          "name": "Taveta",
+          "population": "17465"
+        },
+        {
+          "name": "Voi",
+          "population": "17152"
+        },
+        {
+          "name": "Wajir",
+          "population": "16838"
+        },
+        {
+          "name": "Malaba",
+          "population": "16480"
+        },
+        {
+          "name": "Kerugoya",
+          "population": "16369"
+        },
+        {
+          "name": "Mwingi",
+          "population": "15970"
+        },
+        {
+          "name": "Maralal",
+          "population": "15860"
+        },
+        {
+          "name": "Maua",
+          "population": "15536"
+        },
+        {
+          "name": "Marsabit",
+          "population": "14907"
+        },
+        {
+          "name": "Muhoroni",
+          "population": "14806"
+        },
+        {
+          "name": "Bondo",
+          "population": "14745"
+        },
+        {
+          "name": "Kajiado",
+          "population": "14631"
+        },
+        {
+          "name": "Kiserian",
+          "population": "14243"
+        },
+        {
+          "name": "Masalani",
+          "population": "14012"
+        },
+        {
+          "name": "Kangundo",
+          "population": "13356"
+        },
+        {
+          "name": "Lamu",
+          "population": "13243"
+        },
+        {
+          "name": "Madogo",
+          "population": "13240"
+        },
+        {
+          "name": "Nyamira",
+          "population": "12719"
+        },
+        {
+          "name": "Tabaka",
+          "population": "12700"
+        },
+        {
+          "name": "Rongo",
+          "population": "12355"
+        },
+        {
+          "name": "Msambweni",
+          "population": "11985"
+        },
+        {
+          "name": "Hola",
+          "population": "11693"
+        },
+        {
+          "name": "Mai Mahiu",
+          "population": "11230"
+        },
+        {
+          "name": "Moi's Bridge",
+          "population": "10858"
+        },
+        {
+          "name": "Matuu",
+          "population": "10804"
+        },
+        {
+          "name": "Mbita Point",
+          "population": "10753"
+        },
+        {
+          "name": "Watamu",
+          "population": "10030"
+        },
+        {
+          "name": "Githunguri",
+          "population": "10007"
+        },
+        {
+          "name": "Sagana",
+          "population": "9889"
+        },
+        {
+          "name": "Wote",
+          "population": "9875"
+        },
+        {
+          "name": "Kilgoris",
+          "population": "9865"
+        },
+        {
+          "name": "Mairo Inya",
+          "population": "9858"
+        },
+        {
+          "name": "Usenge",
+          "population": "9830"
         }
       ]
     }

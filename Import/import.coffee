@@ -28,11 +28,13 @@ for component in allComponents
   components[component.Part].push component
 
 cities = importCSV 'Pats Countries - Cities.csv'
+cities.sort (a, b) ->
+  return b.Population - a.Population
 countries = {}
 for city in cities
   # TODO: WARNING: tld is hard coded!!
   countries[city.Country] ?= {name:city.Country,tld:'ke',cities:[]}
-  countries[city.Country].cities.push {name:city.City}
+  countries[city.Country].cities.push {name:city.City,population:city.Population}
 
 data = {components:components, countries:countries}
 
