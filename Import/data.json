@@ -1,0 +1,240 @@
+{
+  "components": {
+    "Battery": [
+      {
+        "Part": "Battery",
+        "Manufacturer": "Sonnenschein",
+        "Term": "intext:sonnenschein intext:battery"
+      },
+      {
+        "Part": "Battery",
+        "Manufacturer": "Rolls",
+        "Term": "intext:\"rolls\" -royce -\"rolls of\" -\"by the roll\" -scrap -news -importer intext:\"battery\""
+      }
+    ],
+    "Inverter": [
+      {
+        "Part": "Inverter",
+        "Manufacturer": "SMA",
+        "Term": "intext:SMA intext:\"inverter\""
+      },
+      {
+        "Part": "Inverter",
+        "Manufacturer": "Victron",
+        "Term": "intext:victron intext:\"inverter\""
+      }
+    ],
+    "PV Module": [
+      {
+        "Part": "PV Module",
+        "Manufacturer": "Sharp",
+        "Term": "intext:sharp intext:\"PV module\""
+      }
+    ],
+    "Generator": [
+      {
+        "Part": "Generator",
+        "Manufacturer": "Caterpillar",
+        "Term": "intext:caterpillar intext:\"diesel generator\""
+      },
+      {
+        "Part": "Generator",
+        "Manufacturer": "Perkins",
+        "Term": "intext:perkins intext:\"diesel generator\""
+      }
+    ],
+    "Pump": [
+      {
+        "Part": "Pump",
+        "Manufacturer": "Danfos",
+        "Term": "intext:danfoss intext:\"pump\""
+      }
+    ],
+    "Charge controller": [
+      {
+        "Part": "Charge controller",
+        "Manufacturer": "Outback",
+        "Term": "intext:outback intext:\"charge controller\""
+      }
+    ]
+  },
+  "countries": {
+    "Kenya": {
+      "name": "Kenya",
+      "tld": "ke",
+      "cities": [
+        {
+          "name": "Baragoi"
+        },
+        {
+          "name": "Bungoma"
+        },
+        {
+          "name": "Busia"
+        },
+        {
+          "name": "Butere"
+        },
+        {
+          "name": "Dadaab"
+        },
+        {
+          "name": "Diani Beach"
+        },
+        {
+          "name": "Eldoret"
+        },
+        {
+          "name": "Embu"
+        },
+        {
+          "name": "Garissa"
+        },
+        {
+          "name": "Gede"
+        },
+        {
+          "name": "Hola"
+        },
+        {
+          "name": "Homa Bay"
+        },
+        {
+          "name": "Isiolo"
+        },
+        {
+          "name": "Kajiado"
+        },
+        {
+          "name": "Kakamega"
+        },
+        {
+          "name": "Kakuma"
+        },
+        {
+          "name": "Kapenguria"
+        },
+        {
+          "name": "Kericho"
+        },
+        {
+          "name": "Kiambu"
+        },
+        {
+          "name": "Kilifi"
+        },
+        {
+          "name": "Kisii"
+        },
+        {
+          "name": "Kisumu"
+        },
+        {
+          "name": "Kitale"
+        },
+        {
+          "name": "Lamu"
+        },
+        {
+          "name": "Langata"
+        },
+        {
+          "name": "Lodwar"
+        },
+        {
+          "name": "Lokichoggio"
+        },
+        {
+          "name": "Loyangalani"
+        },
+        {
+          "name": "Machakos"
+        },
+        {
+          "name": "Malindi"
+        },
+        {
+          "name": "Mandera"
+        },
+        {
+          "name": "Maralal"
+        },
+        {
+          "name": "Marsabit"
+        },
+        {
+          "name": "Meru"
+        },
+        {
+          "name": "Mombasa"
+        },
+        {
+          "name": "Moyale"
+        },
+        {
+          "name": "Mumia's"
+        },
+        {
+          "name": "Muranga"
+        },
+        {
+          "name": "Nairobi"
+        },
+        {
+          "name": "Naivasha"
+        },
+        {
+          "name": "Nakuru"
+        },
+        {
+          "name": "Namanga"
+        },
+        {
+          "name": "Nanyuki"
+        },
+        {
+          "name": "Naro Moru"
+        },
+        {
+          "name": "Narok"
+        },
+        {
+          "name": "Nyahururu"
+        },
+        {
+          "name": "Nyeri"
+        },
+        {
+          "name": "Ruiru"
+        },
+        {
+          "name": "Shimoni"
+        },
+        {
+          "name": "Takaungu"
+        },
+        {
+          "name": "Thika"
+        },
+        {
+          "name": "Vihiga"
+        },
+        {
+          "name": "Voi"
+        },
+        {
+          "name": "Wajir"
+        },
+        {
+          "name": "Watamu"
+        },
+        {
+          "name": "Webuye"
+        },
+        {
+          "name": "Wundanyi"
+        }
+      ]
+    }
+  }
+}

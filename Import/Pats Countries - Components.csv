@@ -1,0 +1,10 @@
+Part,Manufacturer,Term
+Battery,Sonnenschein,intext:sonnenschein intext:battery
+Battery,Rolls,"intext:""rolls"" -royce -""rolls of"" -""by the roll"" -scrap -news -importer intext:""battery"""
+Inverter,SMA,"intext:SMA intext:""inverter"""
+Inverter,Victron,"intext:victron intext:""inverter"""
+PV Module,Sharp,"intext:sharp intext:""PV module"""
+Generator,Caterpillar,"intext:caterpillar intext:""diesel generator"""
+Generator,Perkins,"intext:perkins intext:""diesel generator"""
+Pump,Danfos,"intext:danfoss intext:""pump"""
+Charge controller,Outback,"intext:outback intext:""charge controller"""
