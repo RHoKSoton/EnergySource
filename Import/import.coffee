@@ -1,4 +1,10 @@
+###
+# run as ./import.coffee ke
+###
+
 fs = require 'fs'
+
+tld = process.argv[2]
 
 importCSV = (filepath) ->
   componentsCSV = fs.readFileSync filepath, 'utf8'
@@ -27,13 +33,12 @@ for component in allComponents
   components[component.Part] ?= []
   components[component.Part].push component
 
-cities = importCSV 'Pats Countries - Cities.csv'
+cities = importCSV "Pats Countries - Cities #{tld}.csv"
 cities.sort (a, b) ->
   return b.Population - a.Population
 countries = {}
 for city in cities
-  # TODO: WARNING: tld is hard coded!!
-  countries[city.Country] ?= {name:city.Country,tld:'ke',cities:[]}
+  countries[city.Country] ?= {name:city.Country,tld:tld,cities:[]}
   countries[city.Country].cities.push {name:city.City,population:city.Population}
 
 data = {components:components, countries:countries}
