@@ -129,6 +129,7 @@ done = 0
 
 allDone = ->
   console.log JSON.stringify outputTuples, null, 2
+  writeNow()
   process.exit 0
 
 checkComplete = ->
@@ -136,11 +137,24 @@ checkComplete = ->
     if started is done
       allDone()
 
+writeNow = ->
+  filename = "partial.#{new Date().getTime()}.json"
+  toWrite = JSON.stringify outputTuples, null, 2
+  fs.writeFileSync filename, toWrite
+  console.error "Current data was output to #{filename}"
+  return filename
+
 process.on 'SIGINT', ->
   console.error "WE'VE BEEN Ctrl-C'd!! ARGH!"
+  writeNow()
   allDone()
 
+process.on 'SIGUSR1', ->
+  writeNow()
+  return
+
 process.once 'uncaughtException', (err) ->
+  writeNow()
   console.error "UNCAUGHT EXCEPTION!!"
   console.error util.inspect err, false, null, true
   allDone()
