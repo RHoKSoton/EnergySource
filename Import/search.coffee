@@ -65,7 +65,7 @@ shuffle = (o) ->
   return Math.round(Math.random()*2)-1
 
 POP_THRESHOLD = 100000
-ACTUALLY_SEARCH = 0
+ACTUALLY_SEARCH = 120
 RAND_DELAY = 50000
 google_are_angry = false
 
@@ -162,8 +162,8 @@ for componentType, componentSpecs of data.components then do (componentType, com
                 checkComplete()
                 return
               #console.error util.inspect res, false, null, true
-              numResults = res.responseData.cursor.resultCount
-              numResults = numResults.replace ",", ""
+              numResults = res.responseData.cursor.resultCount ? "0"
+              numResults = String(numResults).replace ",", ""
               numResults = parseInt numResults, 10
               score = (if numResults > 500 then 2 else if numResults > 50 then 1 else 0)
               console.error "Results [#{reqNum}] for #{componentSpec.Manufacturer} #{componentSpec.Part} in #{city.name}: #{numResults ? 0}"
