@@ -9,6 +9,8 @@ var energy = {
 				components_list.append("<tr><td><input name='component' data-comp_name='" + mf_name + "' id='" + mf_name + "' type='radio'/></td><td class='style3'><a class='component_link' href=''>" + mf_name + "(" + mf.Part + ") </a></td><td class='style4'><a class='score_link'><img class='score_light' align='right' alt='' src='images/Button-Blank-Red-icon.png' /></a></td></tr>");
 			}
 		}
+		$(".score_link").hide();
+		$("#clicked_city").closest("td").hide();
 		$(".component_link").live("click", function(e) {
 			energy.component_clicked($(this).closest("tr").find("input").attr("data-comp_name"));
 			e.preventDefault();
@@ -20,6 +22,9 @@ var energy = {
 	},
 	city_clicked: function(city_name) {
 		energy.clicked_city = city_name;
+		$("#clicked_city").html(city_name);
+		$(".score_link").show();
+		$("#clicked_city").closest("td").show();
 		for (var i = 0, i_len = scores.length; i < i_len; i++) {
 			var score = scores[i];
 			if (score.city === city_name) {
@@ -27,7 +32,7 @@ var energy = {
 				if (num_results > 0) {
 					num_results = parseInt(score.numResults.replace(",", ""));
 				}
-				var norm_score = num_results / 100;
+				var norm_score = num_results / 1000;
 				var comp_dom = $("input[data-comp_name='" + score.manufacturer + "']");
 				var image_link = 'Button-Blank-Red-icon.png';
 				if (norm_score < 0.03) {

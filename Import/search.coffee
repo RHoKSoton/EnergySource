@@ -131,17 +131,13 @@ for componentType, componentSpecs of data.components then do (componentType, com
   for componentSpec in componentSpecs then do (componentSpec) ->
 
     for countryName, countrySpec of data.countries then do (countryName, countrySpec) ->
-      #step = Math.floor countrySpec.cities.length/6
-      #cities = (city.name for city, n in countrySpec.cities when (n % step) is 0)
-      cities = (city.name for city in countrySpec.cities when city.population > POP_THRESHOLD)
-      #cities = ['Kakamega', 'Garissa', 'Eldoret']
-      #cities = cities.slice(0,2)
+      cities = (city for city in countrySpec.cities when city.population > POP_THRESHOLD)
       for city in cities then do (city) ->
 
         started++
         reqNum = started
         #term = 'intext:sonnenschein intext:battery intext:(nairobi | kisumu | mombasa | dadaab) intext:kenya -filetype:pdf (site:.com | site:.ke)'
-        term = "#{componentSpec.Term} intext:\"(#{city}), #{countryName}\" (site:.com | site:.#{countrySpec.tld}) -filetype:pdf"
+        term = "#{componentSpec.Term} intext:\"(#{city.name}), #{countryName}\" (site:.com | site:.#{countrySpec.tld}) -filetype:pdf"
 
         delay started*RAND_DELAY + Math.random()*(RAND_DELAY/4), ->
           if started <= ACTUALLY_SEARCH and not google_are_angry
@@ -160,9 +156,10 @@ for componentType, componentSpecs of data.components then do (componentType, com
               numResults = numResults.replace ",", ""
               numResults = parseInt numResults, 10
               score = (if numResults > 500 then 2 else if numResults > 50 then 1 else 0)
-              console.error "Results [#{reqNum}] for #{componentSpec.Manufacturer} #{componentSpec.Part} in #{city}: #{numResults ? 0}"
+              console.error "Results [#{reqNum}] for #{componentSpec.Manufacturer} #{componentSpec.Part} in #{city.name}: #{numResults ? 0}"
               outputTuples.push
-                city: city
+                city: city.name
+                population: city.population
                 country: countryName
                 manufacturer: componentSpec.Manufacturer
                 part: componentSpec.Part
