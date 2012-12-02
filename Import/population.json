@@ -34,7 +34,7 @@
     },
     {
       "name": "Luanda",
-      "population": 5851
+      "population": 5851200
     },
     {
       "name": "Lubango",
@@ -114,7 +114,7 @@
     },
     {
       "name": "Luanda",
-      "population": 5851
+      "population": 5851200
     },
     {
       "name": "Lubango",
@@ -765,7 +765,7 @@
     },
     {
       "name": "Ouagadougou",
-      "population": 1475
+      "population": 1475223
     },
     {
       "name": "Ouahigouya",
@@ -965,7 +965,7 @@
     },
     {
       "name": "Douala",
-      "population": 1906
+      "population": 1906962
     },
     {
       "name": "Dschang",
@@ -1189,7 +1189,7 @@
     },
     {
       "name": "Yaound� {Yaounde}",
-      "population": 1817
+      "population": 1817524
     },
     {
       "name": "Yokadouma",
@@ -1703,7 +1703,7 @@
     },
     {
       "name": "Brazzaville",
-      "population": 1373
+      "population": 1373382
     },
     {
       "name": "Djambala",
@@ -2049,7 +2049,7 @@
     },
     {
       "name": "Kinshasa",
-      "population": 7273
+      "population": 7273947
     },
     {
       "name": "Kipamba &amp; Kikondja",
@@ -2109,7 +2109,7 @@
     },
     {
       "name": "Lubumbashi",
-      "population": 1283
+      "population": 1283380
     },
     {
       "name": "Luebo",
@@ -2161,7 +2161,7 @@
     },
     {
       "name": "Mbuji-Mayi",
-      "population": 1213
+      "population": 1213726
     },
     {
       "name": "Miabi",
@@ -2255,7 +2255,7 @@
     },
     {
       "name": "Abidjan",
-      "population": 2877
+      "population": 2877948
     },
     {
       "name": "Aboisso",
@@ -2727,7 +2727,7 @@
     },
     {
       "name": "Al-Iskandarīyah [Alexandria] {Al-Iskandariyah}",
-      "population": 4084
+      "population": 4084672
     },
     {
       "name": "Al-Ismā'īlīyah [Ismaïlia] {Al-Ismailiyah}",
@@ -2739,7 +2739,7 @@
     },
     {
       "name": "Al-Jīzah (incl. Al-Warrāq) [Giza] {Al-Jizah}",
-      "population": 2891
+      "population": 2891275
     },
     {
       "name": "Al-Khānkah {Al-Khankah}",
@@ -2787,7 +2787,7 @@
     },
     {
       "name": "Al-Qāhirah (incl. Ḥulwān) [Cairo] {Al-Qahirah}",
-      "population": 7740
+      "population": 7740018
     },
     {
       "name": "Al-Qāhirah al-Jadīdah [New Cairo] {Al-Qahirah al-Jadidah}",
@@ -3307,7 +3307,7 @@
     },
     {
       "name": "Shubrā al-Khaymah [Shubra el-Kheima] {Shubra al-Khaymah}",
-      "population": 1025
+      "population": 1025569
     },
     {
       "name": "Shubrā Khīt {Shubra Khit}",
@@ -3525,7 +3525,7 @@
     },
     {
       "name": "Adis Abeba [Addis Abeba]",
-      "population": 2979
+      "population": 2979100
     },
     {
       "name": "Adis Zemen",
@@ -4280,7 +4280,7 @@
     },
     {
       "name": "Conakry",
-      "population": 1092
+      "population": 1092936
     },
     {
       "name": "Coyah",
@@ -4688,7 +4688,7 @@
     },
     {
       "name": "Nairobi",
-      "population": 3133
+      "population": 3133518
     },
     {
       "name": "Naivasha",
@@ -4908,7 +4908,7 @@
     },
     {
       "name": "Monrovia",
-      "population": 1021
+      "population": 1021762
     },
     {
       "name": "Pleebo (Plibo)",
@@ -5180,7 +5180,7 @@
     },
     {
       "name": "Antananarivo [Tananarive]",
-      "population": 2128
+      "population": 2128900
     },
     {
       "name": "Antanifotsy",
@@ -6079,7 +6079,7 @@
     },
     {
       "name": "Maputo",
-      "population": 1094
+      "population": 1094628
     },
     {
       "name": "Marracuene",
@@ -6381,7 +6381,7 @@
     },
     {
       "name": "Casablanca (Dar El Beida)",
-      "population": 3084
+      "population": 3084569
     },
     {
       "name": "Chefchaouene",
@@ -6589,7 +6589,7 @@
     },
     {
       "name": "Rabat",
-      "population": 1622
+      "population": 1622860
     },
     {
       "name": "Sabaa Aioun",
@@ -6985,7 +6985,7 @@
     },
     {
       "name": "Niamey",
-      "population": 1302
+      "population": 1302910
     },
     {
       "name": "Say",
@@ -7246,7 +7246,7 @@
     },
     {
       "name": "Dakar (incl. Pikine &amp; Guediawaye)",
-      "population": 2396
+      "population": 2396800
     },
     {
       "name": "Diamniadio",
@@ -7632,7 +7632,7 @@
   "Somalia": [
     {
       "name": "Muqdisho [Mogadishu]",
-      "population": 1500
+      "population": 1500000
     }
   ],
   "SouthAfrica-UA": [
@@ -7698,7 +7698,7 @@
     },
     {
       "name": "Cape Town (Kaapstad)",
-      "population": 2415
+      "population": 2415408
     },
     {
       "name": "Carletonville (Oberholzer)",
@@ -7722,7 +7722,7 @@
     },
     {
       "name": "Durban",
-      "population": 2117
+      "population": 2117650
     },
     {
       "name": "East London (Oos-Londen)",
@@ -7818,7 +7818,7 @@
     },
     {
       "name": "Johannesburg",
-      "population": 1480
+      "population": 1480530
     },
     {
       "name": "Kgotsong (Bothaville)",
@@ -7982,7 +7982,7 @@
     },
     {
       "name": "Pretoria",
-      "population": 1104
+      "population": 1104479
     },
     {
       "name": "Queenstown",
@@ -8034,7 +8034,7 @@
     },
     {
       "name": "Soweto",
-      "population": 1098
+      "population": 1098094
     },
     {
       "name": "Springs",
@@ -8304,11 +8304,11 @@
     },
     {
       "name": "Al-Kharṭūm [Khartoum] {Al-Khartum}",
-      "population": 1410
+      "population": 1410858
     },
     {
       "name": "Al-Kharṭūm Baḥrī [Khartoum North] {Al-Khartum Bahri}",
-      "population": 1012
+      "population": 1012211
     },
     {
       "name": "Al-Manāqil {Al-Manaqil}",
@@ -8472,7 +8472,7 @@
     },
     {
       "name": "Umm Durmān [Omdurman] {Umm Durman}",
-      "population": 1849
+      "population": 1849659
     },
     {
       "name": "Umm Ruwābah {Umm Ruwabah}",
@@ -8652,7 +8652,7 @@
     },
     {
       "name": "Dar es Salaam",
-      "population": 2339
+      "population": 2339910
     },
     {
       "name": "Diobahika",
@@ -9727,7 +9727,7 @@
     },
     {
       "name": "Lusaka",
-      "population": 1742
+      "population": 1742979
     },
     {
       "name": "Luwingu",
@@ -9901,7 +9901,7 @@
     },
     {
       "name": "Harare (Salisbury)",
-      "population": 1435
+      "population": 1435784
     },
     {
       "name": "Hwange (Wankie)",

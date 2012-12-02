@@ -55,6 +55,11 @@ https = require 'https'
 util = require 'util'
 fs = require 'fs'
 Url = require 'url'
+BING_API_KEY = process.env.BING_API_KEY
+if !BING_API_KEY
+  console.error "NO API KEY!"
+  process.exit 1
+
 
 delay = (ms, cb) -> setTimeout cb, ms
 
@@ -65,11 +70,11 @@ shuffle = (o) ->
   return Math.round(Math.random()*2)-1
 
 POP_THRESHOLD = 100000
-ACTUALLY_SEARCH = 120
-RAND_DELAY = 50000
+ACTUALLY_SEARCH = 100
+RAND_DELAY = 250
 google_are_angry = false
 
-search = (term, cb) ->
+googleSearch = (term, cb) ->
   url = "https://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=#{encodeURIComponent term}"
   parsed = Url.parse url
 
@@ -122,6 +127,49 @@ search = (term, cb) ->
     return
   return
 
+bingSearch = (phrase, cb) ->
+  #phrase = "'#{encodeURIComponent phrase}'"
+  phrase = "'#{phrase.replace(/'/g,"\\'")}'"
+  options =
+    hostname: "api.datamarket.azure.com"
+    port: 443
+    path: "/Bing/Search/Web?$format=json&Query=#{encodeURIComponent phrase}"
+    agent: false
+    auth: "#{BING_API_KEY}:#{BING_API_KEY}"
+    headers:
+      "User-Agent": "RHoK Soton Energy Source"
+
+  req = https.get options, (res) ->
+    res.setEncoding 'utf8'
+    data = ""
+    res.on 'data', (d) ->
+      data += d
+      return
+    res.on 'close', ->
+      if cb?
+        cb new Error("Connection closed")
+        cb = null
+      return
+    res.on 'end', ->
+      try
+        data = JSON.parse data
+      catch e
+        console.error "INVALID JSON: #{data}"
+        if cb?
+          cb e
+          cb = null
+        return
+      if cb?
+        cb null, data
+        cb = null
+  req.on 'error', (err) ->
+    if cb?
+      cb err
+      cb = null
+    return
+  return
+
+
 data = JSON.parse fs.readFileSync 'data.json'
 
 started = 0
@@ -164,49 +212,76 @@ outputTuples = []
 if ACTUALLY_SEARCH is 0
   RAND_DELAY = 0
 
-for componentType, componentSpecs of data.components then do (componentType, componentSpecs) ->
-  for componentSpec in componentSpecs then do (componentSpec) ->
+population = JSON.parse fs.readFileSync 'population.json', 'utf8'
 
-    for countryName, countrySpec of data.countries then do (countryName, countrySpec) ->
-      cities = (city for city in countrySpec.cities when city.population > POP_THRESHOLD)
-      for city in cities then do (city) ->
+cities = []
+lastName = ""
+for countryName, list of population
+  countryName = countryName.replace /-.*$/, ""
+  countryName = countryName.replace /([a-z])([A-Z])/g,"$1 $2"
+  for citySpec in list
+    name = citySpec.name
+    if name.match /[{(\[]/
+      [ignore, name] = name.match /[\[({](.*?)[\])}]/
+    name = name.replace /,/g, ":"
+    if name.match /^incl\./
+      # Skip this!
+      continue
+      name = lastName + " " + name
+    else
+      lastName = name
+    city =
+      country:countryName
+      city: name
+      population: citySpec.population
+    cities.push city
 
-        started++
-        reqNum = started
-        #term = 'intext:sonnenschein intext:battery intext:(nairobi | kisumu | mombasa | dadaab) intext:kenya -filetype:pdf (site:.com | site:.ke)'
-        term = "#{componentSpec.Term} intext:\"(#{city.name}), #{countryName}\" (site:.com | site:.#{countrySpec.tld}) -filetype:pdf"
+cities.sort (a, b) ->
+  return b.population - a.population
 
-        delay (started-1)*RAND_DELAY + Math.random()*(RAND_DELAY/4), ->
-          if started <= ACTUALLY_SEARCH and not google_are_angry
-            console.error "Search #{reqNum}: #{term}"
-            search term, (err, res) ->
-              done++
-              if err or !res?.responseData?.cursor?
-                if res?.responseStatus is 403
-                  google_are_angry = true
-                console.error "ERROR!"
-                console.error err ? res
-                checkComplete()
-                return
-              #console.error util.inspect res, false, null, true
-              numResults = res.responseData.cursor.resultCount ? "0"
-              numResults = String(numResults).replace ",", ""
-              numResults = parseInt numResults, 10
-              score = (if numResults > 500 then 2 else if numResults > 50 then 1 else 0)
-              console.error "Results [#{reqNum}] for #{componentSpec.Manufacturer} #{componentSpec.Part} in #{city.name}: #{numResults ? 0}"
-              outputTuples.push
-                city: city.name
-                population: city.population
-                country: countryName
-                manufacturer: componentSpec.Manufacturer
-                part: componentSpec.Part
-                searchTerm: term
-                numResults: numResults
-                score: score
-                gResults: res.responseData.results
+for city in cities then do (city) ->
+
+  for componentType, componentSpecs of data.components then do (componentType, componentSpecs) ->
+    for componentSpec in componentSpecs then do (componentSpec) ->
+
+      started++
+      reqNum = started
+      #term = 'sonnenschein battery "(nairobi | kisumu | mombasa | dadaab), kenya"'
+      term = "#{componentSpec.Term} \"(#{city.city}), #{city.country}\""
+
+      if reqNum > ACTUALLY_SEARCH
+        RAND_DELAY = 0
+      delay (reqNum-1)*RAND_DELAY + Math.random()*(RAND_DELAY/4), ->
+        if reqNum <= ACTUALLY_SEARCH and not google_are_angry
+          console.error "Search #{reqNum}: #{term}"
+          bingSearch term, (err, res) ->
+            done++
+            if err or !res?.d?.results?
+              if res?
+                google_are_angry = true
+              console.error "ERROR!"
+              console.error err ? res
               checkComplete()
-          else
-            delay 0, ->
-              done++
-              console.error "Not Searching #{done}: #{term}"
-              checkComplete()
+              return
+            #console.error util.inspect res, false, null, true
+            numResults = res.d.results.length
+            score = (if numResults > 100 then 2 else if numResults > 10 then 1 else 0)
+            console.error "Results [#{reqNum}] for #{componentSpec.Manufacturer} #{componentSpec.Part} in #{city.city}: #{numResults ? 0}"
+            resultsCropped = res.d.results
+            resultsCropped = resultsCropped.slice(0,Math.min(4,resultsCropped.length))
+            outputTuples.push
+              city: city.city
+              population: city.population
+              country: city.country
+              manufacturer: componentSpec.Manufacturer
+              part: componentSpec.Part
+              searchTerm: term
+              numResults: numResults
+              score: score
+              bingResults: resultsCropped
+            checkComplete()
+        else
+          delay 0, ->
+            done++
+            console.error "Not Searching #{done}: #{term} (#{if google_are_angry then "angry" else "calm"})"
+            checkComplete()
