@@ -1,4 +1,5 @@
 function initializeMaps() {
+  console.log("Initialize");
     var myOptions = {
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         mapTypeControl: false
@@ -15,9 +16,22 @@ function initializeMaps() {
 
     for (i = 0; i < markers.length; i++) {
     
-        var latitude = markers[i]["latitude"];
-    	var longitude =  markers[i]["longitude"];
     	var city =  markers[i]["city"];
+      var latitude, longitude;
+      for (var j = 0; j < population.Kenya.length; j++) {
+        var city2 = population.Kenya[j];
+        //console.log(city2.name + " vs " + city);
+        if (city2.name  == city) {
+          latitude = city2.lat;
+          longitude = city2.lng;
+          //console.log(city+ ": "+latitude+", "+longitude);
+          break;
+        }
+      }
+      if (!latitude) {
+        console.log("Failed to find lat for "+city);
+        continue;
+      }
         
         pos = new google.maps.LatLng(latitude, longitude);
         bounds.extend(pos);
@@ -48,6 +62,7 @@ function initializeMaps() {
         
     }
     var geocoder = new google.maps.Geocoder();
+    /*
     google.maps.event.addListener(map, 'center_changed', function() {
     	var c = map.getCenter();
     	var latlng = new google.maps.LatLng(c.lat(), c.lng());
@@ -62,5 +77,6 @@ function initializeMaps() {
     		}
     	});
     });
+   */
     map.fitBounds(bounds);
 }
