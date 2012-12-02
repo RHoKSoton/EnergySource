@@ -1,6 +1,10 @@
 var energy = {
 	clicked_city: null,
+	country_info: null,
+	country_name: null,
 	init: function() {
+		energy.country_info = $("#country_info");
+		energy.country_name = $("#country_name");
 		var components_list = $("#components_list");
 		for (var component in data.components) {
 			for (var i = 0, i_len = data.components[component].length; i < i_len; i++) {
@@ -47,6 +51,7 @@ var energy = {
 				comp_dom.closest("tr").find(".score_light").attr({'src': "images/" + image_link});
 			}
 		}
+		
 	},
 	component_clicked: function(comp_name) {
 		for (var i = 0, i_len = scores.length; i < i_len; i++) {
@@ -68,6 +73,14 @@ var energy = {
 				break;
 			}
 		}
+	},
+	display_country_info: function(country_name) {
+		energy.country_name.html(country_name);
+		energy.country_info.html(countries[country_name]);
+	},
+	clear_country_info: function() {
+		energy.country_name.html("");
+		energy.country_info.html("");
 	}
 }
 $(function() {
