@@ -25,6 +25,7 @@ var energy = {
 		})
 	},
 	city_clicked: function(city_name) {
+    console.log("Clicked: "+city_name);
 		energy.clicked_city = city_name;
 		$("#clicked_city").html(city_name);
 		$(".score_link").show();

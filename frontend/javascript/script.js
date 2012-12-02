@@ -37,14 +37,14 @@ function initializeMaps() {
             icon: image
         });
 
-        google.maps.event.addListener(marker, 'click', (function (marker, i) {
+        google.maps.event.addListener(marker, 'click', (function (marker, i, city, map) {
 
             return function () {
                 infowindow.setContent(city);
                 infowindow.open(map, marker);
                 energy.city_clicked(city);
             }
-        })(marker, i));
+        })(marker, i, city, map));
         
     }
     var geocoder = new google.maps.Geocoder();
