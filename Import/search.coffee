@@ -70,8 +70,8 @@ shuffle = (o) ->
   return Math.round(Math.random()*2)-1
 
 POP_THRESHOLD = 100000
-ACTUALLY_SEARCH = 0
-RAND_DELAY = 50
+ACTUALLY_SEARCH = 100
+RAND_DELAY = 250
 google_are_angry = false
 
 googleSearch = (term, cb) ->
@@ -229,7 +229,6 @@ for componentType, componentSpecs of data.components then do (componentType, com
             console.error "Search #{reqNum}: #{term}"
             bingSearch term, (err, res) ->
               done++
-              console.error util.inspect res, false, null, true
               if err or !res?.d?.results?
                 if res?
                   google_are_angry = true
