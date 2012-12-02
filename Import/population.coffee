@@ -103,7 +103,7 @@ for country in countries then do (country) ->
             data = data.replace /<[^>]*>/g, ""
             city.push data
             if td.match /<td class="n">/
-              p = parseInt(data.replace(",",""),10)
+              p = parseInt(data.replace(/,/g,""),10)
               if p > 0
                 pop = p
           if pop is 0
