@@ -212,47 +212,72 @@ outputTuples = []
 if ACTUALLY_SEARCH is 0
   RAND_DELAY = 0
 
-for componentType, componentSpecs of data.components then do (componentType, componentSpecs) ->
-  for componentSpec in componentSpecs then do (componentSpec) ->
+population = JSON.parse fs.readFileSync 'population.json', 'utf8'
 
-    for countryName, countrySpec of data.countries then do (countryName, countrySpec) ->
-      cities = (city for city in countrySpec.cities when city.population > POP_THRESHOLD)
-      for city in cities then do (city) ->
+cities = []
+lastName = ""
+for countryName, list of population
+  for citySpec in list
+    name = citySpec.name
+    if name.match /[{(]/
+      [ignore, name] = name.match /[({](.*?)[)}]/
+    name = name.replace /,/g, ":"
+    if name.match /^incl\./
+      name = lastName + " " + name
+    else
+      lastName = name
+    city =
+      country:countryName
+      city: name
+      population: citySpec.population
+    cities.push city
 
-        started++
-        reqNum = started
-        #term = 'sonnenschein battery "(nairobi | kisumu | mombasa | dadaab), kenya"'
-        term = "#{componentSpec.Term} \"(#{city.name}), #{countryName}\""
+cities.sort (a, b) ->
+  return b.population - a.population
 
-        delay (reqNum-1)*RAND_DELAY + Math.random()*(RAND_DELAY/4), ->
-          if reqNum <= ACTUALLY_SEARCH and not google_are_angry
-            console.error "Search #{reqNum}: #{term}"
-            bingSearch term, (err, res) ->
-              done++
-              if err or !res?.d?.results?
-                if res?
-                  google_are_angry = true
-                console.error "ERROR!"
-                console.error err ? res
-                checkComplete()
-                return
-              #console.error util.inspect res, false, null, true
-              numResults = res.d.results.length
-              score = (if numResults > 100 then 2 else if numResults > 10 then 1 else 0)
-              console.error "Results [#{reqNum}] for #{componentSpec.Manufacturer} #{componentSpec.Part} in #{city.name}: #{numResults ? 0}"
-              outputTuples.push
-                city: city.name
-                population: city.population
-                country: countryName
-                manufacturer: componentSpec.Manufacturer
-                part: componentSpec.Part
-                searchTerm: term
-                numResults: numResults
-                score: score
-                bingResults: res.d.results
+for city in cities then do (city) ->
+
+  for componentType, componentSpecs of data.components then do (componentType, componentSpecs) ->
+    for componentSpec in componentSpecs then do (componentSpec) ->
+
+      started++
+      reqNum = started
+      #term = 'sonnenschein battery "(nairobi | kisumu | mombasa | dadaab), kenya"'
+      term = "#{componentSpec.Term} \"(#{city.city}), #{city.country}\""
+
+      if reqNum > ACTUALLY_SEARCH
+        RAND_DELAY = 0
+      delay (reqNum-1)*RAND_DELAY + Math.random()*(RAND_DELAY/4), ->
+        if reqNum <= ACTUALLY_SEARCH and not google_are_angry
+          console.error "Search #{reqNum}: #{term}"
+          bingSearch term, (err, res) ->
+            done++
+            if err or !res?.d?.results?
+              if res?
+                google_are_angry = true
+              console.error "ERROR!"
+              console.error err ? res
               checkComplete()
-          else
-            delay 0, ->
-              done++
-              console.error "Not Searching #{done}: #{term} (#{if google_are_angry then "angry" else "calm"})"
-              checkComplete()
+              return
+            #console.error util.inspect res, false, null, true
+            numResults = res.d.results.length
+            score = (if numResults > 100 then 2 else if numResults > 10 then 1 else 0)
+            console.error "Results [#{reqNum}] for #{componentSpec.Manufacturer} #{componentSpec.Part} in #{city.name}: #{numResults ? 0}"
+            resultsCropped = res.d.results
+            resultsCropped = resultsCropped.slice(0,Math.min(4,resultsCropped.length))
+            outputTuples.push
+              city: city.city
+              population: city.population
+              country: city.country
+              manufacturer: componentSpec.Manufacturer
+              part: componentSpec.Part
+              searchTerm: term
+              numResults: numResults
+              score: score
+              bingResults: resultsCropped
+            checkComplete()
+        else
+          delay 0, ->
+            done++
+            console.error "Not Searching #{done}: #{term} (#{if google_are_angry then "angry" else "calm"})"
+            checkComplete()
