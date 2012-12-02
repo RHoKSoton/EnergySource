@@ -13,7 +13,7 @@ delay = (ms, cb) -> setTimeout cb, ms
 POP_THRESHOLD = 10000
 ACTUALLY_SEARCH = 0
 RAND_DELAY = 60000
-GOOGLE_ARE_ANGRY = false
+google_are_angry = false
 
 search = (term, cb) ->
   url = "https://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=#{encodeURIComponent term}"
@@ -70,13 +70,13 @@ for componentType, componentSpecs of data.components then do (componentType, com
         term = "#{componentSpec.Term} intext:\"(#{city}), #{countryName}\" (site:.com | site:.#{countrySpec.tld}) -filetype:pdf"
 
         delay started*RAND_DELAY + Math.random()*(RAND_DELAY/2), ->
-          if started <= ACTUALLY_SEARCH and not GOOGLE_ARE_ANGRY
+          if started <= ACTUALLY_SEARCH and not google_are_angry
             console.error "Search #{reqNum}: #{term}"
             search term, (err, res) ->
               done++
               if err or !res?.responseData?.cursor?
                 if res?.responseStatus is 403
-                  GOOGLE_ARE_ANGRY = true
+                  google_are_angry = true
                 console.error "ERROR!"
                 console.error err ? res
                 checkComplete()
