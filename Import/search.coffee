@@ -2,6 +2,7 @@
 # run this as ./search.coffee ke >> scores.json
 ###
 
+# This should probably be brought a little more up to date...
 userAgentList = [
   'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6'
   'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'
@@ -16,13 +17,52 @@ userAgentList = [
   'Mozilla/4.0 (compatible; MSIE 6.0; MSIE 5.5; Windows NT 5.1) Opera 7.02 [en]'
   'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7.5) Gecko/20060127 Netscape/8.1'
 ]
+
+# A nice bit of casual racism to pretend to be newspapers...
+words = [
+  'frog'
+  'prince'
+  'slum'
+  'dog'
+  'millionaire'
+  'obama'
+  'brother'
+  'food'
+  'public'
+  'happy'
+  'family'
+  'immigrants'
+  'jobs'
+  'recession'
+  'polish'
+]
+
+# This is just for randomization you realise.
+# I do not endorse the reading of these publications.
+refererList = [
+  'http://www.dailymail.co.uk/'
+  'http://www.techcrunch.com/'
+  'http://www.cnet.com/'
+  'http://www.telegraph.co.uk/'
+  'http://www.thesun.co.uk/'
+  'http://www.independent.co.uk/'
+  'http://www.hsbc.co.uk/'
+]
+
 country = process.argv[0]
 
 https = require 'https'
 util = require 'util'
 fs = require 'fs'
+Url = require 'url'
 
 delay = (ms, cb) -> setTimeout cb, ms
+
+#+ Jonas Raoni Soares Silva
+#@ http://jsfromhell.com/array/shuffle [v1.0]
+
+shuffle = (o) ->
+  return Math.round(Math.random()*2)-1
 
 POP_THRESHOLD = 10000
 ACTUALLY_SEARCH = 0
@@ -31,12 +71,20 @@ google_are_angry = false
 
 search = (term, cb) ->
   url = "https://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=#{encodeURIComponent term}"
-  parsed = url.parse url
+  parsed = Url.parse url
   options = 
     hostname: parsed.hostname
     port: parsed.port
     path: parsed.path
     agent: false
+  # Randomize our UA
+  ua = userAgentList[Math.floor Math.random()*userAgentList.length]
+  # Randomize our referrer
+  referrer = refererList[Math.floor Math.random()*refererList.length]
+  words.sort shuffle
+  referrer += words.slice(0, Math.ceil Math.random()*4).join("-")
+  referrer += ".html"
+
   req = https.get options, (res) ->
     res.setEncoding 'utf8'
     data = ""
@@ -57,14 +105,12 @@ search = (term, cb) ->
     cb err
     cb = null
     return
-  # Randomize our UA
-  ua = userAgentList[Math.floor Math.random()*userAgentList.length]
   req.setHeader 'User-Agent', ua
   req.setHeader 'Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
-  #req.setHeader 'Referer', 'http://www.google.com/'
+  req.setHeader 'Referer', referrer
   req.setHeader 'Accept-Language', 'en-US,en;q=0.8'
   req.setHeader 'Accept-Charset', 'ISO-8859-1,utf-8;q=0.7,*;q=0.3'
-
+  return
 
 data = JSON.parse fs.readFileSync 'data.json'
 
@@ -97,7 +143,7 @@ for componentType, componentSpecs of data.components then do (componentType, com
         #term = 'intext:sonnenschein intext:battery intext:(nairobi | kisumu | mombasa | dadaab) intext:kenya -filetype:pdf (site:.com | site:.ke)'
         term = "#{componentSpec.Term} intext:\"(#{city}), #{countryName}\" (site:.com | site:.#{countrySpec.tld}) -filetype:pdf"
 
-        delay started*RAND_DELAY + Math.random()*(RAND_DELAY/2), ->
+        delay started*RAND_DELAY + Math.random()*(RAND_DELAY/4), ->
           if started <= ACTUALLY_SEARCH and not google_are_angry
             console.error "Search #{reqNum}: #{term}"
             search term, (err, res) ->
