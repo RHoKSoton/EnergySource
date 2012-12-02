@@ -127,11 +127,24 @@ data = JSON.parse fs.readFileSync 'data.json'
 started = 0
 done = 0
 
+allDone = ->
+  console.log JSON.stringify outputTuples, null, 2
+  process.exit 0
+
 checkComplete = ->
   delay 0, ->
     if started is done
-      console.log JSON.stringify outputTuples, null, 2
-      process.exit 0
+      allDone()
+
+process.on 'SIGINT', ->
+  console.error "WE'VE BEEN Ctrl-C'd!! ARGH!"
+  allDone()
+
+process.once 'uncaughtException', (err) ->
+  console.error "UNCAUGHT EXCEPTION!!"
+  console.error util.inspect err, false, null, true
+  allDone()
+
 
 outputTuples = []
 if ACTUALLY_SEARCH is 0
