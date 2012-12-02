@@ -55,6 +55,8 @@ https = require 'https'
 util = require 'util'
 fs = require 'fs'
 Url = require 'url'
+BING_API_KEY = process.env.BING_API_KEY
+
 
 delay = (ms, cb) -> setTimeout cb, ms
 
@@ -65,11 +67,11 @@ shuffle = (o) ->
   return Math.round(Math.random()*2)-1
 
 POP_THRESHOLD = 100000
-ACTUALLY_SEARCH = 120
-RAND_DELAY = 50000
+ACTUALLY_SEARCH = 20
+RAND_DELAY = 50
 google_are_angry = false
 
-search = (term, cb) ->
+googleSearch = (term, cb) ->
   url = "https://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=#{encodeURIComponent term}"
   parsed = Url.parse url
 
@@ -121,6 +123,48 @@ search = (term, cb) ->
       cb = null
     return
   return
+
+bingSearch = (phrase, cb) ->
+  phrase = "'#{encodeURIComponent phrase}'"
+  options =
+    hostname: "api.datamarket.azure.com"
+    port: 443
+    path: "/Bing/Search/Web?$format=json&Query=#{encodeURIComponent phrase}"
+    agent: false
+    auth: "#{BING_API_KEY}:#{BING_API_KEY}"
+    headers:
+      "User-Agent": "RHoK Soton Energy Source"
+
+  req = https.get options, (res) ->
+    res.setEncoding 'utf8'
+    data = ""
+    res.on 'data', (d) ->
+      data += d
+      return
+    res.on 'close', ->
+      if cb?
+        cb new Error("Connection closed")
+        cb = null
+      return
+    res.on 'end', ->
+      try
+        data = JSON.parse data
+      catch e
+        console.log "INVALID JSON: #{data}"
+        if cb?
+          cb e
+          cb = null
+        return
+      if cb?
+        cb null, data
+        cb = null
+  req.on 'error', (err) ->
+    if cb?
+      cb err
+      cb = null
+    return
+  return
+
 
 data = JSON.parse fs.readFileSync 'data.json'
 
@@ -176,23 +220,22 @@ for componentType, componentSpecs of data.components then do (componentType, com
         #term = 'intext:sonnenschein intext:battery intext:(nairobi | kisumu | mombasa | dadaab) intext:kenya -filetype:pdf (site:.com | site:.ke)'
         term = "#{componentSpec.Term} intext:\"(#{city.name}), #{countryName}\" (site:.com | site:.#{countrySpec.tld}) -filetype:pdf"
 
-        delay (started-1)*RAND_DELAY + Math.random()*(RAND_DELAY/4), ->
-          if started <= ACTUALLY_SEARCH and not google_are_angry
+        delay (reqNum-1)*RAND_DELAY + Math.random()*(RAND_DELAY/4), ->
+          if reqNum <= ACTUALLY_SEARCH and not google_are_angry
             console.error "Search #{reqNum}: #{term}"
-            search term, (err, res) ->
+            bingSearch term, (err, res) ->
               done++
-              if err or !res?.responseData?.cursor?
-                if res?.responseStatus is 403
+              console.log util.inspect res, false, null, true
+              if err or !res?.d?.results?
+                if res?
                   google_are_angry = true
                 console.error "ERROR!"
                 console.error err ? res
                 checkComplete()
                 return
               #console.error util.inspect res, false, null, true
-              numResults = res.responseData.cursor.resultCount ? "0"
-              numResults = String(numResults).replace ",", ""
-              numResults = parseInt numResults, 10
-              score = (if numResults > 500 then 2 else if numResults > 50 then 1 else 0)
+              numResults = res.d.results.length
+              score = (if numResults > 100 then 2 else if numResults > 10 then 1 else 0)
               console.error "Results [#{reqNum}] for #{componentSpec.Manufacturer} #{componentSpec.Part} in #{city.name}: #{numResults ? 0}"
               outputTuples.push
                 city: city.name
@@ -203,10 +246,10 @@ for componentType, componentSpecs of data.components then do (componentType, com
                 searchTerm: term
                 numResults: numResults
                 score: score
-                gResults: res.responseData.results
+                bingResults: res.d.results
               checkComplete()
           else
             delay 0, ->
               done++
-              console.error "Not Searching #{done}: #{term}"
+              console.error "Not Searching #{done}: #{term} (#{if google_are_angry then "angry" else "calm"})"
               checkComplete()
