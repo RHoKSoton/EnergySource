@@ -52,6 +52,8 @@ iteration = 0
 cities = []
 lastName = ""
 for countryName, list of population
+  if countryName != "Kenya"
+    continue
   countryName = countryName.replace /-.*$/, ""
   countryName = countryName.replace /([a-z])([A-Z])/g,"$1 $2"
   for citySpec, i in list then do (i, countryName, citySpec, list) ->

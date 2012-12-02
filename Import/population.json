@@ -5032,23 +5032,33 @@
   "Kenya": [
     {
       "name": "Awendo",
-      "population": 17992
+      "population": 17992,
+      "lat": -0.9017151999999999,
+      "lng": 34.5334534
     },
     {
       "name": "Bondo",
-      "population": 14745
+      "population": 14745,
+      "lat": -0.09978,
+      "lng": 34.274444
     },
     {
       "name": "Bungoma",
-      "population": 55867
+      "population": 55867,
+      "lat": 0.569369,
+      "lng": 34.561138
     },
     {
       "name": "Busia",
-      "population": 40740
+      "population": 40740,
+      "lat": 0.4607691,
+      "lng": 34.1114621
     },
     {
       "name": "Elburgon",
-      "population": 32654
+      "population": 32654,
+      "lat": -0.3,
+      "lng": 35.8166667
     },
     {
       "name": "Eldama Ravine",
@@ -5056,31 +5066,45 @@
     },
     {
       "name": "Eldoret",
-      "population": 252061
+      "population": 252061,
+      "lat": 0.51524,
+      "lng": 35.266369
     },
     {
       "name": "Elwak",
-      "population": 24368
+      "population": 24368,
+      "lat": 2.7946248,
+      "lng": 40.9341466
     },
     {
       "name": "Embu",
-      "population": 35736
+      "population": 35736,
+      "lat": -0.5388381,
+      "lng": 37.4596409
     },
     {
       "name": "Garissa",
-      "population": 110383
+      "population": 110383,
+      "lat": -0.4532293,
+      "lng": 39.6460988
     },
     {
       "name": "Gilgil",
-      "population": 35293
+      "population": 35293,
+      "lat": -0.4849310000000001,
+      "lng": 36.311932
     },
     {
       "name": "Githunguri",
-      "population": 10007
+      "population": 10007,
+      "lat": -1.0586336,
+      "lng": 36.7779108
     },
     {
       "name": "Hola",
-      "population": 11693
+      "population": 11693,
+      "lat": -1.5,
+      "lng": 40.0333333
     },
     {
       "name": "Homa Bay",
@@ -5088,123 +5112,183 @@
     },
     {
       "name": "Isiolo",
-      "population": 44154
+      "population": 44154,
+      "lat": 0.355636,
+      "lng": 37.5833061
     },
     {
       "name": "Juja",
-      "population": 40446
+      "population": 40446,
+      "lat": -1.1025542,
+      "lng": 37.0131926
     },
     {
       "name": "Kabarnet",
-      "population": 17645
+      "population": 17645,
+      "lat": 0.497705,
+      "lng": 35.73201
     },
     {
       "name": "Kajiado",
-      "population": 14631
+      "population": 14631,
+      "lat": -1.8420731,
+      "lng": 36.7918599
     },
     {
       "name": "Kakamega",
-      "population": 69502
+      "population": 69502,
+      "lat": 0.2827307,
+      "lng": 34.7518631
     },
     {
       "name": "Kakuma",
-      "population": 31962
+      "population": 31962,
+      "lat": 3.7067943,
+      "lng": 34.8665552
     },
     {
       "name": "Kangundo (-Tala)",
-      "population": 13356
+      "population": 13356,
+      "lat": -0.023559,
+      "lng": 37.906193
     },
     {
       "name": "Kapenguria",
-      "population": 20880
+      "population": 20880,
+      "lat": 1.260912,
+      "lng": 35.07835
     },
     {
       "name": "Kapsabet",
-      "population": 22804
+      "population": 22804,
+      "lat": 0.202957,
+      "lng": 35.0978385
     },
     {
       "name": "Karuri",
-      "population": 99739
+      "population": 99739,
+      "lat": -0.7134402999999999,
+      "lng": 37.0373502
     },
     {
       "name": "Kehancha",
-      "population": 30109
+      "population": 30109,
+      "lat": -1.1939843,
+      "lng": 34.6165033
     },
     {
       "name": "Kericho",
-      "population": 42029
+      "population": 42029,
+      "lat": -0.366062,
+      "lng": 35.281799
     },
     {
       "name": "Kerugoya/Kutus",
-      "population": 16369
+      "population": 16369,
+      "lat": -0.5,
+      "lng": 37.2833333
     },
     {
       "name": "Kiambu",
-      "population": 76093
+      "population": 76093,
+      "lat": -1.1748105,
+      "lng": 36.8304102
     },
     {
       "name": "Kikuyu",
-      "population": 190208
+      "population": 190208,
+      "lat": -1.2543366,
+      "lng": 36.681661
     },
     {
       "name": "Kilgoris",
-      "population": 9865
+      "population": 9865,
+      "lat": -1.002313,
+      "lng": 34.873932
     },
     {
       "name": "Kilifi",
-      "population": 44257
+      "population": 44257,
+      "lat": -3.6333333,
+      "lng": 39.85
     },
     {
       "name": "Kimilili",
-      "population": 41115
+      "population": 41115,
+      "lat": 0.7833333,
+      "lng": 34.7166667
     },
     {
       "name": "Kiserian",
-      "population": 14243
+      "population": 14243,
+      "lat": -1.4251869,
+      "lng": 36.6936512
     },
     {
       "name": "Kisii",
-      "population": 61892
+      "population": 61892,
+      "lat": -0.678306,
+      "lng": 34.771966
     },
     {
       "name": "Kisumu",
-      "population": 259258
+      "population": 259258,
+      "lat": -0.0917016,
+      "lng": 34.7679568
     },
     {
       "name": "Kitale",
-      "population": 75782
+      "population": 75782,
+      "lat": 1.019089,
+      "lng": 35.0023048
     },
     {
       "name": "Kitengela",
-      "population": 58167
+      "population": 58167,
+      "lat": -1.4752891,
+      "lng": 36.9620104
     },
     {
       "name": "Kitui",
-      "population": 20419
+      "population": 20419,
+      "lat": -1.3750813,
+      "lng": 37.9952144
     },
     {
       "name": "Lamu",
-      "population": 13243
+      "population": 13243,
+      "lat": -2.2695575,
+      "lng": 40.9006408
     },
     {
       "name": "Limuru",
-      "population": 61336
+      "population": 61336,
+      "lat": -1.1692017,
+      "lng": 36.6903289
     },
     {
       "name": "Lodwar",
-      "population": 45368
+      "population": 45368,
+      "lat": 3.1166667,
+      "lng": 35.6
     },
     {
       "name": "Lokichogio",
-      "population": 17695
+      "population": 17695,
+      "lat": 4.2,
+      "lng": 34.35
     },
     {
       "name": "Machakos",
-      "population": 41917
+      "population": 41917,
+      "lat": -1.5176837,
+      "lng": 37.2634146
     },
     {
       "name": "Madogo",
-      "population": 13240
+      "population": 13240,
+      "lat": -0.4725528,
+      "lng": 39.6027669
     },
     {
       "name": "Mai Mahiu",
@@ -5216,39 +5300,57 @@
     },
     {
       "name": "Malaba",
-      "population": 16480
+      "population": 16480,
+      "lat": 0.6327779,
+      "lng": 34.269444
     },
     {
       "name": "Malindi",
-      "population": 84150
+      "population": 84150,
+      "lat": -3.2191864,
+      "lng": 40.1168906
     },
     {
       "name": "Mandera",
-      "population": 57692
+      "population": 57692,
+      "lat": 3.935638899999999,
+      "lng": 41.8551162
     },
     {
       "name": "Maralal",
-      "population": 15860
+      "population": 15860,
+      "lat": 1.0931431,
+      "lng": 36.7018311
     },
     {
       "name": "Mariakani",
-      "population": 24055
+      "population": 24055,
+      "lat": -3.8634574,
+      "lng": 39.4737607
     },
     {
       "name": "Marsabit",
-      "population": 14907
+      "population": 14907,
+      "lat": 2.3333333,
+      "lng": 37.9833333
     },
     {
       "name": "Masalani",
-      "population": 14012
+      "population": 14012,
+      "lat": -1.697511,
+      "lng": 40.122952
     },
     {
       "name": "Matuu",
-      "population": 10804
+      "population": 10804,
+      "lat": -1.1459799,
+      "lng": 37.5474575
     },
     {
       "name": "Maua",
-      "population": 15536
+      "population": 15536,
+      "lat": 0.2381221,
+      "lng": 37.9387252
     },
     {
       "name": "Mavoko (Athi River)",
@@ -5260,11 +5362,15 @@
     },
     {
       "name": "Meru",
-      "population": 38833
+      "population": 38833,
+      "lat": 0.0514721,
+      "lng": 37.6456042
     },
     {
       "name": "Migori",
-      "population": 53100
+      "population": 53100,
+      "lat": -1.066667,
+      "lng": 34.466667
     },
     {
       "name": "Moi's Bridge {Mois Bridge}",
@@ -5272,79 +5378,117 @@
     },
     {
       "name": "Molo",
-      "population": 32576
+      "population": 32576,
+      "lat": -0.2488358,
+      "lng": 35.7323709
     },
     {
       "name": "Mombasa",
-      "population": 915101
+      "population": 915101,
+      "lat": -4.0434771,
+      "lng": 39.6682065
     },
     {
       "name": "Moyale",
-      "population": 27943
+      "population": 27943,
+      "lat": 3.5210916,
+      "lng": 39.0546262
     },
     {
       "name": "Msambweni",
-      "population": 11985
+      "population": 11985,
+      "lat": -4.463744,
+      "lng": 39.4735025
     },
     {
       "name": "Mtwapa",
-      "population": 48625
+      "population": 48625,
+      "lat": -3.95,
+      "lng": 39.7444444
     },
     {
       "name": "Muhoroni",
-      "population": 14806
+      "population": 14806,
+      "lat": -0.148921,
+      "lng": 35.196339
     },
     {
       "name": "Mumias",
-      "population": 38960
+      "population": 38960,
+      "lat": 0.3333333,
+      "lng": 34.4833333
     },
     {
       "name": "Murang'a {Muranga}",
-      "population": 23949
+      "population": 23949,
+      "lat": -0.7839281,
+      "lng": 37.0400339
     },
     {
       "name": "Mwingi",
-      "population": 15970
+      "population": 15970,
+      "lat": -0.9374110000000001,
+      "lng": 38.0605006
     },
     {
       "name": "Nairobi",
-      "population": 3133518
+      "population": 3133518,
+      "lat": -1.2920659,
+      "lng": 36.8219462
     },
     {
       "name": "Naivasha",
-      "population": 91993
+      "population": 91993,
+      "lat": -0.7202360999999999,
+      "lng": 36.42853059999999
     },
     {
       "name": "Nakuru",
-      "population": 286411
+      "population": 286411,
+      "lat": -0.3030988,
+      "lng": 36.080026
     },
     {
       "name": "Nanyuki",
-      "population": 31826
+      "population": 31826,
+      "lat": 0.0166667,
+      "lng": 37.0666667
     },
     {
       "name": "Narok",
-      "population": 38653
+      "population": 38653,
+      "lat": -1.0833333,
+      "lng": 35.8666667
     },
     {
       "name": "Ngong",
-      "population": 104073
+      "population": 104073,
+      "lat": -1.3562118,
+      "lng": 36.6687545
     },
     {
       "name": "Njoro",
-      "population": 23551
+      "population": 23551,
+      "lat": -0.331626,
+      "lng": 35.944938
     },
     {
       "name": "Nyahururu",
-      "population": 31952
+      "population": 31952,
+      "lat": 0.0351644,
+      "lng": 36.3642919
     },
     {
       "name": "Nyamira",
-      "population": 12719
+      "population": 12719,
+      "lat": -0.6482688,
+      "lng": 34.994751
     },
     {
       "name": "Nyeri",
-      "population": 63626
+      "population": 63626,
+      "lat": -0.416876,
+      "lng": 36.950981
     },
     {
       "name": "Ongata Rongai",
@@ -5352,75 +5496,111 @@
     },
     {
       "name": "Rhamu",
-      "population": 24037
+      "population": 24037,
+      "lat": 3.924094,
+      "lng": 41.2122
     },
     {
       "name": "Rongo",
-      "population": 12355
+      "population": 12355,
+      "lat": -0.7553244,
+      "lng": 34.5998996
     },
     {
       "name": "Ruiru",
-      "population": 236961
+      "population": 236961,
+      "lat": -1.1488889,
+      "lng": 36.9569444
     },
     {
       "name": "Sagana",
-      "population": 9889
+      "population": 9889,
+      "lat": -0.6695131999999999,
+      "lng": 37.2061138
     },
     {
       "name": "Siaya",
-      "population": 20923
+      "population": 20923,
+      "lat": 0.0626293,
+      "lng": 34.2878084
     },
     {
       "name": "Tabaka",
-      "population": 12700
+      "population": 12700,
+      "lat": -0.7547705,
+      "lng": 34.6607641
     },
     {
       "name": "Takaba",
-      "population": 21474
+      "population": 21474,
+      "lat": 3.3855556,
+      "lng": 40.2230556
     },
     {
       "name": "Taveta",
-      "population": 17465
+      "population": 17465,
+      "lat": -3.4,
+      "lng": 37.6833333
     },
     {
       "name": "Thika",
-      "population": 136576
+      "population": 136576,
+      "lat": -1.0387569,
+      "lng": 37.0833753
     },
     {
       "name": "Ukunda",
-      "population": 62529
+      "population": 62529,
+      "lat": -4.289796,
+      "lng": 39.567371
     },
     {
       "name": "Usenge",
-      "population": 9830
+      "population": 9830,
+      "lat": 0.0434411,
+      "lng": 34.2387307
     },
     {
       "name": "Vihiga",
-      "population": 36398
+      "population": 36398,
+      "lat": 0.0921041,
+      "lng": 34.7298765
     },
     {
       "name": "Voi",
-      "population": 17152
+      "population": 17152,
+      "lat": -3.3973104,
+      "lng": 38.5559336
     },
     {
       "name": "Wajir",
-      "population": 16838
+      "population": 16838,
+      "lat": 1.7488388,
+      "lng": 40.058633
     },
     {
       "name": "Wanguru",
-      "population": 17626
+      "population": 17626,
+      "lat": -0.6796211,
+      "lng": 37.3593424
     },
     {
       "name": "Watamu",
-      "population": 10030
+      "population": 10030,
+      "lat": -3.35,
+      "lng": 40.016667
     },
     {
       "name": "Webuye",
-      "population": 23318
+      "population": 23318,
+      "lat": 0.6166667,
+      "lng": 34.7666667
     },
     {
       "name": "Wote",
-      "population": 9875
+      "population": 9875,
+      "lat": -1.7833333,
+      "lng": 37.6333333
     }
   ],
   "Lesotho": [
