@@ -83,7 +83,6 @@ function initializeMaps() {
         
     }
     var geocoder = new google.maps.Geocoder();
-    /*
     google.maps.event.addListener(map, 'center_changed', function() {
     	var c = map.getCenter();
     	var latlng = new google.maps.LatLng(c.lat(), c.lng());
@@ -98,6 +97,5 @@ function initializeMaps() {
     		}
     	});
     });
-   */
     map.fitBounds(bounds);
 }
