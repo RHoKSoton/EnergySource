@@ -34,7 +34,7 @@ var energy = {
 			if (score.city === city_name) {
 				var num_results = score.gResults.length;
 				if (num_results > 0) {
-					num_results = parseInt(score.numResults.replace(",", ""));
+					num_results = score.numResults;
 				}
 				var norm_score = num_results / 1000;
 				var comp_dom = $("input[data-comp_name='" + score.manufacturer + "']");
