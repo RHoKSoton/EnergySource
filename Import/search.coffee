@@ -150,7 +150,7 @@ bingSearch = (phrase, cb) ->
       try
         data = JSON.parse data
       catch e
-        console.log "INVALID JSON: #{data}"
+        console.error "INVALID JSON: #{data}"
         if cb?
           cb e
           cb = null
@@ -225,7 +225,7 @@ for componentType, componentSpecs of data.components then do (componentType, com
             console.error "Search #{reqNum}: #{term}"
             bingSearch term, (err, res) ->
               done++
-              console.log util.inspect res, false, null, true
+              console.error util.inspect res, false, null, true
               if err or !res?.d?.results?
                 if res?
                   google_are_angry = true
