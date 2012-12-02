@@ -67,7 +67,7 @@ shuffle = (o) ->
   return Math.round(Math.random()*2)-1
 
 POP_THRESHOLD = 100000
-ACTUALLY_SEARCH = 20
+ACTUALLY_SEARCH = 0
 RAND_DELAY = 50
 google_are_angry = false
 
@@ -217,8 +217,8 @@ for componentType, componentSpecs of data.components then do (componentType, com
 
         started++
         reqNum = started
-        #term = 'intext:sonnenschein intext:battery intext:(nairobi | kisumu | mombasa | dadaab) intext:kenya -filetype:pdf (site:.com | site:.ke)'
-        term = "#{componentSpec.Term} intext:\"(#{city.name}), #{countryName}\" (site:.com | site:.#{countrySpec.tld}) -filetype:pdf"
+        #term = 'sonnenschein battery "(nairobi | kisumu | mombasa | dadaab), kenya"'
+        term = "#{componentSpec.Term} \"(#{city.name}), #{countryName}\""
 
         delay (reqNum-1)*RAND_DELAY + Math.random()*(RAND_DELAY/4), ->
           if reqNum <= ACTUALLY_SEARCH and not google_are_angry
