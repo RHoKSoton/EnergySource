@@ -2,11 +2,15 @@
   "Angola": [
     {
       "name": "Benguela",
-      "population": 155000
+      "population": 155000,
+      "lat": -12.58,
+      "lng": 13.4077778
     },
     {
       "name": "Ca�la {Caala}",
-      "population": 8894
+      "population": 8894,
+      "lat": -12.8525,
+      "lng": 15.5605556
     },
     {
       "name": "Cabinda (Tchiowa)",
@@ -14,47 +18,69 @@
     },
     {
       "name": "Camacupa",
-      "population": 5740
+      "population": 5740,
+      "lat": -12.0269,
+      "lng": 17.47369
     },
     {
       "name": "Gabela",
-      "population": 6930
+      "population": 6930,
+      "lat": -10.85349,
+      "lng": 14.37026
     },
     {
       "name": "Huambo (Nova Lisboa)",
-      "population": 400000
+      "population": 400000,
+      "lat": -12.7666667,
+      "lng": 15.7333333
     },
     {
       "name": "Kuito (Cuito)",
-      "population": 18941
+      "population": 18941,
+      "lat": -12.38036,
+      "lng": 16.939119
     },
     {
       "name": "Lobito",
-      "population": 150000
+      "population": 150000,
+      "lat": -12.3666667,
+      "lng": 13.5333333
     },
     {
       "name": "Luanda",
-      "population": 5851200
+      "population": 5851200,
+      "lat": -8.8383333,
+      "lng": 13.2344444
     },
     {
       "name": "Lubango",
-      "population": 31674
+      "population": 31674,
+      "lat": -14.7071628,
+      "lng": 13.8216261
     },
     {
       "name": "Luena",
-      "population": 2539
+      "population": 2539,
+      "lat": -11.79,
+      "lng": 19.9
     },
     {
       "name": "Malanje",
-      "population": 31599
+      "population": 31599,
+      "lat": -9.8251183,
+      "lng": 16.912251
     },
     {
       "name": "M'banza-Kongo {Mbanza-Kongo}",
-      "population": 4002
+      "population": 4002,
+      "lat": -6.2666667,
+      "lng": 14.25
     },
     {
       "name": "Menongue",
-      "population": 3023
+      "population": 3023,
+      "lat": -15.2371176,
+      "lng": 17.8583868
     },
     {
       "name": "Namibe (Mo��medes)",
@@ -62,31 +88,45 @@
     },
     {
       "name": "N'dalatando {Ndalatando}",
-      "population": 7342
+      "population": 7342,
+      "lat": -9.2984069,
+      "lng": 14.91416
     },
     {
       "name": "Saurimo",
-      "population": 12901
+      "population": 12901,
+      "lat": -10.1537842,
+      "lng": 20.1402594
     },
     {
       "name": "Sumbe (Novo Redondo)",
-      "population": 7911
+      "population": 7911,
+      "lat": -11.2122554,
+      "lng": 13.8477121
     },
     {
       "name": "T�mboa {Tomboa}",
-      "population": 8235
+      "population": 8235,
+      "lat": -16.7335292,
+      "lng": 12.2547919
     },
     {
       "name": "U�ge (Carmona) {Uige}",
-      "population": 11972
+      "population": 11972,
+      "lat": -7.6102105,
+      "lng": 15.0615865
     },
     {
       "name": "Benguela",
-      "population": 155000
+      "population": 155000,
+      "lat": -12.58,
+      "lng": 13.4077778
     },
     {
       "name": "Ca�la {Caala}",
-      "population": 8894
+      "population": 8894,
+      "lat": -12.8525,
+      "lng": 15.5605556
     },
     {
       "name": "Cabinda (Tchiowa)",
@@ -94,47 +134,69 @@
     },
     {
       "name": "Camacupa",
-      "population": 5740
+      "population": 5740,
+      "lat": -12.0269,
+      "lng": 17.47369
     },
     {
       "name": "Gabela",
-      "population": 6930
+      "population": 6930,
+      "lat": -10.85349,
+      "lng": 14.37026
     },
     {
       "name": "Huambo (Nova Lisboa)",
-      "population": 400000
+      "population": 400000,
+      "lat": -12.7666667,
+      "lng": 15.7333333
     },
     {
       "name": "Kuito (Cuito)",
-      "population": 18941
+      "population": 18941,
+      "lat": -12.38036,
+      "lng": 16.939119
     },
     {
       "name": "Lobito",
-      "population": 150000
+      "population": 150000,
+      "lat": -12.3666667,
+      "lng": 13.5333333
     },
     {
       "name": "Luanda",
-      "population": 5851200
+      "population": 5851200,
+      "lat": -8.8383333,
+      "lng": 13.2344444
     },
     {
       "name": "Lubango",
-      "population": 31674
+      "population": 31674,
+      "lat": -14.7071628,
+      "lng": 13.8216261
     },
     {
       "name": "Luena",
-      "population": 2539
+      "population": 2539,
+      "lat": -11.79,
+      "lng": 19.9
     },
     {
       "name": "Malanje",
-      "population": 31599
+      "population": 31599,
+      "lat": -9.8251183,
+      "lng": 16.912251
     },
     {
       "name": "M'banza-Kongo {Mbanza-Kongo}",
-      "population": 4002
+      "population": 4002,
+      "lat": -6.2666667,
+      "lng": 14.25
     },
     {
       "name": "Menongue",
-      "population": 3023
+      "population": 3023,
+      "lat": -15.2371176,
+      "lng": 17.8583868
     },
     {
       "name": "Namibe (Mo��medes)",
@@ -142,142 +204,210 @@
     },
     {
       "name": "N'dalatando {Ndalatando}",
-      "population": 7342
+      "population": 7342,
+      "lat": -9.2984069,
+      "lng": 14.91416
     },
     {
       "name": "Saurimo",
-      "population": 12901
+      "population": 12901,
+      "lat": -10.1537842,
+      "lng": 20.1402594
     },
     {
       "name": "Sumbe (Novo Redondo)",
-      "population": 7911
+      "population": 7911,
+      "lat": -11.2122554,
+      "lng": 13.8477121
     },
     {
       "name": "T�mboa {Tomboa}",
-      "population": 8235
+      "population": 8235,
+      "lat": -16.7335292,
+      "lng": 12.2547919
     },
     {
       "name": "U�ge (Carmona) {Uige}",
-      "population": 11972
+      "population": 11972,
+      "lat": -7.6102105,
+      "lng": 15.0615865
     }
   ],
   "Algeria": [],
   "Benin": [
     {
       "name": "Abomey",
-      "population": 59672
+      "population": 59672,
+      "lat": 7.186504299999999,
+      "lng": 1.9939643
     },
     {
       "name": "Abomey-Calavi",
-      "population": 61450
+      "population": 61450,
+      "lat": 6.449999999999999,
+      "lng": 2.35
     },
     {
       "name": "Adja-Ou�r� {Adja-Ouere}",
-      "population": 16905
+      "population": 16905,
+      "lat": 6.9568767,
+      "lng": 2.5792482
     },
     {
       "name": "Adjarra",
-      "population": 16255
+      "population": 16255,
+      "lat": 6.533333,
+      "lng": 2.666667
     },
     {
       "name": "Akpro-Miss�r�t� {Akpro-Misserete}",
-      "population": 22491
+      "population": 22491,
+      "lat": 6.562500000000001,
+      "lng": 2.5852778
     },
     {
       "name": "Allada",
-      "population": 14915
+      "population": 14915,
+      "lat": 6.664462899999999,
+      "lng": 2.1597595
     },
     {
       "name": "Aplahou� {Aplahoue}",
-      "population": 21443
+      "population": 21443,
+      "lat": 6.9421349,
+      "lng": 1.6736397
     },
     {
       "name": "Athi�m� {Athieme}",
-      "population": 10925
+      "population": 10925,
+      "lat": 6.591543499999999,
+      "lng": 1.6809283
     },
     {
       "name": "Avrankou",
-      "population": 13734
+      "population": 13734,
+      "lat": 6.5607071,
+      "lng": 2.6487087
     },
     {
       "name": "Banikoara",
-      "population": 23203
+      "population": 23203,
+      "lat": 11.29397,
+      "lng": 2.439285
     },
     {
       "name": "Bant� {Bante}",
-      "population": 15297
+      "population": 15297,
+      "lat": 8.416699999999999,
+      "lng": 1.8833
     },
     {
       "name": "Bassila",
-      "population": 25441
+      "population": 25441,
+      "lat": 9.002578,
+      "lng": 1.668649
     },
     {
       "name": "Bemb�r�k� {Bembereke}",
-      "population": 24594
+      "population": 24594,
+      "lat": 10.216667,
+      "lng": 2.666667
     },
     {
       "name": "Bohicon",
-      "population": 65974
+      "population": 65974,
+      "lat": 7.168870999999999,
+      "lng": 2.067014
     },
     {
       "name": "Boukoumb� {Boukoumbe}",
-      "population": 16843
+      "population": 16843,
+      "lat": 10.1833333,
+      "lng": 1.1
     },
     {
       "name": "Cobly (Kobli)",
-      "population": 17809
+      "population": 17809,
+      "lat": 10.4834476,
+      "lng": 0.8675134
     },
     {
       "name": "Com� {Come}",
-      "population": 29069
+      "population": 29069,
+      "lat": 6.399999999999999,
+      "lng": 1.8833333
     },
     {
       "name": "Copargo",
-      "population": 19020
+      "population": 19020,
+      "lat": 9.833309,
+      "lng": 1.5492649
     },
     {
       "name": "Cotonou",
-      "population": 665100
+      "population": 665100,
+      "lat": 6.3666667,
+      "lng": 2.4333333
     },
     {
       "name": "Dassa-Zoum� {Dassa-Zoume}",
-      "population": 23068
+      "population": 23068,
+      "lat": 7.771076000000001,
+      "lng": 2.196917
     },
     {
       "name": "Djakotomey",
-      "population": 15111
+      "population": 15111,
+      "lat": 6.8964579,
+      "lng": 1.6955092
     },
     {
       "name": "Djidja",
-      "population": 15549
+      "population": 15549,
+      "lat": 7.3461574,
+      "lng": 1.9355775
     },
     {
       "name": "Djougou",
-      "population": 63626
+      "population": 63626,
+      "lat": 9.7,
+      "lng": 1.6666667
     },
     {
       "name": "Dogbo-Tota",
-      "population": 31107
+      "population": 31107,
+      "lat": 6.801260000000001,
+      "lng": 1.782828
     },
     {
       "name": "Ekp� {Ekpe}",
-      "population": 34917
+      "population": 34917,
+      "lat": 6.393479999999999,
+      "lng": 2.5470339
     },
     {
       "name": "Glazou� {Glazoue}",
-      "population": 12822
+      "population": 12822,
+      "lat": 7.9736111,
+      "lng": 2.24
     },
     {
       "name": "Godomey",
-      "population": 153447
+      "population": 153447,
+      "lat": 6.413202399999999,
+      "lng": 2.3123031
     },
     {
       "name": "Gogounou",
-      "population": 10679
+      "population": 10679,
+      "lat": 10.7889897,
+      "lng": 2.6189273
     },
     {
       "name": "Ifangni",
-      "population": 20524
+      "population": 20524,
+      "lat": 6.677744,
+      "lng": 2.7182728
     },
     {
       "name": "Kalel� {Kalele}",
@@ -285,527 +415,787 @@
     },
     {
       "name": "Kandi",
-      "population": 27227
+      "population": 27227,
+      "lat": 11.1286111,
+      "lng": 2.9369444
     },
     {
       "name": "K�rou {Kerou}",
-      "population": 34246
+      "population": 34246,
+      "lat": 10.825,
+      "lng": 2.1094444
     },
     {
       "name": "K�tou {Ketou}",
-      "population": 25102
+      "population": 25102,
+      "lat": 7.3580556,
+      "lng": 2.6075
     },
     {
       "name": "Klou�kanm� {Klouekanme}",
-      "population": 16908
+      "population": 16908,
+      "lat": 7.0461241,
+      "lng": 1.8708613
     },
     {
       "name": "Kouand� {Kouande}",
-      "population": 20723
+      "population": 20723,
+      "lat": 10.3316667,
+      "lng": 1.6913889
     },
     {
       "name": "Lalo",
-      "population": 10038
+      "population": 10038,
+      "lat": 6.923973999999999,
+      "lng": 1.886424
     },
     {
       "name": "Lokossa",
-      "population": 36954
+      "population": 36954,
+      "lat": 6.633333299999999,
+      "lng": 1.7166667
     },
     {
       "name": "Malanville",
-      "population": 36056
+      "population": 36056,
+      "lat": 11.8666667,
+      "lng": 3.3833333
     },
     {
       "name": "Mat�ri {Materi}",
-      "population": 17887
+      "population": 17887,
+      "lat": 10.7279374,
+      "lng": 0.9940179000000001
     },
     {
       "name": "Natitingou",
-      "population": 40443
+      "population": 40443,
+      "lat": 10.31291,
+      "lng": 1.388616
     },
     {
       "name": "N'Dali {NDali}",
-      "population": 15314
+      "population": 15314,
+      "lat": 9.8608333,
+      "lng": 2.7180556
     },
     {
       "name": "Nikki",
-      "population": 45571
+      "population": 45571,
+      "lat": 9.9333333,
+      "lng": 3.2083333
     },
     {
       "name": "Ou�ss� {Ouesse}",
-      "population": 11253
+      "population": 11253,
+      "lat": 8.4959624,
+      "lng": 2.4233417
     },
     {
       "name": "Ouidah",
-      "population": 37647
+      "population": 37647,
+      "lat": 6.3666667,
+      "lng": 2.0833333
     },
     {
       "name": "Ouinhi",
-      "population": 11552
+      "population": 11552,
+      "lat": 7.1078076,
+      "lng": 2.4801989
     },
     {
       "name": "Parakou",
-      "population": 149819
+      "population": 149819,
+      "lat": 9.35,
+      "lng": 2.6166667
     },
     {
       "name": "P�hunco {Pehunco}",
-      "population": 27101
+      "population": 27101,
+      "lat": 10.2283333,
+      "lng": 2.0019444
     },
     {
       "name": "P�r�r� {Perere}",
-      "population": 10782
+      "population": 10782,
+      "lat": 9.800075999999999,
+      "lng": 2.990856
     },
     {
       "name": "Pob� {Pobe}",
-      "population": 33249
+      "population": 33249,
+      "lat": 6.9832415,
+      "lng": 2.6636066
     },
     {
       "name": "Porto-Novo",
-      "population": 223552
+      "population": 223552,
+      "lat": 6.478352999999999,
+      "lng": 2.632503
     },
     {
       "name": "Sak�t� {Sakete}",
-      "population": 26036
+      "population": 26036,
+      "lat": 6.7363889,
+      "lng": 2.6580556
     },
     {
       "name": "Savalou",
-      "population": 28952
+      "population": 28952,
+      "lat": 7.9333333,
+      "lng": 1.9666667
     },
     {
       "name": "Sav� {Save}",
-      "population": 26440
+      "population": 26440,
+      "lat": 8.033333299999999,
+      "lng": 2.4833333
     },
     {
       "name": "S�gbana {Segbana}",
-      "population": 16115
+      "population": 16115,
+      "lat": 10.9277778,
+      "lng": 3.6944444
     },
     {
       "name": "S�m�-Kpodji {Seme-Kpodji}",
-      "population": 12582
+      "population": 12582,
+      "lat": 6.4224777,
+      "lng": 2.5990835
     },
     {
       "name": "Sinend� {Sinende}",
-      "population": 25984
+      "population": 25984,
+      "lat": 10.343629,
+      "lng": 2.381287
     },
     {
       "name": "Tangui�ta {Tanguieta}",
-      "population": 20167
+      "population": 20167,
+      "lat": 10.6166667,
+      "lng": 1.2666667
     },
     {
       "name": "Tchaourou",
-      "population": 20838
+      "population": 20838,
+      "lat": 8.8833333,
+      "lng": 2.6
     },
     {
       "name": "Tori-Bossito",
-      "population": 12481
+      "population": 12481,
+      "lat": 6.5030556,
+      "lng": 2.145
     },
     {
       "name": "Toucountouna",
-      "population": 11785
+      "population": 11785,
+      "lat": 10.6612238,
+      "lng": 1.4821482
     },
     {
       "name": "Toviklin",
-      "population": 13562
+      "population": 13562,
+      "lat": 6.9390918,
+      "lng": 1.7733566
     },
     {
       "name": "Za-Kpota",
-      "population": 16994
+      "population": 16994,
+      "lat": 7.216949700000001,
+      "lng": 2.1843285
     },
     {
       "name": "Z� {Ze}",
-      "population": 10987
+      "population": 10987,
+      "lat": 6.701041,
+      "lng": 2.341887
     },
     {
       "name": "Zinvi� {Zinvie}",
-      "population": 13212
+      "population": 13212,
+      "lat": 6.616667,
+      "lng": 2.35
     }
   ],
   "Botswana": [
     {
       "name": "Bobonong",
-      "population": 19389
+      "population": 19389,
+      "lat": -22.0939778,
+      "lng": 28.5797981
     },
     {
       "name": "Bokaa",
-      "population": 5680
+      "population": 5680,
+      "lat": -24.4263889,
+      "lng": 26.0166667
     },
     {
       "name": "Borolong",
-      "population": 5184
+      "population": 5184,
+      "lat": -25.5327852,
+      "lng": 24.7142918
     },
     {
       "name": "Chadibe",
-      "population": 4939
+      "population": 4939,
+      "lat": -24.6310469,
+      "lng": 25.9033165
     },
     {
       "name": "Francistown (Nyangabgwe)",
-      "population": 98961
+      "population": 98961,
+      "lat": -21.171129,
+      "lng": 27.50024
     },
     {
       "name": "Gabane",
-      "population": 15237
+      "population": 15237,
+      "lat": -24.664129,
+      "lng": 25.78355
     },
     {
       "name": "Gaborone",
-      "population": 231592
+      "population": 231592,
+      "lat": -24.65411,
+      "lng": 25.908739
     },
     {
       "name": "Ghanzi",
-      "population": 14807
+      "population": 14807,
+      "lat": -21.7,
+      "lng": 21.65
     },
     {
       "name": "Goodhope",
-      "population": 6362
+      "population": 6362,
+      "lat": -25.4741508,
+      "lng": 25.4318914
     },
     {
       "name": "Gumare",
-      "population": 8532
+      "population": 8532,
+      "lat": -19.36912,
+      "lng": 22.1616399
     },
     {
       "name": "Gweta",
-      "population": 5304
+      "population": 5304,
+      "lat": -20.205589,
+      "lng": 25.260151
     },
     {
       "name": "Jwaneng",
-      "population": 18008
+      "population": 18008,
+      "lat": -24.5980556,
+      "lng": 24.7291667
     },
     {
       "name": "Kanye",
-      "population": 47007
+      "population": 47007,
+      "lat": -24.977751,
+      "lng": 25.342581
     },
     {
       "name": "Kasane",
-      "population": 9008
+      "population": 9008,
+      "lat": -17.8166667,
+      "lng": 25.15
     },
     {
       "name": "Kopong",
-      "population": 9312
+      "population": 9312,
+      "lat": -24.4686111,
+      "lng": 25.8922222
     },
     {
       "name": "Kumakwane",
-      "population": 5545
+      "population": 5545,
+      "lat": -24.663106,
+      "lng": 25.8603167
     },
     {
       "name": "Lentsweletau",
-      "population": 4916
+      "population": 4916,
+      "lat": -24.2544444,
+      "lng": 25.8516667
     },
     {
       "name": "Lerala",
-      "population": 6871
+      "population": 6871,
+      "lat": -22.79582,
+      "lng": 27.76499
     },
     {
       "name": "Letlhakane",
-      "population": 22911
+      "population": 22911,
+      "lat": -21.4166667,
+      "lng": 25.5833333
     },
     {
       "name": "Letlhakeng",
-      "population": 7229
+      "population": 7229,
+      "lat": -24.0958333,
+      "lng": 25.0297222
     },
     {
       "name": "Lobatse",
-      "population": 29007
+      "population": 29007,
+      "lat": -25.227739,
+      "lng": 25.677389
     },
     {
       "name": "Lotlhakane",
-      "population": 4828
+      "population": 4828,
+      "lat": -25.083546,
+      "lng": 25.4555858
     },
     {
       "name": "Mahalapye",
-      "population": 43289
+      "population": 43289,
+      "lat": -23.10898,
+      "lng": 26.82592
     },
     {
       "name": "Maitengwe",
-      "population": 5890
+      "population": 5890,
+      "lat": -20.12756,
+      "lng": 27.227791
     },
     {
       "name": "Masunga",
-      "population": 5666
+      "population": 5666,
+      "lat": -20.666667,
+      "lng": 27.416667
     },
     {
       "name": "Mathangwane",
-      "population": 5075
+      "population": 5075,
+      "lat": -21,
+      "lng": 27.3333333
     },
     {
       "name": "Maun",
-      "population": 60263
+      "population": 60263,
+      "lat": -19.994169,
+      "lng": 23.4183999
     },
     {
       "name": "Metsimotlhaba",
-      "population": 8884
+      "population": 8884,
+      "lat": -24.5530556,
+      "lng": 25.8038889
     },
     {
       "name": "Mmadinare",
-      "population": 12086
+      "population": 12086,
+      "lat": -21.95,
+      "lng": 27.616667
     },
     {
       "name": "Mmankgodi",
-      "population": 6802
+      "population": 6802,
+      "lat": -24.7288065,
+      "lng": 25.6450721
     },
     {
       "name": "Mmathethe",
-      "population": 5078
+      "population": 5078,
+      "lat": -25.317051,
+      "lng": 25.267429
     },
     {
       "name": "Mmopane",
-      "population": 15450
+      "population": 15450,
+      "lat": -24.5669444,
+      "lng": 25.8733333
     },
     {
       "name": "Mochudi",
-      "population": 44815
+      "population": 44815,
+      "lat": -24.376789,
+      "lng": 26.1523
     },
     {
       "name": "Mogoditshane",
-      "population": 58079
+      "population": 58079,
+      "lat": -24.6131407,
+      "lng": 25.8731407
     },
     {
       "name": "Molapowabojang",
-      "population": 7520
+      "population": 7520,
+      "lat": -24.6700813,
+      "lng": 25.8636787
     },
     {
       "name": "Molepolole",
-      "population": 66466
+      "population": 66466,
+      "lat": -24.414164,
+      "lng": 25.519084
     },
     {
       "name": "Moshupa",
-      "population": 20016
+      "population": 20016,
+      "lat": -24.7762704,
+      "lng": 25.4141193
     },
     {
       "name": "Nata",
-      "population": 6714
+      "population": 6714,
+      "lat": -20.2105556,
+      "lng": 26.1805556
     },
     {
       "name": "Oodi",
-      "population": 5687
+      "population": 5687,
+      "lat": -24.6723535,
+      "lng": 25.9338613
     },
     {
       "name": "Orapa",
-      "population": 9531
+      "population": 9531,
+      "lat": -21.3338889,
+      "lng": 25.3647222
     },
     {
       "name": "Otse",
-      "population": 7661
+      "population": 7661,
+      "lat": -25.0333333,
+      "lng": 25.7386111
     },
     {
       "name": "Palapye",
-      "population": 37256
+      "population": 37256,
+      "lat": -22.55,
+      "lng": 27.1333333
     },
     {
       "name": "Ramotswa",
-      "population": 28952
+      "population": 28952,
+      "lat": -24.8705652,
+      "lng": 25.8640062
     },
     {
       "name": "Sefophe",
-      "population": 6062
+      "population": 6062,
+      "lat": -22.19372,
+      "lng": 27.96755
     },
     {
       "name": "Selebi-Phikwe",
-      "population": 49411
+      "population": 49411,
+      "lat": -21.98098,
+      "lng": 27.843519
     },
     {
       "name": "Serowe",
-      "population": 50820
+      "population": 50820,
+      "lat": -22.389299,
+      "lng": 26.710991
     },
     {
       "name": "Shakawe",
-      "population": 6693
+      "population": 6693,
+      "lat": -18.36418,
+      "lng": 21.8421309
     },
     {
       "name": "Shoshong",
-      "population": 9678
+      "population": 9678,
+      "lat": -23.0333333,
+      "lng": 26.5166667
     },
     {
       "name": "Sowa",
-      "population": 3598
+      "population": 3598,
+      "lat": -20.5636111,
+      "lng": 26.2244444
     },
     {
       "name": "Tati Siding",
-      "population": 8112
+      "population": 8112,
+      "lat": -21.2795511,
+      "lng": 27.4908738
     },
     {
       "name": "Thamaga",
-      "population": 21471
+      "population": 21471,
+      "lat": -24.669471,
+      "lng": 25.535126
     },
     {
       "name": "Tlokweng",
-      "population": 36323
+      "population": 36323,
+      "lat": -24.6679808,
+      "lng": 25.9763625
     },
     {
       "name": "Tonota",
-      "population": 21031
+      "population": 21031,
+      "lat": -21.4433017,
+      "lng": 27.4615118
     },
     {
       "name": "Tsabong",
-      "population": 8939
+      "population": 8939,
+      "lat": -26.02,
+      "lng": 22.4055556
     },
     {
       "name": "Tsienyane (Rakops)",
-      "population": 6396
+      "population": 6396,
+      "lat": -21.0369444,
+      "lng": 24.4091667
     },
     {
       "name": "Tutume",
-      "population": 17528
+      "population": 17528,
+      "lat": -20.51,
+      "lng": 27.05
     }
   ],
   "BurkinaFaso": [
     {
       "name": "Banfora",
-      "population": 75917
+      "population": 75917,
+      "lat": 10.6333333,
+      "lng": -4.75
     },
     {
       "name": "Bati� {Batie}",
-      "population": 10105
+      "population": 10105,
+      "lat": 9.873859699999999,
+      "lng": -2.9213408
     },
     {
       "name": "Bittou",
-      "population": 20118
+      "population": 20118,
+      "lat": 11.2666667,
+      "lng": -0.3
     },
     {
       "name": "Bobo Dioulasso",
-      "population": 489967
+      "population": 489967,
+      "lat": 11.1781,
+      "lng": -4.291773
     },
     {
       "name": "Bogand� {Bogande}",
-      "population": 14929
+      "population": 14929,
+      "lat": 12.96933,
+      "lng": -0.137657
     },
     {
       "name": "Boromo",
-      "population": 14594
+      "population": 14594,
+      "lat": 11.75,
+      "lng": -2.9333333
     },
     {
       "name": "Boulsa",
-      "population": 17925
+      "population": 17925,
+      "lat": 12.65662,
+      "lng": -0.568618
     },
     {
       "name": "Bouss� {Bousse}",
-      "population": 15868
+      "population": 15868,
+      "lat": 12.65179,
+      "lng": -1.888756
     },
     {
       "name": "Dano",
-      "population": 16798
+      "population": 16798,
+      "lat": 11.14218,
+      "lng": -3.058979
     },
     {
       "name": "D�dougou {Dedougou}",
-      "population": 38862
+      "population": 38862,
+      "lat": 12.45462,
+      "lng": -3.463617
     },
     {
       "name": "Diapaga",
-      "population": 8400
+      "population": 8400,
+      "lat": 12.07683,
+      "lng": 1.796048
     },
     {
       "name": "Di�bougou {Diebougou}",
-      "population": 17937
+      "population": 17937,
+      "lat": 10.9666667,
+      "lng": -3.25
     },
     {
       "name": "Djibo",
-      "population": 28990
+      "population": 28990,
+      "lat": 14.09929,
+      "lng": -1.626794
     },
     {
       "name": "Dori",
-      "population": 21078
+      "population": 21078,
+      "lat": 14.0246473,
+      "lng": -0.0233208
     },
     {
       "name": "Fada Ngourma",
-      "population": 41785
+      "population": 41785,
+      "lat": 12.05481,
+      "lng": 0.360972
     },
     {
       "name": "Gaoua",
-      "population": 25104
+      "population": 25104,
+      "lat": 10.32498,
+      "lng": -3.173709
     },
     {
       "name": "Garango",
-      "population": 35015
+      "population": 35015,
+      "lat": 11.79955,
+      "lng": -0.5505439999999999
     },
     {
       "name": "Gourcy",
-      "population": 24616
+      "population": 24616,
+      "lat": 13.20178,
+      "lng": -2.3571749
     },
     {
       "name": "Hound� {Hounde}",
-      "population": 39458
+      "population": 39458,
+      "lat": 11.48827,
+      "lng": -3.517817
     },
     {
       "name": "Kaya",
-      "population": 54365
+      "population": 54365,
+      "lat": 13.0833333,
+      "lng": -1.0833333
     },
     {
       "name": "Kombissiri",
-      "population": 23460
+      "population": 23460,
+      "lat": 12.06382,
+      "lng": -1.3343449
     },
     {
       "name": "Kongoussi",
-      "population": 25172
+      "population": 25172,
+      "lat": 13.3333333,
+      "lng": -1.5333333
     },
     {
       "name": "Koudougou",
-      "population": 88184
+      "population": 88184,
+      "lat": 12.25,
+      "lng": -2.36667
     },
     {
       "name": "Koup�la {Koupela}",
-      "population": 28151
+      "population": 28151,
+      "lat": 12.17719,
+      "lng": -0.355766
     },
     {
       "name": "L�o {Leo}",
-      "population": 26779
+      "population": 26779,
+      "lat": 11.09447,
+      "lng": -2.098178
     },
     {
       "name": "Manga",
-      "population": 19860
+      "population": 19860,
+      "lat": 11.66231,
+      "lng": -1.0651
     },
     {
       "name": "Niangoloko",
-      "population": 22310
+      "population": 22310,
+      "lat": 10.2833333,
+      "lng": -4.9166667
     },
     {
       "name": "Nouna",
-      "population": 22166
+      "population": 22166,
+      "lat": 12.7333333,
+      "lng": -3.866666699999999
     },
     {
       "name": "Orodara",
-      "population": 23356
+      "population": 23356,
+      "lat": 10.97378,
+      "lng": -4.908157999999999
     },
     {
       "name": "Ouagadougou",
-      "population": 1475223
+      "population": 1475223,
+      "lat": 12.364637,
+      "lng": -1.5338639
     },
     {
       "name": "Ouahigouya",
-      "population": 73153
+      "population": 73153,
+      "lat": 13.56924,
+      "lng": -2.417089
     },
     {
       "name": "Ouargaye",
-      "population": 10103
+      "population": 10103,
+      "lat": 11.5,
+      "lng": 0.05
     },
     {
       "name": "P� {Po}",
-      "population": 24320
+      "population": 24320,
+      "lat": 11.16881,
+      "lng": -1.135485
     },
     {
       "name": "Pouytenga",
-      "population": 60618
+      "population": 60618,
+      "lat": 12.2487403,
+      "lng": -0.4266584
     },
     {
       "name": "R�o {Reo}",
-      "population": 28446
+      "population": 28446,
+      "lat": 12.3166667,
+      "lng": -2.4666667
     },
     {
       "name": "Sapouy",
-      "population": 12438
+      "population": 12438,
+      "lat": 11.54914,
+      "lng": -1.761232
     },
     {
       "name": "Solenzo",
-      "population": 16850
+      "population": 16850,
+      "lat": 12.1833333,
+      "lng": -4.0833333
     },
     {
       "name": "Tenkodogo",
-      "population": 44491
+      "population": 44491,
+      "lat": 11.7833333,
+      "lng": -0.3666667
     },
     {
       "name": "Titao",
-      "population": 19131
+      "population": 19131,
+      "lat": 13.7666667,
+      "lng": -2.0666667
     },
     {
       "name": "Toma",
-      "population": 12401
+      "population": 12401,
+      "lat": 12.64031,
+      "lng": -4.410877999999999
     },
     {
       "name": "Tougan (Bonou-Toaga)",
@@ -813,315 +1203,469 @@
     },
     {
       "name": "Yako",
-      "population": 22685
+      "population": 22685,
+      "lat": 12.95439,
+      "lng": -2.262832
     },
     {
       "name": "Ziniar� {Ziniare}",
-      "population": 18619
+      "population": 18619,
+      "lat": 12.5833333,
+      "lng": -1.3
     },
     {
       "name": "Zorgo",
-      "population": 20462
+      "population": 20462,
+      "lat": 12.25,
+      "lng": -0.6166667
     }
   ],
   "Burundi": [
     {
       "name": "Bubanza",
-      "population": 2945
+      "population": 2945,
+      "lat": -3.0833333,
+      "lng": 29.4
     },
     {
       "name": "Bujumbura",
-      "population": 235440
+      "population": 235440,
+      "lat": -3.376217,
+      "lng": 29.359349
     },
     {
       "name": "Bururi",
-      "population": 15816
+      "population": 15816,
+      "lat": -3.95,
+      "lng": 29.6166667
     },
     {
       "name": "Cankuzo",
-      "population": 1643
+      "population": 1643,
+      "lat": -3.216667,
+      "lng": 30.54999999999999
     },
     {
       "name": "Cibitoke",
-      "population": 8280
+      "population": 8280,
+      "lat": -2.8886111,
+      "lng": 29.11999999999999
     },
     {
       "name": "Gitega",
-      "population": 20708
+      "population": 20708,
+      "lat": -3.429664,
+      "lng": 29.92979
     },
     {
       "name": "Karuzi",
-      "population": 3403
+      "population": 3403,
+      "lat": -3.100096,
+      "lng": 30.163019
     },
     {
       "name": "Kayanza",
-      "population": 6881
+      "population": 6881,
+      "lat": -2.9218531,
+      "lng": 29.6252858
     },
     {
       "name": "Kirundo",
-      "population": 5181
+      "population": 5181,
+      "lat": -2.5848378,
+      "lng": 30.0961296
     },
     {
       "name": "Makamba",
-      "population": 5198
+      "population": 5198,
+      "lat": -4.133333299999999,
+      "lng": 29.8
     },
     {
       "name": "Muramvya",
-      "population": 2290
+      "population": 2290,
+      "lat": -3.2675245,
+      "lng": 29.62238779999999
     },
     {
       "name": "Muyinga",
-      "population": 5533
+      "population": 5533,
+      "lat": -2.85,
+      "lng": 30.3333333
     },
     {
       "name": "Ngozi",
-      "population": 14511
+      "population": 14511,
+      "lat": -2.912195,
+      "lng": 29.825001
     },
     {
       "name": "Rutana",
-      "population": 1944
+      "population": 1944,
+      "lat": -3.930821,
+      "lng": 29.992649
     },
     {
       "name": "Ruyigi",
-      "population": 2377
+      "population": 2377,
+      "lat": -3.4750027,
+      "lng": 30.2483881
     }
   ],
   "Cameroon": [
     {
       "name": "Abo",
-      "population": 16022
+      "population": 16022,
+      "lat": 6.1584127,
+      "lng": 9.0211813
     },
     {
       "name": "Abong-Mbang",
-      "population": 15663
+      "population": 15663,
+      "lat": 3.983866,
+      "lng": 13.17407
     },
     {
       "name": "Akonolinga",
-      "population": 19282
+      "population": 19282,
+      "lat": 3.7827632,
+      "lng": 12.2490697
     },
     {
       "name": "Ambam",
-      "population": 16060
+      "population": 16060,
+      "lat": 2.384043,
+      "lng": 11.26637
     },
     {
       "name": "Bafang",
-      "population": 34941
+      "population": 34941,
+      "lat": 5.164962,
+      "lng": 10.17878
     },
     {
       "name": "Bafia",
-      "population": 47471
+      "population": 47471,
+      "lat": 4.751031999999999,
+      "lng": 11.23084
     },
     {
       "name": "Bafoussam",
-      "population": 239287
+      "population": 239287,
+      "lat": 5.485658,
+      "lng": 10.41299
     },
     {
       "name": "Bafut",
-      "population": 16388
+      "population": 16388,
+      "lat": 6.084528,
+      "lng": 10.13017
     },
     {
       "name": "Bali",
-      "population": 17612
+      "population": 17612,
+      "lat": 5.883333299999999,
+      "lng": 10.0166667
     },
     {
       "name": "Bamenda",
-      "population": 269530
+      "population": 269530,
+      "lat": 5.958647,
+      "lng": 10.14751
     },
     {
       "name": "Bandjoun",
-      "population": 20354
+      "population": 20354,
+      "lat": 5.3726525,
+      "lng": 10.4115631
     },
     {
       "name": "Bangangt� {Bangangte}",
-      "population": 28011
+      "population": 28011,
+      "lat": 5.141023,
+      "lng": 10.5191
     },
     {
       "name": "Banyo",
-      "population": 30730
+      "population": 30730,
+      "lat": 6.750211999999999,
+      "lng": 11.81085
     },
     {
       "name": "Batouri",
-      "population": 31683
+      "population": 31683,
+      "lat": 4.4333333,
+      "lng": 14.3666667
     },
     {
       "name": "B�labo {Belabo}",
-      "population": 15616
+      "population": 15616,
+      "lat": 4.9333333,
+      "lng": 13.3
     },
     {
       "name": "Bertoua",
-      "population": 88462
+      "population": 88462,
+      "lat": 4.575472,
+      "lng": 13.68459
     },
     {
       "name": "Blangoua",
-      "population": 17442
+      "population": 17442,
+      "lat": 12.7724545,
+      "lng": 14.5524179
     },
     {
       "name": "Bogo",
-      "population": 21046
+      "population": 21046,
+      "lat": 10.733333,
+      "lng": 14.6
     },
     {
       "name": "Bu�a {Buea}",
-      "population": 90090
+      "population": 90090,
+      "lat": 4.155169,
+      "lng": 9.231387999999999
     },
     {
       "name": "Douala",
-      "population": 1906962
+      "population": 1906962,
+      "lat": 4.047486000000001,
+      "lng": 9.706374
     },
     {
       "name": "Dschang",
-      "population": 63838
+      "population": 63838,
+      "lat": 5.45,
+      "lng": 10.0666667
     },
     {
       "name": "Ebolowa",
-      "population": 64980
+      "population": 64980,
+      "lat": 2.9166667,
+      "lng": 11.15
     },
     {
       "name": "Ed�a {Edea}",
-      "population": 66581
+      "population": 66581,
+      "lat": 3.8,
+      "lng": 10.1333333
     },
     {
       "name": "Ekondo-Titi",
-      "population": 15370
+      "population": 15370,
+      "lat": 4.601389999999999,
+      "lng": 9.03889
     },
     {
       "name": "Es�ka {Eseka}",
-      "population": 17904
+      "population": 17904,
+      "lat": 3.650364,
+      "lng": 10.77609
     },
     {
       "name": "Figuil",
-      "population": 20226
+      "population": 20226,
+      "lat": 9.7666667,
+      "lng": 13.9666667
     },
     {
       "name": "Foumban",
-      "population": 83522
+      "population": 83522,
+      "lat": 5.728629,
+      "lng": 10.90184
     },
     {
       "name": "Foumbot",
-      "population": 47643
+      "population": 47643,
+      "lat": 5.512694,
+      "lng": 10.63627
     },
     {
       "name": "Garoua",
-      "population": 235996
+      "population": 235996,
+      "lat": 9.299999999999999,
+      "lng": 13.4
     },
     {
       "name": "Garoua Boula� {Garoua Boulai}",
-      "population": 22410
+      "population": 22410,
+      "lat": 5.8874129,
+      "lng": 14.55086
     },
     {
       "name": "Guider",
-      "population": 52316
+      "population": 52316,
+      "lat": 9.934166699999999,
+      "lng": 13.9486111
     },
     {
       "name": "Guidiguis",
-      "population": 15741
+      "population": 15741,
+      "lat": 10.13232,
+      "lng": 14.71067
     },
     {
       "name": "Ka�le {Kaele}",
-      "population": 25810
+      "population": 25810,
+      "lat": 10.1,
+      "lng": 14.45
     },
     {
       "name": "K�kem {Kekem}",
-      "population": 17333
+      "population": 17333,
+      "lat": 5.152532,
+      "lng": 10.0191857
     },
     {
       "name": "Kousseri (Fort-Foureau)",
-      "population": 89123
+      "population": 89123,
+      "lat": 12.0833333,
+      "lng": 15.0333333
     },
     {
       "name": "Kribi",
-      "population": 59928
+      "population": 59928,
+      "lat": 2.935,
+      "lng": 9.91
     },
     {
       "name": "Kumba",
-      "population": 144268
+      "population": 144268,
+      "lat": 4.633333299999999,
+      "lng": 9.45
     },
     {
       "name": "Kumbo",
-      "population": 80212
+      "population": 80212,
+      "lat": 6.209571,
+      "lng": 10.686
     },
     {
       "name": "Lagdo",
-      "population": 21517
+      "population": 21517,
+      "lat": 8.895412199999999,
+      "lng": 13.8332193
     },
     {
       "name": "Limbe (Victoria)",
-      "population": 84223
+      "population": 84223,
+      "lat": 4.0095705,
+      "lng": 9.2203687
     },
     {
       "name": "Loum",
-      "population": 37537
+      "population": 37537,
+      "lat": 4.718,
+      "lng": 9.73
     },
     {
       "name": "Maga",
-      "population": 15701
+      "population": 15701,
+      "lat": 10.85,
+      "lng": 14.95
     },
     {
       "name": "Magba",
-      "population": 19829
+      "population": 19829,
+      "lat": 5.967656,
+      "lng": 11.22577
     },
     {
       "name": "Manjo",
-      "population": 26758
+      "population": 26758,
+      "lat": 4.85,
+      "lng": 9.8166667
     },
     {
       "name": "Maroua",
-      "population": 201371
+      "population": 201371,
+      "lat": 10.5823219,
+      "lng": 14.327545
     },
     {
       "name": "Mbalmayo",
-      "population": 52813
+      "population": 52813,
+      "lat": 3.515529,
+      "lng": 11.50085
     },
     {
       "name": "Mbandjock",
-      "population": 18771
+      "population": 18771,
+      "lat": 4.45,
+      "lng": 11.9
     },
     {
       "name": "Mbanga",
-      "population": 28306
+      "population": 28306,
+      "lat": 4.501984999999999,
+      "lng": 9.569578
     },
     {
       "name": "Mbouda",
-      "population": 46071
+      "population": 46071,
+      "lat": 5.633333299999999,
+      "lng": 10.25
     },
     {
       "name": "Meiganga",
-      "population": 38096
+      "population": 38096,
+      "lat": 6.521471,
+      "lng": 14.28475
     },
     {
       "name": "M�long {Melong}",
-      "population": 49180
+      "population": 49180,
+      "lat": 5.122737,
+      "lng": 9.952096
     },
     {
       "name": "Mokolo",
-      "population": 33335
+      "population": 33335,
+      "lat": 10.74,
+      "lng": 13.8
     },
     {
       "name": "Mora",
-      "population": 39440
+      "population": 39440,
+      "lat": 11.05,
+      "lng": 14.15
     },
     {
       "name": "Mutengene",
-      "population": 41063
+      "population": 41063,
+      "lat": 4.0892492,
+      "lng": 9.314601399999999
     },
     {
       "name": "Muyuka",
-      "population": 28046
+      "population": 28046,
+      "lat": 4.2904513,
+      "lng": 9.4144962
     },
     {
       "name": "Nanga-Eboko",
-      "population": 18282
+      "population": 18282,
+      "lat": 4.662732,
+      "lng": 12.37078
     },
     {
       "name": "Ndop",
-      "population": 25740
+      "population": 25740,
+      "lat": 5.980118699999999,
+      "lng": 10.3610179
     },
     {
       "name": "Ngaoundal",
-      "population": 25853
+      "population": 25853,
+      "lat": 6.461336699999999,
+      "lng": 13.2721197
     },
     {
       "name": "Ngaound�r� {Ngaoundere}",
-      "population": 152698
+      "population": 152698,
+      "lat": 7.323872,
+      "lng": 13.58363
     },
     {
       "name": "Njomb�-Penja {Njombe-Penja}",
@@ -1129,129 +1673,191 @@
     },
     {
       "name": "Nkambe",
-      "population": 17191
+      "population": 17191,
+      "lat": 6.589042,
+      "lng": 10.68112
     },
     {
       "name": "Nkongsamba",
-      "population": 104050
+      "population": 104050,
+      "lat": 4.95604,
+      "lng": 9.936546
     },
     {
       "name": "Nkoteng",
-      "population": 17743
+      "population": 17743,
+      "lat": 4.5385626,
+      "lng": 12.0204247
     },
     {
       "name": "Obala",
-      "population": 29054
+      "population": 29054,
+      "lat": 4.163587,
+      "lng": 11.53263
     },
     {
       "name": "Oku",
-      "population": 28491
+      "population": 28491,
+      "lat": 6.249276699999999,
+      "lng": 10.4185855
     },
     {
       "name": "Pitoa",
-      "population": 21546
+      "population": 21546,
+      "lat": 9.3860529,
+      "lng": 13.5060994
     },
     {
       "name": "Sangm�lima {Sangmelima}",
-      "population": 51308
+      "population": 51308,
+      "lat": 2.9333333,
+      "lng": 11.9833333
     },
     {
       "name": "Soa",
-      "population": 15456
+      "population": 15456,
+      "lat": 3.9833333,
+      "lng": 11.6
     },
     {
       "name": "Tcheboa",
-      "population": 22565
+      "population": 22565,
+      "lat": 9.029821,
+      "lng": 13.1884542
     },
     {
       "name": "Tibati",
-      "population": 22869
+      "population": 22869,
+      "lat": 6.466011,
+      "lng": 12.62307
     },
     {
       "name": "Tiko",
-      "population": 60796
+      "population": 60796,
+      "lat": 4.075,
+      "lng": 9.36
     },
     {
       "name": "Tombel",
-      "population": 15632
+      "population": 15632,
+      "lat": 4.746388899999999,
+      "lng": 9.6702778
     },
     {
       "name": "Touboro",
-      "population": 18583
+      "population": 18583,
+      "lat": 7.7666667,
+      "lng": 15.35
     },
     {
       "name": "Wum",
-      "population": 27218
+      "population": 27218,
+      "lat": 6.388762,
+      "lng": 10.0731
     },
     {
       "name": "Yagoua",
-      "population": 37867
+      "population": 37867,
+      "lat": 10.3427778,
+      "lng": 15.2405556
     },
     {
       "name": "Yaound� {Yaounde}",
-      "population": 1817524
+      "population": 1817524,
+      "lat": 3.866666699999999,
+      "lng": 11.5166667
     },
     {
       "name": "Yokadouma",
-      "population": 21091
+      "population": 21091,
+      "lat": 3.5166667,
+      "lng": 15.05
     }
   ],
   "CapeVerde": [
     {
       "name": "Assomada",
-      "population": 12026
+      "population": 12026,
+      "lat": 15.098819,
+      "lng": -23.6710502
     },
     {
       "name": "Calheta de S�o Miguel {Calheta de Sao Miguel}",
-      "population": 4220
+      "population": 4220,
+      "lat": 15.1875,
+      "lng": -23.5916667
     },
     {
       "name": "Cidade Velha",
-      "population": 1214
+      "population": 1214,
+      "lat": 14.9163748,
+      "lng": -23.6040974
     },
     {
       "name": "Cova Figueira",
-      "population": 659
+      "population": 659,
+      "lat": 14.8916667,
+      "lng": -24.2916667
     },
     {
       "name": "Jo�o Teves {Joao Teves}",
-      "population": 1699
+      "population": 1699,
+      "lat": 15.079714,
+      "lng": -23.528627
     },
     {
       "name": "Mindelo",
-      "population": 70468
+      "population": 70468,
+      "lat": 16.890618,
+      "lng": -24.980821
     },
     {
       "name": "Mosteiros",
-      "population": 3598
+      "population": 3598,
+      "lat": 15.0333333,
+      "lng": -24.325
     },
     {
       "name": "Nova Sintra",
-      "population": 1127
+      "population": 1127,
+      "lat": 14.868481,
+      "lng": -24.690402
     },
     {
       "name": "Pedra Badejo",
-      "population": 9345
+      "population": 9345,
+      "lat": 15.1375,
+      "lng": -23.5333333
     },
     {
       "name": "Picos",
-      "population": 1406
+      "population": 1406,
+      "lat": 15.0833333,
+      "lng": -23.6333333
     },
     {
       "name": "Pombas",
-      "population": 1263
+      "population": 1263,
+      "lat": 17.152756,
+      "lng": -25.027117
     },
     {
       "name": "Porto Novo",
-      "population": 9430
+      "population": 9430,
+      "lat": 16.9911107,
+      "lng": -25.2363408
     },
     {
       "name": "Praia",
-      "population": 127832
+      "population": 127832,
+      "lat": 14.930464,
+      "lng": -23.512669
     },
     {
       "name": "Ribeira Brava",
-      "population": 1884
+      "population": 1884,
+      "lat": 16.6070739,
+      "lng": -24.2033843
     },
     {
       "name": "Ribeira Grande (incl. Ponta do Sol)",
@@ -1259,7 +1865,9 @@
     },
     {
       "name": "Sal Rei",
-      "population": 5407
+      "population": 5407,
+      "lat": 16.1791667,
+      "lng": -22.9166667
     },
     {
       "name": "Santa Maria (incl. Espargos)",
@@ -1267,19 +1875,27 @@
     },
     {
       "name": "S�o Domingos {Sao Domingos}",
-      "population": 2583
+      "population": 2583,
+      "lat": 15.032935,
+      "lng": -23.564448
     },
     {
       "name": "S�o Filipe {Sao Filipe}",
-      "population": 8125
+      "population": 8125,
+      "lat": 14.8958333,
+      "lng": -24.4958333
     },
     {
       "name": "Tarrafal",
-      "population": 6177
+      "population": 6177,
+      "lat": 15.275,
+      "lng": -23.7541667
     },
     {
       "name": "Tarrafal de S�o Nicolau {Tarrafal de Sao Nicolau}",
-      "population": 3766
+      "population": 3766,
+      "lat": 16.5666667,
+      "lng": -24.3583333
     },
     {
       "name": "Vila do Maio (Porto Ingl�s)",
@@ -1293,7 +1909,9 @@
     },
     {
       "name": "Baboua",
-      "population": 6812
+      "population": 6812,
+      "lat": 5.803210099999999,
+      "lng": 14.8308695
     },
     {
       "name": "Bambari",
@@ -1305,7 +1923,9 @@
     },
     {
       "name": "Bangui",
-      "population": 622771
+      "population": 622771,
+      "lat": 4.361698,
+      "lng": 18.555975
     },
     {
       "name": "Baoro",
