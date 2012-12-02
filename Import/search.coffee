@@ -100,18 +100,25 @@ search = (term, cb) ->
       data += d
       return
     res.on 'close', ->
-      cb new Error("Connection closed")
-      cb = null
+      if cb?
+        cb new Error("Connection closed")
+        cb = null
       return
     res.on 'end', ->
       try
         data = JSON.parse data
       catch e
-        return cb e
-      cb null, data
+        if cb?
+          cb e
+          cb = null
+        return
+      if cb?
+        cb null, data
+        cb = null
   req.on 'error', (err) ->
-    cb err
-    cb = null
+    if cb?
+      cb err
+      cb = null
     return
   return
 
