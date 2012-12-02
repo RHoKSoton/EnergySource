@@ -64,19 +64,15 @@ delay = (ms, cb) -> setTimeout cb, ms
 shuffle = (o) ->
   return Math.round(Math.random()*2)-1
 
-POP_THRESHOLD = 10000
+POP_THRESHOLD = 100000
 ACTUALLY_SEARCH = 0
-RAND_DELAY = 40000
+RAND_DELAY = 50000
 google_are_angry = false
 
 search = (term, cb) ->
   url = "https://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=#{encodeURIComponent term}"
   parsed = Url.parse url
-  options = 
-    hostname: parsed.hostname
-    port: parsed.port
-    path: parsed.path
-    agent: false
+
   # Randomize our UA
   ua = userAgentList[Math.floor Math.random()*userAgentList.length]
   # Randomize our referrer
@@ -84,6 +80,18 @@ search = (term, cb) ->
   words.sort shuffle
   referrer += words.slice(0, Math.ceil Math.random()*4).join("-")
   referrer += ".html"
+
+  options =
+    hostname: parsed.hostname
+    port: parsed.port
+    path: parsed.path
+    agent: false
+    headers:
+      'User-Agent': ua
+      'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+      'Referer': referrer
+      'Accept-Language': 'en-US,en;q=0.8'
+      'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3'
 
   req = https.get options, (res) ->
     res.setEncoding 'utf8'
@@ -105,11 +113,6 @@ search = (term, cb) ->
     cb err
     cb = null
     return
-  req.setHeader 'User-Agent', ua
-  req.setHeader 'Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
-  req.setHeader 'Referer', referrer
-  req.setHeader 'Accept-Language', 'en-US,en;q=0.8'
-  req.setHeader 'Accept-Charset', 'ISO-8859-1,utf-8;q=0.7,*;q=0.3'
   return
 
 data = JSON.parse fs.readFileSync 'data.json'
@@ -139,7 +142,7 @@ for componentType, componentSpecs of data.components then do (componentType, com
         #term = 'intext:sonnenschein intext:battery intext:(nairobi | kisumu | mombasa | dadaab) intext:kenya -filetype:pdf (site:.com | site:.ke)'
         term = "#{componentSpec.Term} intext:\"(#{city.name}), #{countryName}\" (site:.com | site:.#{countrySpec.tld}) -filetype:pdf"
 
-        delay started*RAND_DELAY + Math.random()*(RAND_DELAY/4), ->
+        delay (started-1)*RAND_DELAY + Math.random()*(RAND_DELAY/4), ->
           if started <= ACTUALLY_SEARCH and not google_are_angry
             console.error "Search #{reqNum}: #{term}"
             search term, (err, res) ->
