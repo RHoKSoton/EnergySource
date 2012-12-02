@@ -1,11 +1,8 @@
-
-html, body
-{
+html,body {
 	height: 100%;
 }
 
-body
-{
+body {
 	margin: 0px;
 	padding: 0px;
 	background: #EDEBED url(images/img01.png) repeat;
@@ -14,8 +11,7 @@ body
 	color: #6D6D6D;
 }
 
-h1, h2, h3
-{
+h1,h2,h3 {
 	margin: 0px;
 	padding: 0px;
 	/*text-transform: uppercase; */
@@ -23,126 +19,105 @@ h1, h2, h3
 	font-weight: 300;
 }
 
-p, ol, ul
-{
+p,ol,ul {
 	margin-top: 0px;
 }
 
-p
-{
+p {
 	line-height: 2em;
 }
 
-strong
-{
+strong {
+	
 }
 
-a
-{
+a {
 	color: #B42A5C;
 }
 
-a:hover
-{
+a:hover {
 	text-decoration: none;
 }
 
-a img
-{
+a img {
 	border: none;
 }
 
-img.border
-{
+img.border {
+	
 }
 
-img.alignleft
-{
+img.alignleft {
 	float: left;
 	margin-top: 10px;
 	margin-right: 30px;
 	margin-bottom: 10px;
 }
 
-img.alignright
-{
+img.alignright {
 	float: right;
 }
 
-img.aligncenter
-{
+img.aligncenter {
 	margin: 0px auto;
 }
 
-hr
-{
+hr {
 	display: none;
 }
 
 /** WRAPPER */
-
-#wrapper
-{
+#wrapper {
 	overflow: hidden;
 	padding-top: 10px;
 }
 
-.container
-{
+.container {
 	width: 1200px;
 	margin: 0px auto;
 }
 
-.clearfix
-{
+.clearfix {
 	clear: both;
 }
 
 /** HEADER */
-
-#header-wrapper
-{
+#header-wrapper {
 	overflow: hidden;
 	height: 87px;
 	margin: 0px auto;
-	box-shadow: 0px 0px 10px 5px rgba(0,0,0,.05);
+	box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .05);
 }
 
-#header
-{
+#header {
 	overflow: hidden;
 	height: 75px;
 	background: url(images/img02.png) repeat-x left top;
 }
 
 /* Logo */
-
-#logo
-{
+#logo {
 	float: left;
 	width: 350px;
 	padding: 0px 0px 0px 10px;
 	text-shadow: 1px 1px 0px #814059;
-    /* text-transform: uppercase;*/
+	/* text-transform: uppercase;*/
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
-#logo h1
-{
+#logo h1 {
 	float: left;
 	padding: 5px 10px 0px 0px;
 }
 
-#logo h1 a
-{
+#logo h1 a {
 	text-decoration: none;
 	font-size: 2em;
 	font-weight: 300;
 	color: #FFFFFF;
 }
 
-#logo p
-{
+#logo p {
 	display: block;
 	padding: 25px 0px 0px 40px;
 	letter-spacing: 1px;
@@ -150,22 +125,18 @@ hr
 	color: #E5C5C9;
 }
 
-#logo p a
-{
+#logo p a {
 	color: #E5C5C9;
 }
 
 /* Menu */
-
-#menu
-{
+#menu {
 	float: right;
 	width: 750px;
 	padding: 20px 30px 0px 0px;
 }
 
-#menu ul
-{
+#menu ul {
 	float: right;
 	margin: 0;
 	padding: 0px 0px 0px 0px;
@@ -173,13 +144,11 @@ hr
 	line-height: normal;
 }
 
-#menu li
-{
+#menu li {
 	float: left;
 }
 
-#menu a
-{
+#menu a {
 	display: block;
 	margin-left: 1px;
 	padding: 7px 0px 7px 30px;
@@ -194,238 +163,219 @@ hr
 	color: #FFFFFF;
 }
 
-#menu a:hover, #menu .current_page_item a
-{
+#menu a:hover,#menu .current_page_item a {
 	text-decoration: none;
 	border-radius: 5px;
 	color: #FFFFFF;
 }
 
 /** PAGE */
-
-#page
-{
+#page {
 	overflow: hidden;
 	width: 1140px;
 	margin: 10px auto 30px auto;
 	padding: 0px 30px;
 	background: #FFFFFF;
-	box-shadow: 0px 0px 10px 5px rgba(0,0,0,.05);
+	box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .05);
 }
 
 /** CONTENT */
-
-#content
-{
+#content {
 	float: left;
 	width: 800px;
-    height: 572px;
+	height: 572px;
 }
 
-#content h2
-{
+#content h2 {
 	padding: 0px 0px 20px 0px;
 	letter-spacing: -2px;
 	font-size: 3.5em;
 	color: #383838;
 }
 
-#content h2 a
-{
+#content h2 a {
 	text-decoration: none;
 	color: #383838;
 }
 
-#content .onecolumn
-{
+#content .onecolumn {
 	margin-bottom: 50px;
 }
 
 /** SIDEBAR */
-
-#sidebar
-{
+#sidebar {
 	float: right;
 	width: 286px;
-    margin-left: 38px;
+	margin-left: 38px;
 }
 
-#sidebar h2
-{
+#sidebar h2 {
 	padding: 0px 0px 20px 0px;
 	font-size: 2.5em;
 	color: #383838;
 }
 
 /* Footer */
-
-#footer
-{
+#footer {
 	overflow: hidden;
 	padding: 30px 0px 50px 0px;
 	background: url(images/img04.png) repeat-x left top;
 }
 
-#footer p
-{
+#footer p {
 	text-shadow: 1px 1px 0px #FFFFFF;
 	font-size: 12px;
 	color: #6D6D6D;
 }
 
-#footer a
-{
+#footer a {
 	text-decoration: underline;
 	color: #6D6D6D;
 }
 
-#footer a:hover
-{
+#footer a:hover {
 	text-decoration: none;
 }
 
-#footer .copyright
-{
+#footer .copyright {
 	float: left;
 }
 
-#footer .legal
-{
+#footer .legal {
 	float: right;
 }
 
 /* Two Column Content */
-
-#two-columns
-{
+#two-columns {
 	overflow: hidden;
 	padding: 40px 0px 0px 0px;
 	border-top: 1px solid #E0E0E0;
 }
 
-#two-columns h2
-{
+#two-columns h2 {
 	letter-spacing: normal;
 	font-size: 2.5em;
 }
 
-#two-columns #column1
-{
+#two-columns #column1 {
 	float: left;
 	width: 470px;
 }
 
-#two-columns #column2
-{
+#two-columns #column2 {
 	float: right;
 	width: 280px;
 }
 
 /* Four Column Content */
-
-#four-columns
-{
+#four-columns {
 	overflow: hidden;
 	padding: 40px 0px;
 	background: url(images/img04.png) repeat-x left top;
 	text-shadow: 1px 1px 0px #FFFFFF;
 }
 
-#four-columns h2
-{
+#four-columns h2 {
 	padding: 0px 0px 20px 0px;
 	font-size: 2em;
 	color: #383838;
 }
 
-#four-columns #fbox1
-{
+#four-columns #fbox1 {
 	float: left;
 	width: 282px;
 	margin-right: 24px;
 }
 
-#four-columns #fbox2
-{
+#four-columns #fbox2 {
 	float: left;
 	width: 282px;
 	margin-right: 24px;
 }
 
-#four-columns #fbox3
-{
+#four-columns #fbox3 {
 	float: left;
 	width: 282px;
 }
 
-#four-columns #fbox4
-{
+#four-columns #fbox4 {
 	float: right;
 	width: 282px;
 }
 
 /* List Style 1 */
-
-.list-style1
-{
+.list-style1 {
 	margin: 0px;
 	padding: 0px;
 	list-style: none;
 }
 
-.list-style1 li
-{
+.list-style1 li {
 	padding: 40px 0px 30px 0px;
 	border-top: 1px solid #E0E0E0;
 }
 
-.list-style1 .date
-{
+.list-style1 .date {
 	font-weight: bold;
 	color: #212121;
 }
 
-.list-style1 .first
-{
+.list-style1 .first {
 	padding-top: 0px;
 	border-top: none;
 }
 
 /* List Style 2 */
-
-.list-style2
-{
+.list-style2 {
 	margin: 0px;
 	padding: 0px 0px 20px 0px;
 	list-style: none;
 }
 
-.list-style2 li
-{
+.list-style2 li {
 	padding: 10px 0px 10px 0px;
 	border-top: 1px solid #E0E0E0;
 }
 
-.list-style2 .first
-{
+.list-style2 .first {
 	padding-top: 0px;
 	border-top: none;
 }
 
 /* List Style 1 */
-
-.link-style
-{
+.link-style {
 	display: inline-block;
 	margin-top: 10px;
 	padding: 5px 15px;
 	background: #363636;
-	box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.6), inset 0px 2px 0px 0px rgba(255,255,255,0.1), inset 0px 0px 0px 2px rgba(255,255,255,0.2);
+	box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.6), inset 0px 2px 0px
+		0px rgba(255, 255, 255, 0.1), inset 0px 0px 0px 2px
+		rgba(255, 255, 255, 0.2);
 	letter-spacing: 1px;
 	text-decoration: none;
 	text-shadow: 1px 0px 1px #5C1111;
 	/*text-transform: uppercase; */
 	color: #FFFFFF;
-    width: 260px;
-    text-align: center;
+	width: 260px;
+	text-align: center;
+}
+
+#Text1 {
+	width: 284px;
+}
+
+.style1 {
+	width: 171px;
+}
+
+.style2 {
+	width: 594px;
+}
+
+.style3 {
+	width: 799px;
+}
+
+.style4 {
+	width: 162px;
 }

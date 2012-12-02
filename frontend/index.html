@@ -11,132 +11,116 @@ Released   : 20121105
 
 -->
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Energy Portal</title>
-        <meta name="keywords" content="" />
-        <meta name="description" content="" />
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css" />
-        <link href="default.css" rel="stylesheet" type="text/css" media="all" />
-
-        <!--[if IE 6]>
-        <link href="default_ie6.css" rel="stylesheet" type="text/css" />
-        <![endif]-->
-        <style type="text/css">
-            #Text1
-            {
-                width: 284px;
-            }
-            .style1
-            {
-                width: 171px;
-            }
-            .style2
-            {
-                width: 594px;
-            }
-            .style3
-            {
-                width: 799px;
-            }
-            .style4
-            {
-                width: 162px;
-            }
-        </style>
-        <script language="javascript">
-            var checktoggle = true;
-            function checkAll(formname) {
-                var checkboxes = new Array();
-                checkboxes = document.getElementsByTagName('input');
-
-                for (var i = 0; i < checkboxes.length; i++) {
-                    if (checkboxes[i].type == 'radio') {
-                        checkboxes[i].checked = this.checktoggle;
-                    }
-                }
-                this.checktoggle = !checktoggle;
-            }
-        </script>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Energy Portal</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link
+	href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"
+	rel="stylesheet" type="text/css" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
 
 
-        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-          <script type="text/javascript" src="javascript/script.js"></script>
+
+<script type="text/javascript"
+	src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="javascript/scores.js"></script>
+<script type="text/javascript" src="javascript/script.js"></script>
 
 
-    </head>
-    <body onLoad="initializeMaps()">
-        <div id="wrapper">
-            <div id="header-wrapper" class="container">
-                <div id="header" class="container">
-                    <div id="logo">
-                        <h1><a href="#">EnergySource</a></h1>
+</head>
+<body onLoad="initializeMaps()">
+	<div id="wrapper">
+		<div id="header-wrapper" class="container">
+			<div id="header" class="container">
+				<div id="logo">
+					<h1>
+						<a href="#">EnergySource</a>
+					</h1>
 
-                    </div>
-                    <div id="menu">
-                        <ul>
-                            <li><a href="#" accesskey="1" title="">Homepage</a></li>
-                            <li><a href="#" accesskey="3" title="">About Us</a></li>
-                            <li><a href="#" accesskey="5" title="">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
+				</div>
+				<div id="menu">
+					<ul>
+						<li><a href="#" accesskey="1" title="">Homepage</a></li>
+						<li><a href="#" accesskey="3" title="">About Us</a></li>
+						<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
 
-            </div>
-            <div id="page" class="container">
-                <div id="content">
-                    <div class="onecolumn">
-                        <div class="content"><br />
-                            <p>
-    <div id="map" style="width: 800px; height: 500px">
-    </div>
- 
-</small><br />
-                        </div>
-                    </div>
+		</div>
+		<div id="page" class="container">
+			<div id="content">
+				<div class="onecolumn">
+					<div class="content">
+						<br />
+						<p>
+						<div id="map" style="width: 800px; height: 500px"></div>
 
-                </div>
-                <div id="sidebar" stly="float:left">
-                    <div><br />
-                        <h3>Search a Country...</h2>
-                            <ul class="list-style1">
-                                <li class="first">
-                                    <p>
-                                        <input id="Text1" type="text" onclick="return Text1_onclick()" 
-                                               value="Kenya" /></p>
-                                    <p>
-                                
-                                    <table id="components_list">
-                                    <tr><td colspan="3">&nbsp;</td></tr>
-                                             <tr>
-                                                    <td colspan="3"><a href="#" class="link-style">View All Components</a></td>
-                                               
-                                                </tr>
+						</small><br />
+					</div>
+				</div>
 
-                                                 <tr>
-                                                    <td colspan="3"></td>
-                                               
-                                                </tr>
-                                            <tr><td class="style2" colspan="3"><br /><strong>View one component </strong></td>
-                                                <td class="style1"></td></tr>
-      										
-                                        </table>
-                                            </p>
-                                    <p>&nbsp;</p>
-                                </li>
-                            </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+			</div>
+			<div id="sidebar" stly="float:left">
+				<div>
+					<br />
+					<h3>
+						Search a Country...
+						</h2>
+						<ul class="list-style1">
+							<li class="first">
+								<p>
+									<input id="Text1" type="text" onclick="return Text1_onclick()"
+										value="Kenya" />
+								</p>
+								<p>
+								<table id="components_list">
+									<tr>
+										<td colspan="3">&nbsp;</td>
+									</tr>
+									
 
-        <div id="footer" class="container">
-            <p class="copyright">Copyright (c) 2012 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org">FCT</a>. Photos by <a href="http://fotogrph.com/">Fotogrph</a>.</p>
-            <p class="legal"><a href="#">Privacy</a> | <a href="#">Terms &amp; Conditions</a></p>
-        </div>
-	    <script type="text/javascript" src="js/jquery.js"></script>
-	    <script type="text/javascript" src="js/scores.js"></script>
-	    <script type="text/javascript" src="js/data.js"></script>
-	    <script type="text/javascript" src="js/energy.js"></script>
-    </body>
+									<tr>
+										<td colspan="3"></td>
+
+									</tr>
+									<tr>
+										<td class="style2" colspan="3"><br />
+										<strong>View component </strong></td>
+										<td class="style1"></td>
+									</tr>
+									<tr>
+										<td><input name="component" data-comp_name="Danfos" id="Danfos" type="radio" checked="true"></td>
+										<td><b>all components</b></td>
+										<td></td>
+									</tr>
+									
+
+								</table>
+								</p>
+								<p>&nbsp;</p>
+							</li>
+						</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer" class="container">
+		<p class="copyright">
+			Copyright (c) 2012 Sitename.com. All rights reserved. Design by <a
+				href="http://www.freecsstemplates.org">FCT</a>. Photos by <a
+				href="http://fotogrph.com/">Fotogrph</a>.
+		</p>
+		<p class="legal">
+			<a href="#">Privacy</a> | <a href="#">Terms &amp; Conditions</a>
+		</p>
+	</div>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/scores.js"></script>
+	<script type="text/javascript" src="js/data.js"></script>
+	<script type="text/javascript" src="js/energy.js"></script>
+</body>
 </html>
