@@ -22,9 +22,9 @@ function initializeMaps() {
         pos = new google.maps.LatLng(latitude, longitude);
         bounds.extend(pos);
 
-        if (markers[i]["numResults"] >= 100) {
+        if (markers[i]["numResults"] >= 40) {
             image = "images/greenLarge.png";
-        } else if (markers[i]["numResults"] >3) {
+        } else if (markers[i]["numResults"] >0) {
             image = "images/yellowLarge.png";
         } else {
             image = "images/redLarge.png";

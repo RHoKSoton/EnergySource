@@ -33,17 +33,13 @@ var energy = {
 		for (var i = 0, i_len = scores.length; i < i_len; i++) {
 			var score = scores[i];
 			if (score.city === city_name) {
-				var num_results = score.gResults.length;
-				if (num_results > 0) {
-					num_results = score.numResults;
-				}
-				var norm_score = num_results / 1000;
+        var num_results = score.numResults || 0;
 				var comp_dom = $("input[data-comp_name='" + score.manufacturer + "']");
 				var image_link = 'Button-Blank-Red-icon.png';
-				if (norm_score < 0.03) {
+				if (num_results < 1) {
 					image_link = 'Button-Blank-Red-icon.png';
 				}
-				else if (norm_score < 0.1) {
+				else if (num_results < 40) {
 					image_link = 'Button-Blank-Yellow-icon.png';
 				}
 				else {
