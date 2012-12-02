@@ -13,6 +13,27 @@ function initializeMaps() {
     var iconGreen = 'images/img/greenLarge.png';
 
     //alert(markers.length);
+    var oldMarkers = markers;
+    markers = [];
+    var cities = {};
+
+    for (i = 0; i < oldMarkers.length; i++) {
+      var m = oldMarkers[i];
+      if (!cities[m.city]) {
+        cities[m.city] = {
+          city: m.city,
+          results: 0,
+          count: 0
+        };
+      }
+      cities[m.city].results += m.numResults;
+      cities[m.city].count++;
+      cities[m.city].numResults = Math.ceil(cities[m.city].results / cities[m.city].count);
+
+    }
+    for (var k in cities) {
+      markers.push(cities[k]);
+    }
 
     for (i = 0; i < markers.length; i++) {
     
