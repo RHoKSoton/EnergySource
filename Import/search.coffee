@@ -56,6 +56,9 @@ util = require 'util'
 fs = require 'fs'
 Url = require 'url'
 BING_API_KEY = process.env.BING_API_KEY
+if !BING_API_KEY
+  console.error "NO API KEY!"
+  process.exit 1
 
 
 delay = (ms, cb) -> setTimeout cb, ms
@@ -125,7 +128,8 @@ googleSearch = (term, cb) ->
   return
 
 bingSearch = (phrase, cb) ->
-  phrase = "'#{encodeURIComponent phrase}'"
+  #phrase = "'#{encodeURIComponent phrase}'"
+  phrase = "'#{phrase.replace(/'/g,"\\'")}'"
   options =
     hostname: "api.datamarket.azure.com"
     port: 443
