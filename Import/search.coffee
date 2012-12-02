@@ -217,12 +217,16 @@ population = JSON.parse fs.readFileSync 'population.json', 'utf8'
 cities = []
 lastName = ""
 for countryName, list of population
+  countryName = countryName.replace /-.*$/, ""
+  countryName = countryName.replace /([a-z])([A-Z])/g,"$1 $2"
   for citySpec in list
     name = citySpec.name
-    if name.match /[{(]/
-      [ignore, name] = name.match /[({](.*?)[)}]/
+    if name.match /[{(\[]/
+      [ignore, name] = name.match /[\[({](.*?)[\])}]/
     name = name.replace /,/g, ":"
     if name.match /^incl\./
+      # Skip this!
+      continue
       name = lastName + " " + name
     else
       lastName = name
@@ -262,7 +266,7 @@ for city in cities then do (city) ->
             #console.error util.inspect res, false, null, true
             numResults = res.d.results.length
             score = (if numResults > 100 then 2 else if numResults > 10 then 1 else 0)
-            console.error "Results [#{reqNum}] for #{componentSpec.Manufacturer} #{componentSpec.Part} in #{city.name}: #{numResults ? 0}"
+            console.error "Results [#{reqNum}] for #{componentSpec.Manufacturer} #{componentSpec.Part} in #{city.city}: #{numResults ? 0}"
             resultsCropped = res.d.results
             resultsCropped = resultsCropped.slice(0,Math.min(4,resultsCropped.length))
             outputTuples.push
