@@ -15,6 +15,10 @@ var energy = {
 		}
 		$(".score_link").hide();
 		$("#clicked_city").closest("td").hide();
+		components_list.find("input").live("click", function(e) {
+			energy.display_component($(this).closest("tr").find("input").attr("data-comp_name"));
+			e.preventDefault();
+		})
 		$(".component_link").live("click", function(e) {
 			energy.component_clicked($(this).closest("tr").find("input").attr("data-comp_name"));
 			e.preventDefault();
@@ -50,6 +54,9 @@ var energy = {
 		}
 		
 	},
+  display_component: function(comp_name) {
+    console.log("Selected: "+comp_name);
+  },
 	component_clicked: function(comp_name) {
 		for (var i = 0, i_len = scores.length; i < i_len; i++) {
 			var score = scores[i];
