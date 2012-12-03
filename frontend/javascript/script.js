@@ -126,5 +126,7 @@ function initializeMaps() {
     		}
     	});
     });
-    map.fitBounds(bounds);
+    //map.fitBounds(bounds);
+    map.setCenter(new google.maps.LatLng( -0.023559, 37.906193));
+    map.setZoom(6);
 }
