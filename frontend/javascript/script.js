@@ -22,6 +22,7 @@ function initializeMaps() {
       if (!cities[m.city]) {
         cities[m.city] = {
           city: m.city,
+          country: m.country,
           results: 0,
           count: 0
         };
@@ -35,12 +36,24 @@ function initializeMaps() {
       markers.push(cities[k]);
     }
 
+    max = 200;
     for (i = 0; i < markers.length; i++) {
+      if (max < 0) break;
     
-    	var city =  markers[i]["city"];
-      var latitude, longitude;
-      for (var j = 0; j < population.Kenya.length; j++) {
-        var city2 = population.Kenya[j];
+      var m = markers[i];
+      if (!m.city || !m.country) {
+        console.log(m);
+        continue;
+      }
+    	var city = m.city
+      var country = m.country.replace(/ /g,"");
+      var latitude = 0, longitude = 0;
+      if (!population[country]) {
+        console.warn("Couldn't find country: "+country);
+        continue;
+      }
+      for (var j = 0; j < population[country].length; j++) {
+        var city2 = population[country][j];
         //console.log(city2.name + " vs " + city);
         if (city2.name  == city) {
           latitude = city2.lat;
@@ -53,6 +66,7 @@ function initializeMaps() {
         console.log("Failed to find lat for "+city);
         continue;
       }
+      max--;
         
         pos = new google.maps.LatLng(latitude, longitude);
         bounds.extend(pos);
