@@ -52,8 +52,9 @@ function initializeMaps() {
         console.warn("Couldn't find country: "+country);
         continue;
       }
+      var city2 = null;
       for (var j = 0; j < population[country].length; j++) {
-        var city2 = population[country][j];
+        city2 = population[country][j];
         //console.log(city2.name + " vs " + city);
         if (city2.name  == city) {
           latitude = city2.lat;
@@ -86,14 +87,14 @@ function initializeMaps() {
             icon: image
         });
 
-        google.maps.event.addListener(marker, 'click', (function (marker, i, city, map) {
+        google.maps.event.addListener(marker, 'click', (function (marker, i, country, city, city2, map) {
 
             return function () {
-                infowindow.setContent(city);
+                infowindow.setContent(city+", "+country+"<br />Population: "+city2.population);
                 infowindow.open(map, marker);
-                energy.city_clicked(city);
+                energy.city_clicked(city, country);
             }
-        })(marker, i, city, map));
+        })(marker, i, country, city, city2, map));
         
     }
     var geocoder = new google.maps.Geocoder();
