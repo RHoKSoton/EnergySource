@@ -88,9 +88,9 @@ function initializeMaps() {
         if (markers[i]["numResults"] >= 50) {
             image = "images/greenLarge.png";
         } else if (markers[i]["numResults"] >= 3) {
-            image = "images/yellowLarge.png";
+            image = "images/Button-Blank-Yellow-icon.png";
         } else {
-            image = "images/redLarge.png";
+            image = "images/Button-Blank-Red-icon.png";
         }
         console.log(city+" : "+markers[i].numResults);
 
