@@ -10,7 +10,7 @@ var energy = {
 			for (var i = 0, i_len = data.components[component].length; i < i_len; i++) {
 				var mf = data.components[component][i];
 				var mf_name = mf.Manufacturer;
-				components_list.append("<tr><td style='height:25px'><input name='component' data-comp_name='" + mf_name + "' id='" + mf_name + "' type='radio' style='display:none'/></td><td class='style3'><a class='component_link' href=''>" + mf_name + "(" + mf.Part + ") </a></td><td class='style4'><a class='score_link'><img class='score_light' align='right' alt='' src='images/Button-Blank-Red-icon.png' /></a></td></tr>");
+				components_list.append("<tr><td style='height:25px'><input name='component' data-comp_name='" + mf_name + "' id='" + mf_name + "' type='radio' /></td><td class='style3'><a class='component_link' href=''>" + mf_name + "(" + mf.Part + ") </a></td><td class='style4'><a class='score_link'><img class='score_light' align='right' alt='' src='images/Button-Blank-Red-icon.png' /></a></td></tr>");
 			}
 		}
 		$(".score_link").hide();
