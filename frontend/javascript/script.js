@@ -49,7 +49,7 @@ function initializeMaps() {
       markers.push(cities[k]);
     }
 
-    max = 200;
+    max = 500;
     for (i = 0; i < markers.length; i++) {
       if (max < 0) break;
     
