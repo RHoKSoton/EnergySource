@@ -41,10 +41,10 @@ var energy = {
         var num_results = score.numResults || 0;
 				var comp_dom = $("input[data-comp_name='" + score.manufacturer + "']");
 				var image_link = 'Button-Blank-Red-icon.png';
-				if (num_results < 1) {
+				if (num_results < 3) {
 					image_link = 'Button-Blank-Red-icon.png';
 				}
-				else if (num_results < 40) {
+				else if (num_results < 50) {
 					image_link = 'Button-Blank-Yellow-icon.png';
 				}
 				else {
@@ -62,7 +62,7 @@ var energy = {
 		for (var i = 0, i_len = scores.length; i < i_len; i++) {
 			var score = scores[i];
 			if (score.city === energy.clicked_city && score.manufacturer === comp_name) {
-				window.open("http://google.com/search?q=" + score.searchTerm, "_blank");
+				window.open("http://bing.com/search?q=" + score.searchTerm, "_blank");
 				break;
 			}
 		}
@@ -72,8 +72,8 @@ var energy = {
 		for (var i = 0, i_len = scores.length; i < i_len; i++) {
 			var score = scores[i];
 			if (score.city === energy.clicked_city && score.manufacturer === comp_name) {
-				if (score.gResults.length > 0) {
-					window.open(score.gResults[0].unescapedUrl, "_blank");
+				if (score.bingResults.length > 0) {
+					window.open(score.bingResults[0].Url, "_blank");
 				}
 				break;
 			}

@@ -24,12 +24,25 @@ function initializeMaps() {
           city: m.city,
           country: m.country,
           results: 0,
-          count: 0
+          count: 0,
+          greenCount: 0,
+          orangeCount: 0,
+          numResults: 0
         };
       }
-      cities[m.city].results += m.numResults;
-      cities[m.city].count++;
-      cities[m.city].numResults = Math.ceil(cities[m.city].results / cities[m.city].count);
+      if (m.numResults >= 50) {
+        cities[m.city].greenCount++;
+      } else if (m.numResults >= 3) {
+        cities[m.city].orangeCount++;
+      }
+      if (cities[m.city].greenCount >= 2) {
+        cities[m.city].numResults = 100;
+      } else if (cities[m.city].orangeCount >= 2) {
+        cities[m.city].numResults = 25;
+      }
+      //cities[m.city].results += m.numResults;
+      //cities[m.city].count++;
+      //cities[m.city].numResults = Math.ceil(cities[m.city].results / cities[m.city].count);
 
     }
     for (var k in cities) {
@@ -72,13 +85,14 @@ function initializeMaps() {
         pos = new google.maps.LatLng(latitude, longitude);
         bounds.extend(pos);
 
-        if (markers[i]["numResults"] >= 40) {
+        if (markers[i]["numResults"] >= 50) {
             image = "images/greenLarge.png";
-        } else if (markers[i]["numResults"] >0) {
+        } else if (markers[i]["numResults"] >= 3) {
             image = "images/yellowLarge.png";
         } else {
             image = "images/redLarge.png";
         }
+        console.log(city+" : "+markers[i].numResults);
 
         marker = new google.maps.Marker({
             position: pos,
