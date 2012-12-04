@@ -18,27 +18,26 @@ userAgentList = [
   'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7.5) Gecko/20060127 Netscape/8.1'
 ]
 
-# A nice bit of casual racism to pretend to be newspapers...
+# Randomly generated words
 words = [
-  'frog'
-  'prince'
-  'slum'
-  'dog'
-  'millionaire'
-  'obama'
-  'brother'
-  'food'
-  'public'
-  'happy'
-  'family'
-  'immigrants'
-  'jobs'
-  'recession'
-  'polish'
+  'report'
+  'stall'
+  'sometime'
+  'detected'
+  'geographical'
+  'terminal'
+  'determined'
+  'distant'
+  'recognition'
+  'offer'
+  'stunt'
+  'overhead'
+  'ear'
+  'suspect'
 ]
 
 # This is just for randomization you realise.
-# I do not endorse the reading of these publications.
+# I do not necessarily endorse the reading of these publications.
 refererList = [
   'http://www.dailymail.co.uk/'
   'http://www.techcrunch.com/'

@@ -14,7 +14,9 @@
     },
     {
       "name": "Cabinda (Tchiowa)",
-      "population": 21124
+      "population": 21124,
+      "lat": -5.556549,
+      "lng": 12.18984
     },
     {
       "name": "Camacupa",
@@ -84,7 +86,9 @@
     },
     {
       "name": "Namibe (Mo��medes)",
-      "population": 100000
+      "population": 100000,
+      "lat": -15.187,
+      "lng": 12.1561
     },
     {
       "name": "N'dalatando {Ndalatando}",
