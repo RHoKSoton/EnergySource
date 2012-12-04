@@ -3,7 +3,7 @@ util = require 'util'
 Url = require 'url'
 fs = require 'fs'
 
-DELAY = 40000
+DELAY = 5000
 
 delay = (ms, cb) -> setTimeout cb, ms
 
@@ -119,8 +119,9 @@ iteration = 0
 cities = []
 lastName = ""
 for countryName, list of population
-  countryName = countryName.replace /-.*$/, ""
-  countryName = countryName.replace /([a-z])([A-Z])/g,"$1 $2"
+  if !countryName.match /[ -]/
+    countryName = countryName.replace /-.*$/, ""
+    countryName = countryName.replace /([a-z])([A-Z])/g,"$1 $2"
   for citySpec, i in list then do (i, countryName, citySpec, list) ->
     if citySpec.lng?
       return
@@ -147,9 +148,7 @@ for countryName, list of population
     delay (count-1)*DELAY+Math.random()*DELAY/3, ->
       getloc city.country, city.city, (err, res) ->
         done++
-        if err?
-          console.log "GOT ERR"
-        else
+        if !err?
           list[i].lat = res.lat
           list[i].lng = res.lng
           console.log "#{countryName}, #{name}, #{res.lat}, #{res.lng}"
