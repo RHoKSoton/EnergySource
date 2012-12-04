@@ -1,0 +1,1252 @@
+[
+  {
+    "cc": "AD",
+    "country": "Andorra",
+    "tld": ".ad"
+  },
+  {
+    "cc": "AE",
+    "country": "United Arab Emirates",
+    "tld": ".ae"
+  },
+  {
+    "cc": "AF",
+    "country": "Afghanistan",
+    "tld": ".af"
+  },
+  {
+    "cc": "AG",
+    "country": "Antigua and Barbuda",
+    "tld": ".ag"
+  },
+  {
+    "cc": "AI",
+    "country": "Anguilla",
+    "tld": ".ai"
+  },
+  {
+    "cc": "AL",
+    "country": "Albania",
+    "tld": ".al"
+  },
+  {
+    "cc": "AM",
+    "country": "Armenia",
+    "tld": ".am"
+  },
+  {
+    "cc": "AO",
+    "country": "Angola",
+    "tld": ".ao"
+  },
+  {
+    "cc": "AQ",
+    "country": "Antarctica",
+    "tld": ".aq"
+  },
+  {
+    "cc": "AR",
+    "country": "Argentina",
+    "tld": ".ar"
+  },
+  {
+    "cc": "AS",
+    "country": "American Samoa",
+    "tld": ".as"
+  },
+  {
+    "cc": "AT",
+    "country": "Austria",
+    "tld": ".at"
+  },
+  {
+    "cc": "AU",
+    "country": "Australia",
+    "tld": ".au"
+  },
+  {
+    "cc": "AW",
+    "country": "Aruba",
+    "tld": ".aw"
+  },
+  {
+    "cc": "AX",
+    "country": "Åland Islands",
+    "tld": ".ax"
+  },
+  {
+    "cc": "AZ",
+    "country": "Azerbaijan",
+    "tld": ".az"
+  },
+  {
+    "cc": "BA",
+    "country": "Bosnia and Herzegovina",
+    "tld": ".ba"
+  },
+  {
+    "cc": "BB",
+    "country": "Barbados",
+    "tld": ".bb"
+  },
+  {
+    "cc": "BD",
+    "country": "Bangladesh",
+    "tld": ".bd"
+  },
+  {
+    "cc": "BE",
+    "country": "Belgium",
+    "tld": ".be"
+  },
+  {
+    "cc": "BF",
+    "country": "Burkina Faso",
+    "tld": ".bf"
+  },
+  {
+    "cc": "BG",
+    "country": "Bulgaria",
+    "tld": ".bg"
+  },
+  {
+    "cc": "BH",
+    "country": "Bahrain",
+    "tld": ".bh"
+  },
+  {
+    "cc": "BI",
+    "country": "Burundi",
+    "tld": ".bi"
+  },
+  {
+    "cc": "BJ",
+    "country": "Benin",
+    "tld": ".bj"
+  },
+  {
+    "cc": "BL",
+    "country": "Saint Barthélemy",
+    "tld": ".bl"
+  },
+  {
+    "cc": "BM",
+    "country": "Bermuda",
+    "tld": ".bm"
+  },
+  {
+    "cc": "BN",
+    "country": "Brunei Darussalam",
+    "tld": ".bn"
+  },
+  {
+    "cc": "BO",
+    "country": "Bolivia, Plurinational State of",
+    "tld": ".bo"
+  },
+  {
+    "cc": "BQ",
+    "country": "Bonaire, Sint Eustatius and Saba",
+    "tld": ".bq"
+  },
+  {
+    "cc": "BR",
+    "country": "Brazil",
+    "tld": ".br"
+  },
+  {
+    "cc": "BS",
+    "country": "Bahamas",
+    "tld": ".bs"
+  },
+  {
+    "cc": "BT",
+    "country": "Bhutan",
+    "tld": ".bt"
+  },
+  {
+    "cc": "BV",
+    "country": "Bouvet Island",
+    "tld": ".bv"
+  },
+  {
+    "cc": "BW",
+    "country": "Botswana",
+    "tld": ".bw"
+  },
+  {
+    "cc": "BY",
+    "country": "Belarus",
+    "tld": ".by"
+  },
+  {
+    "cc": "BZ",
+    "country": "Belize",
+    "tld": ".bz"
+  },
+  {
+    "cc": "CA",
+    "country": "Canada",
+    "tld": ".ca"
+  },
+  {
+    "cc": "CC",
+    "country": "Cocos (Keeling) Islands",
+    "tld": ".cc"
+  },
+  {
+    "cc": "CD",
+    "country": "Congo, the Democratic Republic of the",
+    "tld": ".cd"
+  },
+  {
+    "cc": "CF",
+    "country": "Central African Republic",
+    "tld": ".cf"
+  },
+  {
+    "cc": "CG",
+    "country": "Congo",
+    "tld": ".cg"
+  },
+  {
+    "cc": "CH",
+    "country": "Switzerland",
+    "tld": ".ch"
+  },
+  {
+    "cc": "CI",
+    "country": "Côte d'Ivoire",
+    "tld": ".ci"
+  },
+  {
+    "cc": "CK",
+    "country": "Cook Islands",
+    "tld": ".ck"
+  },
+  {
+    "cc": "CL",
+    "country": "Chile",
+    "tld": ".cl"
+  },
+  {
+    "cc": "CM",
+    "country": "Cameroon",
+    "tld": ".cm"
+  },
+  {
+    "cc": "CN",
+    "country": "China",
+    "tld": ".cn"
+  },
+  {
+    "cc": "CO",
+    "country": "Colombia",
+    "tld": ".co"
+  },
+  {
+    "cc": "CR",
+    "country": "Costa Rica",
+    "tld": ".cr"
+  },
+  {
+    "cc": "CU",
+    "country": "Cuba",
+    "tld": ".cu"
+  },
+  {
+    "cc": "CV",
+    "country": "Cape Verde",
+    "tld": ".cv"
+  },
+  {
+    "cc": "CW",
+    "country": "Curaçao",
+    "tld": ".cw"
+  },
+  {
+    "cc": "CX",
+    "country": "Christmas Island",
+    "tld": ".cx"
+  },
+  {
+    "cc": "CY",
+    "country": "Cyprus",
+    "tld": ".cy"
+  },
+  {
+    "cc": "CZ",
+    "country": "Czech Republic",
+    "tld": ".cz"
+  },
+  {
+    "cc": "DE",
+    "country": "Germany",
+    "tld": ".de"
+  },
+  {
+    "cc": "DJ",
+    "country": "Djibouti",
+    "tld": ".dj"
+  },
+  {
+    "cc": "DK",
+    "country": "Denmark",
+    "tld": ".dk"
+  },
+  {
+    "cc": "DM",
+    "country": "Dominica",
+    "tld": ".dm"
+  },
+  {
+    "cc": "DO",
+    "country": "Dominican Republic",
+    "tld": ".do"
+  },
+  {
+    "cc": "DZ",
+    "country": "Algeria",
+    "tld": ".dz"
+  },
+  {
+    "cc": "EC",
+    "country": "Ecuador",
+    "tld": ".ec"
+  },
+  {
+    "cc": "EE",
+    "country": "Estonia",
+    "tld": ".ee"
+  },
+  {
+    "cc": "EG",
+    "country": "Egypt",
+    "tld": ".eg"
+  },
+  {
+    "cc": "EH",
+    "country": "Western Sahara",
+    "tld": ".eh"
+  },
+  {
+    "cc": "ER",
+    "country": "Eritrea",
+    "tld": ".er"
+  },
+  {
+    "cc": "ES",
+    "country": "Spain",
+    "tld": ".es"
+  },
+  {
+    "cc": "ET",
+    "country": "Ethiopia",
+    "tld": ".et"
+  },
+  {
+    "cc": "FI",
+    "country": "Finland",
+    "tld": ".fi"
+  },
+  {
+    "cc": "FJ",
+    "country": "Fiji",
+    "tld": ".fj"
+  },
+  {
+    "cc": "FK",
+    "country": "Falkland Islands (Malvinas)",
+    "tld": ".fk"
+  },
+  {
+    "cc": "FM",
+    "country": "Micronesia, Federated States of",
+    "tld": ".fm"
+  },
+  {
+    "cc": "FO",
+    "country": "Faroe Islands",
+    "tld": ".fo"
+  },
+  {
+    "cc": "FR",
+    "country": "France",
+    "tld": ".fr"
+  },
+  {
+    "cc": "GA",
+    "country": "Gabon",
+    "tld": ".ga"
+  },
+  {
+    "cc": "GB",
+    "country": "United Kingdom",
+    "tld": "\".gb"
+  },
+  {
+    "cc": "GD",
+    "country": "Grenada",
+    "tld": ".gd"
+  },
+  {
+    "cc": "GE",
+    "country": "Georgia",
+    "tld": ".ge"
+  },
+  {
+    "cc": "GF",
+    "country": "French Guiana",
+    "tld": ".gf"
+  },
+  {
+    "cc": "GG",
+    "country": "Guernsey",
+    "tld": ".gg"
+  },
+  {
+    "cc": "GH",
+    "country": "Ghana",
+    "tld": ".gh"
+  },
+  {
+    "cc": "GI",
+    "country": "Gibraltar",
+    "tld": ".gi"
+  },
+  {
+    "cc": "GL",
+    "country": "Greenland",
+    "tld": ".gl"
+  },
+  {
+    "cc": "GM",
+    "country": "Gambia",
+    "tld": ".gm"
+  },
+  {
+    "cc": "GN",
+    "country": "Guinea",
+    "tld": ".gn"
+  },
+  {
+    "cc": "GP",
+    "country": "Guadeloupe",
+    "tld": ".gp"
+  },
+  {
+    "cc": "GQ",
+    "country": "Equatorial Guinea",
+    "tld": ".gq"
+  },
+  {
+    "cc": "GR",
+    "country": "Greece",
+    "tld": ".gr"
+  },
+  {
+    "cc": "GS",
+    "country": "South Georgia and the South Sandwich Islands",
+    "tld": ".gs"
+  },
+  {
+    "cc": "GT",
+    "country": "Guatemala",
+    "tld": ".gt"
+  },
+  {
+    "cc": "GU",
+    "country": "Guam",
+    "tld": ".gu"
+  },
+  {
+    "cc": "GW",
+    "country": "Guinea-Bissau",
+    "tld": ".gw"
+  },
+  {
+    "cc": "GY",
+    "country": "Guyana",
+    "tld": ".gy"
+  },
+  {
+    "cc": "HK",
+    "country": "Hong Kong",
+    "tld": ".hk"
+  },
+  {
+    "cc": "HM",
+    "country": "Heard Island and McDonald Islands",
+    "tld": ".hm"
+  },
+  {
+    "cc": "HN",
+    "country": "Honduras",
+    "tld": ".hn"
+  },
+  {
+    "cc": "HR",
+    "country": "Croatia",
+    "tld": ".hr"
+  },
+  {
+    "cc": "HT",
+    "country": "Haiti",
+    "tld": ".ht"
+  },
+  {
+    "cc": "HU",
+    "country": "Hungary",
+    "tld": ".hu"
+  },
+  {
+    "cc": "ID",
+    "country": "Indonesia",
+    "tld": ".id"
+  },
+  {
+    "cc": "IE",
+    "country": "Ireland",
+    "tld": ".ie"
+  },
+  {
+    "cc": "IL",
+    "country": "Israel",
+    "tld": ".il"
+  },
+  {
+    "cc": "IM",
+    "country": "Isle of Man",
+    "tld": ".im"
+  },
+  {
+    "cc": "IN",
+    "country": "India",
+    "tld": ".in"
+  },
+  {
+    "cc": "IO",
+    "country": "British Indian Ocean Territory",
+    "tld": ".io"
+  },
+  {
+    "cc": "IQ",
+    "country": "Iraq",
+    "tld": ".iq"
+  },
+  {
+    "cc": "IR",
+    "country": "Iran, Islamic Republic of",
+    "tld": ".ir"
+  },
+  {
+    "cc": "IS",
+    "country": "Iceland",
+    "tld": ".is"
+  },
+  {
+    "cc": "IT",
+    "country": "Italy",
+    "tld": ".it"
+  },
+  {
+    "cc": "JE",
+    "country": "Jersey",
+    "tld": ".je"
+  },
+  {
+    "cc": "JM",
+    "country": "Jamaica",
+    "tld": ".jm"
+  },
+  {
+    "cc": "JO",
+    "country": "Jordan",
+    "tld": ".jo"
+  },
+  {
+    "cc": "JP",
+    "country": "Japan",
+    "tld": ".jp"
+  },
+  {
+    "cc": "KE",
+    "country": "Kenya",
+    "tld": ".ke"
+  },
+  {
+    "cc": "KG",
+    "country": "Kyrgyzstan",
+    "tld": ".kg"
+  },
+  {
+    "cc": "KH",
+    "country": "Cambodia",
+    "tld": ".kh"
+  },
+  {
+    "cc": "KI",
+    "country": "Kiribati",
+    "tld": ".ki"
+  },
+  {
+    "cc": "KM",
+    "country": "Comoros",
+    "tld": ".km"
+  },
+  {
+    "cc": "KN",
+    "country": "Saint Kitts and Nevis",
+    "tld": ".kn"
+  },
+  {
+    "cc": "KP",
+    "country": "Korea, Democratic People's Republic of",
+    "tld": ".kp"
+  },
+  {
+    "cc": "KR",
+    "country": "Korea, Republic of",
+    "tld": ".kr"
+  },
+  {
+    "cc": "KW",
+    "country": "Kuwait",
+    "tld": ".kw"
+  },
+  {
+    "cc": "KY",
+    "country": "Cayman Islands",
+    "tld": ".ky"
+  },
+  {
+    "cc": "KZ",
+    "country": "Kazakhstan",
+    "tld": ".kz"
+  },
+  {
+    "cc": "LA",
+    "country": "Lao People's Democratic Republic",
+    "tld": ".la"
+  },
+  {
+    "cc": "LB",
+    "country": "Lebanon",
+    "tld": ".lb"
+  },
+  {
+    "cc": "LC",
+    "country": "Saint Lucia",
+    "tld": ".lc"
+  },
+  {
+    "cc": "LI",
+    "country": "Liechtenstein",
+    "tld": ".li"
+  },
+  {
+    "cc": "LK",
+    "country": "Sri Lanka",
+    "tld": ".lk"
+  },
+  {
+    "cc": "LR",
+    "country": "Liberia",
+    "tld": ".lr"
+  },
+  {
+    "cc": "LS",
+    "country": "Lesotho",
+    "tld": ".ls"
+  },
+  {
+    "cc": "LT",
+    "country": "Lithuania",
+    "tld": ".lt"
+  },
+  {
+    "cc": "LU",
+    "country": "Luxembourg",
+    "tld": ".lu"
+  },
+  {
+    "cc": "LV",
+    "country": "Latvia",
+    "tld": ".lv"
+  },
+  {
+    "cc": "LY",
+    "country": "Libya",
+    "tld": ".ly"
+  },
+  {
+    "cc": "MA",
+    "country": "Morocco",
+    "tld": ".ma"
+  },
+  {
+    "cc": "MC",
+    "country": "Monaco",
+    "tld": ".mc"
+  },
+  {
+    "cc": "MD",
+    "country": "Moldova, Republic of",
+    "tld": ".md"
+  },
+  {
+    "cc": "ME",
+    "country": "Montenegro",
+    "tld": ".me"
+  },
+  {
+    "cc": "MF",
+    "country": "Saint Martin (French part)",
+    "tld": ".mf"
+  },
+  {
+    "cc": "MG",
+    "country": "Madagascar",
+    "tld": ".mg"
+  },
+  {
+    "cc": "MH",
+    "country": "Marshall Islands",
+    "tld": ".mh"
+  },
+  {
+    "cc": "MK",
+    "country": "Macedonia, the former Yugoslav Republic of",
+    "tld": ".mk"
+  },
+  {
+    "cc": "ML",
+    "country": "Mali",
+    "tld": ".ml"
+  },
+  {
+    "cc": "MM",
+    "country": "Myanmar",
+    "tld": ".mm"
+  },
+  {
+    "cc": "MN",
+    "country": "Mongolia",
+    "tld": ".mn"
+  },
+  {
+    "cc": "MO",
+    "country": "Macao",
+    "tld": ".mo"
+  },
+  {
+    "cc": "MP",
+    "country": "Northern Mariana Islands",
+    "tld": ".mp"
+  },
+  {
+    "cc": "MQ",
+    "country": "Martinique",
+    "tld": ".mq"
+  },
+  {
+    "cc": "MR",
+    "country": "Mauritania",
+    "tld": ".mr"
+  },
+  {
+    "cc": "MS",
+    "country": "Montserrat",
+    "tld": ".ms"
+  },
+  {
+    "cc": "MT",
+    "country": "Malta",
+    "tld": ".mt"
+  },
+  {
+    "cc": "MU",
+    "country": "Mauritius",
+    "tld": ".mu"
+  },
+  {
+    "cc": "MV",
+    "country": "Maldives",
+    "tld": ".mv"
+  },
+  {
+    "cc": "MW",
+    "country": "Malawi",
+    "tld": ".mw"
+  },
+  {
+    "cc": "MX",
+    "country": "Mexico",
+    "tld": ".mx"
+  },
+  {
+    "cc": "MY",
+    "country": "Malaysia",
+    "tld": ".my"
+  },
+  {
+    "cc": "MZ",
+    "country": "Mozambique",
+    "tld": ".mz"
+  },
+  {
+    "cc": "NA",
+    "country": "Namibia",
+    "tld": ".na"
+  },
+  {
+    "cc": "NC",
+    "country": "New Caledonia",
+    "tld": ".nc"
+  },
+  {
+    "cc": "NE",
+    "country": "Niger",
+    "tld": ".ne"
+  },
+  {
+    "cc": "NF",
+    "country": "Norfolk Island",
+    "tld": ".nf"
+  },
+  {
+    "cc": "NG",
+    "country": "Nigeria",
+    "tld": ".ng"
+  },
+  {
+    "cc": "NI",
+    "country": "Nicaragua",
+    "tld": ".ni"
+  },
+  {
+    "cc": "NL",
+    "country": "Netherlands",
+    "tld": ".nl"
+  },
+  {
+    "cc": "NO",
+    "country": "Norway",
+    "tld": ".no"
+  },
+  {
+    "cc": "NP",
+    "country": "Nepal",
+    "tld": ".np"
+  },
+  {
+    "cc": "NR",
+    "country": "Nauru",
+    "tld": ".nr"
+  },
+  {
+    "cc": "NU",
+    "country": "Niue",
+    "tld": ".nu"
+  },
+  {
+    "cc": "NZ",
+    "country": "New Zealand",
+    "tld": ".nz"
+  },
+  {
+    "cc": "OM",
+    "country": "Oman",
+    "tld": ".om"
+  },
+  {
+    "cc": "PA",
+    "country": "Panama",
+    "tld": ".pa"
+  },
+  {
+    "cc": "PE",
+    "country": "Peru",
+    "tld": ".pe"
+  },
+  {
+    "cc": "PF",
+    "country": "French Polynesia",
+    "tld": ".pf"
+  },
+  {
+    "cc": "PG",
+    "country": "Papua New Guinea",
+    "tld": ".pg"
+  },
+  {
+    "cc": "PH",
+    "country": "Philippines",
+    "tld": ".ph"
+  },
+  {
+    "cc": "PK",
+    "country": "Pakistan",
+    "tld": ".pk"
+  },
+  {
+    "cc": "PL",
+    "country": "Poland",
+    "tld": ".pl"
+  },
+  {
+    "cc": "PM",
+    "country": "Saint Pierre and Miquelon",
+    "tld": ".pm"
+  },
+  {
+    "cc": "PN",
+    "country": "Pitcairn",
+    "tld": ".pn"
+  },
+  {
+    "cc": "PR",
+    "country": "Puerto Rico",
+    "tld": ".pr"
+  },
+  {
+    "cc": "PS",
+    "country": "Palestinian Territory, Occupied",
+    "tld": ".ps"
+  },
+  {
+    "cc": "PT",
+    "country": "Portugal",
+    "tld": ".pt"
+  },
+  {
+    "cc": "PW",
+    "country": "Palau",
+    "tld": ".pw"
+  },
+  {
+    "cc": "PY",
+    "country": "Paraguay",
+    "tld": ".py"
+  },
+  {
+    "cc": "QA",
+    "country": "Qatar",
+    "tld": ".qa"
+  },
+  {
+    "cc": "RE",
+    "country": "Réunion",
+    "tld": ".re"
+  },
+  {
+    "cc": "RO",
+    "country": "Romania",
+    "tld": ".ro"
+  },
+  {
+    "cc": "RS",
+    "country": "Serbia",
+    "tld": ".rs"
+  },
+  {
+    "cc": "RU",
+    "country": "Russian Federation",
+    "tld": ".ru"
+  },
+  {
+    "cc": "RW",
+    "country": "Rwanda",
+    "tld": ".rw"
+  },
+  {
+    "cc": "SA",
+    "country": "Saudi Arabia",
+    "tld": ".sa"
+  },
+  {
+    "cc": "SB",
+    "country": "Solomon Islands",
+    "tld": ".sb"
+  },
+  {
+    "cc": "SC",
+    "country": "Seychelles",
+    "tld": ".sc"
+  },
+  {
+    "cc": "SD",
+    "country": "Sudan",
+    "tld": ".sd"
+  },
+  {
+    "cc": "SE",
+    "country": "Sweden",
+    "tld": ".se"
+  },
+  {
+    "cc": "SG",
+    "country": "Singapore",
+    "tld": ".sg"
+  },
+  {
+    "cc": "SH",
+    "country": "Saint Helena, Ascension and Tristan da Cunha",
+    "tld": ".sh"
+  },
+  {
+    "cc": "SI",
+    "country": "Slovenia",
+    "tld": ".si"
+  },
+  {
+    "cc": "SJ",
+    "country": "Svalbard and Jan Mayen",
+    "tld": ".sj"
+  },
+  {
+    "cc": "SK",
+    "country": "Slovakia",
+    "tld": ".sk"
+  },
+  {
+    "cc": "SL",
+    "country": "Sierra Leone",
+    "tld": ".sl"
+  },
+  {
+    "cc": "SM",
+    "country": "San Marino",
+    "tld": ".sm"
+  },
+  {
+    "cc": "SN",
+    "country": "Senegal",
+    "tld": ".sn"
+  },
+  {
+    "cc": "SO",
+    "country": "Somalia",
+    "tld": ".so"
+  },
+  {
+    "cc": "SR",
+    "country": "Suriname",
+    "tld": ".sr"
+  },
+  {
+    "cc": "SS",
+    "country": "South Sudan",
+    "tld": ".ss"
+  },
+  {
+    "cc": "ST",
+    "country": "Sao Tome and Principe",
+    "tld": ".st"
+  },
+  {
+    "cc": "SV",
+    "country": "El Salvador",
+    "tld": ".sv"
+  },
+  {
+    "cc": "SX",
+    "country": "Sint Maarten (Dutch part)",
+    "tld": ".sx"
+  },
+  {
+    "cc": "SY",
+    "country": "Syrian Arab Republic",
+    "tld": ".sy"
+  },
+  {
+    "cc": "SZ",
+    "country": "Swaziland",
+    "tld": ".sz"
+  },
+  {
+    "cc": "TC",
+    "country": "Turks and Caicos Islands",
+    "tld": ".tc"
+  },
+  {
+    "cc": "TD",
+    "country": "Chad",
+    "tld": ".td"
+  },
+  {
+    "cc": "TF",
+    "country": "French Southern Territories",
+    "tld": ".tf"
+  },
+  {
+    "cc": "TG",
+    "country": "Togo",
+    "tld": ".tg"
+  },
+  {
+    "cc": "TH",
+    "country": "Thailand",
+    "tld": ".th"
+  },
+  {
+    "cc": "TJ",
+    "country": "Tajikistan",
+    "tld": ".tj"
+  },
+  {
+    "cc": "TK",
+    "country": "Tokelau",
+    "tld": ".tk"
+  },
+  {
+    "cc": "TL",
+    "country": "Timor-Leste",
+    "tld": ".tl"
+  },
+  {
+    "cc": "TM",
+    "country": "Turkmenistan",
+    "tld": ".tm"
+  },
+  {
+    "cc": "TN",
+    "country": "Tunisia",
+    "tld": ".tn"
+  },
+  {
+    "cc": "TO",
+    "country": "Tonga",
+    "tld": ".to"
+  },
+  {
+    "cc": "TR",
+    "country": "Turkey",
+    "tld": ".tr"
+  },
+  {
+    "cc": "TT",
+    "country": "Trinidad and Tobago",
+    "tld": ".tt"
+  },
+  {
+    "cc": "TV",
+    "country": "Tuvalu",
+    "tld": ".tv"
+  },
+  {
+    "cc": "TW",
+    "country": "Taiwan, Province of China",
+    "tld": ".tw"
+  },
+  {
+    "cc": "TZ",
+    "country": "Tanzania, United Republic of",
+    "tld": ".tz"
+  },
+  {
+    "cc": "UA",
+    "country": "Ukraine",
+    "tld": ".ua"
+  },
+  {
+    "cc": "UG",
+    "country": "Uganda",
+    "tld": ".ug"
+  },
+  {
+    "cc": "UM",
+    "country": "United States Minor Outlying Islands",
+    "tld": ".um"
+  },
+  {
+    "cc": "US",
+    "country": "United States",
+    "tld": ".us"
+  },
+  {
+    "cc": "UY",
+    "country": "Uruguay",
+    "tld": ".uy"
+  },
+  {
+    "cc": "UZ",
+    "country": "Uzbekistan",
+    "tld": ".uz"
+  },
+  {
+    "cc": "VA",
+    "country": "Holy See (Vatican City State)",
+    "tld": ".va"
+  },
+  {
+    "cc": "VC",
+    "country": "Saint Vincent and the Grenadines",
+    "tld": ".vc"
+  },
+  {
+    "cc": "VE",
+    "country": "Venezuela, Bolivarian Republic of",
+    "tld": ".ve"
+  },
+  {
+    "cc": "VG",
+    "country": "Virgin Islands, British",
+    "tld": ".vg"
+  },
+  {
+    "cc": "VI",
+    "country": "Virgin Islands, U.S.",
+    "tld": ".vi"
+  },
+  {
+    "cc": "VN",
+    "country": "Viet Nam",
+    "tld": ".vn"
+  },
+  {
+    "cc": "VU",
+    "country": "Vanuatu",
+    "tld": ".vu"
+  },
+  {
+    "cc": "WF",
+    "country": "Wallis and Futuna",
+    "tld": ".wf"
+  },
+  {
+    "cc": "WS",
+    "country": "Samoa",
+    "tld": ".ws"
+  },
+  {
+    "cc": "YE",
+    "country": "Yemen",
+    "tld": ".ye"
+  },
+  {
+    "cc": "YT",
+    "country": "Mayotte",
+    "tld": ".yt"
+  },
+  {
+    "cc": "ZA",
+    "country": "South Africa",
+    "tld": ".za"
+  },
+  {
+    "cc": "ZM",
+    "country": "Zambia",
+    "tld": ".zm"
+  },
+  {
+    "cc": "ZW",
+    "country": "Zimbabwe",
+    "tld": ".zw"
+  },
+  {
+    "cc": "[edit]",
+    "country": "",
+    "tld": ""
+  }
+]
