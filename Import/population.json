@@ -1,5 +1,5 @@
 {
-  "Angola": [
+  "AO": [
     {
       "name": "Benguela",
       "population": 155000,
@@ -241,8 +241,8 @@
       "lng": 15.0615865
     }
   ],
-  "Algeria": [],
-  "Benin": [
+  "DZ": [],
+  "BJ": [
     {
       "name": "Abomey",
       "population": 59672,
@@ -626,7 +626,7 @@
       "lng": 2.35
     }
   ],
-  "Botswana": [
+  "BW": [
     {
       "name": "Bobonong",
       "population": 19389,
@@ -964,7 +964,7 @@
       "lng": 27.05
     }
   ],
-  "BurkinaFaso": [
+  "BF": [
     {
       "name": "Banfora",
       "population": 75917,
@@ -1230,7 +1230,7 @@
       "lng": -0.6166667
     }
   ],
-  "Burundi": [
+  "BI": [
     {
       "name": "Bubanza",
       "population": 2945,
@@ -1322,7 +1322,7 @@
       "lng": 30.2483881
     }
   ],
-  "Cameroon": [
+  "CM": [
     {
       "name": "Abo",
       "population": 16022,
@@ -1784,7 +1784,7 @@
       "lng": 15.05
     }
   ],
-  "CapeVerde": [
+  "CV": [
     {
       "name": "Assomada",
       "population": 12026,
@@ -1918,7 +1918,7 @@
       "lng": -23.2083333
     }
   ],
-  "CentralAfricanRepublic": [
+  "CF": [
     {
       "name": "Alindao",
       "population": 14401,
@@ -2142,7 +2142,7 @@
       "lng": 25.1333333
     }
   ],
-  "Chad": [
+  "TD": [
     {
       "name": "Abéché {Abeche}",
       "population": 77400,
@@ -2396,7 +2396,7 @@
       "lng": 18.3833333
     }
   ],
-  "Comores": [
+  "KM": [
     {
       "name": "Djoi�zi {Djoiezi}",
       "population": 2096
@@ -2516,7 +2516,7 @@
       "lng": 43.8028027
     }
   ],
-  "Congo": [
+  "CG": [
     {
       "name": "B�tou {Betou}",
       "population": 11240,
@@ -2738,7 +2738,7 @@
       "population": 5962
     }
   ],
-  "Congo-Kinshasa": [
+  "CD": [
     {
       "name": "Aketi",
       "population": 35486,
@@ -3352,7 +3352,7 @@
       "lng": 15.2895412
     }
   ],
-  "Côte d'Ivoire": [
+  "CI": [
     {
       "name": "Abengourou",
       "population": 71462,
@@ -3818,7 +3818,7 @@
       "lng": -6.0430556
     }
   ],
-  "Djibouti": [
+  "DJ": [
     {
       "name": "Ali-Sabieh",
       "population": 22630,
@@ -3856,7 +3856,7 @@
       "lng": 42.3938375
     }
   ],
-  "Egypt": [
+  "EG": [
     {
       "name": "Abnūb {Abnub}",
       "population": 67526,
@@ -5030,7 +5030,7 @@
       "lng": 31.2447709
     }
   ],
-  "EquatorialGuinea": [
+  "GQ": [
     {
       "name": "Bata",
       "population": 50023,
@@ -5080,7 +5080,7 @@
       "lng": 5.615225
     }
   ],
-  "Eritrea": [
+  "ER": [
     {
       "name": "Ādī K'eyih (Adi Qayeh) {Adi Keyih}",
       "population": 15633,
@@ -5206,7 +5206,7 @@
       "lng": 36.6575
     }
   ],
-  "Ethiopia": [
+  "ET": [
     {
       "name": "Abiy Addi",
       "population": 19500,
@@ -6052,7 +6052,7 @@
       "lng": 38.7166667
     }
   ],
-  "Gabon": [
+  "GA": [
     {
       "name": "Bitam",
       "population": 7473,
@@ -6150,7 +6150,7 @@
       "lng": 11
     }
   ],
-  "Gambia": [
+  "GM": [
     {
       "name": "Allunhari (Kara Allunkhari)",
       "population": 4571
@@ -6308,8 +6308,8 @@
       "lng": -15.3226315
     }
   ],
-  "Ghana": [],
-  "Guinea": [
+  "GH": [],
+  "GN": [
     {
       "name": "Beyla",
       "population": 11566,
@@ -6473,7 +6473,7 @@
       "lng": -9.2533
     }
   ],
-  "Guinea-Bissau": [
+  "GW": [
     {
       "name": "Bafat� {Bafata}",
       "population": 18000,
@@ -6517,7 +6517,7 @@
       "lng": -15.32335
     }
   ],
-  "Kenya": [
+  "KE": [
     {
       "name": "Awendo",
       "population": 17992,
@@ -7107,7 +7107,7 @@
       "lng": 37.6333333
     }
   ],
-  "Lesotho": [
+  "LS": [
     {
       "name": "Botha-Bothe",
       "population": 14268
@@ -7173,7 +7173,7 @@
       "lng": 28.6
     }
   ],
-  "Liberia": [
+  "LR": [
     {
       "name": "Barclayville",
       "population": 3108,
@@ -7307,7 +7307,7 @@
       "lng": -8.1333333
     }
   ],
-  "Libya": [
+  "LY": [
     {
       "name": "Ajdābīyā {Ajdabiya}",
       "population": 65276,
@@ -7555,7 +7555,7 @@
       "lng": 12.0833333
     }
   ],
-  "Madagascar": [
+  "MG": [
     {
       "name": "Ambalavao",
       "population": 27200,
@@ -7929,7 +7929,7 @@
       "lng": 47.3706554
     }
   ],
-  "Malawi": [
+  "MW": [
     {
       "name": "Balaka",
       "population": 22733,
@@ -8105,8 +8105,8 @@
       "lng": 35.3333333
     }
   ],
-  "Mali": [],
-  "Mauritania": [
+  "ML": [],
+  "MR": [
     {
       "name": "Adel Bagrou",
       "population": 36007,
@@ -8290,7 +8290,7 @@
       "lng": -12.4753205
     }
   ],
-  "Mauritius": [
+  "MU": [
     {
       "name": "Bambous",
       "population": 15345,
@@ -8550,7 +8550,7 @@
       "lng": 57.48333330000001
     }
   ],
-  "Mayotte": [
+  "YT": [
     {
       "name": "Acoua",
       "population": 3276,
@@ -8742,7 +8742,7 @@
       "lng": 45.1780556
     }
   ],
-  "Mocambique": [
+  "MZ": [
     {
       "name": "Alto Mol�cue {Alto Molocue}",
       "population": 42200,
@@ -9274,7 +9274,7 @@
       "lng": 32.78458
     }
   ],
-  "Morocco": [
+  "MA": [
     {
       "name": "Agadir",
       "population": 695667,
@@ -9926,7 +9926,7 @@
       "lng": -3.0000604
     }
   ],
-  "Namibia": [
+  "NA": [
     {
       "name": "Arandis",
       "population": 5100,
@@ -10156,7 +10156,7 @@
       "lng": 17.082481
     }
   ],
-  "Niger": [
+  "NE": [
     {
       "name": "Abalak",
       "population": 12764,
@@ -10374,8 +10374,8 @@
       "lng": 8.988333299999999
     }
   ],
-  "Nigeria": [],
-  "Reunion": [
+  "NG": [],
+  "RE": [
     {
       "name": "Bras-Panon",
       "population": 11699,
@@ -10521,7 +10521,7 @@
       "lng": 55.5136433
     }
   ],
-  "Rwanda": [
+  "RW": [
     {
       "name": "Butare",
       "population": 77217,
@@ -10613,7 +10613,7 @@
       "lng": 30.3288209
     }
   ],
-  "São Tomé": [
+  "ST": [
     {
       "name": "Guadelupe",
       "population": 1543,
@@ -10663,7 +10663,7 @@
       "lng": 6.683333299999999
     }
   ],
-  "Senegal": [
+  "SN": [
     {
       "name": "Bakel",
       "population": 14100,
@@ -10989,7 +10989,7 @@
       "lng": -16.2839509
     }
   ],
-  "Seychelles": [
+  "SC": [
     {
       "name": "Anse aux Pins",
       "population": 3850,
@@ -11099,7 +11099,7 @@
       "lng": 55.4513149
     }
   ],
-  "SierraLeone": [
+  "SL": [
     {
       "name": "Benguema",
       "population": 9707
@@ -11271,7 +11271,7 @@
       "lng": -11.0428931
     }
   ],
-  "Somalia": [
+  "SO": [
     {
       "name": "Muqdisho [Mogadishu]",
       "population": 1500000,
@@ -11279,7 +11279,7 @@
       "lng": 45.35
     }
   ],
-  "South Africa": [
+  "ZA": [
     {
       "name": "Alberton",
       "population": 147948,
@@ -12023,7 +12023,7 @@
       "lng": 19.4436111
     }
   ],
-  "SouthSudan": [
+  "SS": [
     {
       "name": "Aweil (Uwayl)",
       "population": 59217,
@@ -12127,7 +12127,7 @@
       "lng": 30.51
     }
   ],
-  "StHelena": [
+  "SH": [
     {
       "name": "Alarm Forest",
       "population": 256
@@ -12175,7 +12175,7 @@
       "lng": -5.7202372
     }
   ],
-  "Sudan": [
+  "SD": [
     {
       "name": "Abū Jubayhah {Abu Jubayhah}",
       "population": 47188,
@@ -12531,7 +12531,7 @@
       "population": 35061
     }
   ],
-  "Swaziland": [
+  "SZ": [
     {
       "name": "Bhunya",
       "population": 2650,
@@ -12675,7 +12675,7 @@
       "lng": 31.8776076
     }
   ],
-  "Tanzania": [
+  "TZ": [
     {
       "name": "Arusha",
       "population": 333791,
@@ -13507,7 +13507,7 @@
       "lng": 39.202641
     }
   ],
-  "Togo": [
+  "TG": [
     {
       "name": "An�ho (An�cho) {Aneho}",
       "population": 24891,
@@ -13645,7 +13645,7 @@
       "lng": 1.5333333
     }
   ],
-  "Tunisia": [
+  "TN": [
     {
       "name": "Ad-Dandān (Den Den) {Ad-Dandan}",
       "population": 24732
@@ -14181,8 +14181,8 @@
       "lng": 10.14721
     }
   ],
-  "Uganda": [],
-  "Zambia": [
+  "UG": [],
+  "ZM": [
     {
       "name": "Chililabombwe",
       "population": 75747,
@@ -14476,7 +14476,7 @@
       "lng": 23.1166667
     }
   ],
-  "Zimbabwe": [
+  "ZW": [
     {
       "name": "Banket",
       "population": 9814,
