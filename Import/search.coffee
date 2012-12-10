@@ -62,9 +62,6 @@ if !BING_API_KEY
 
 delay = (ms, cb) -> setTimeout cb, ms
 
-#+ Jonas Raoni Soares Silva
-#@ http://jsfromhell.com/array/shuffle [v1.0]
-
 shuffle = (o) ->
   return Math.round(Math.random()*2)-1
 
